@@ -6495,8 +6495,7 @@ yx-axis
   margin: 0px 22px 0px 0px;
 }
 
-.brands__item.active,
-.brands__item:hover {
+.brands__item.active {
   color: #ffffff;
   background-color: #64b0ce;
 }
@@ -6846,6 +6845,11 @@ yx-axis
 
   .navigation-tablet {
     display: none !important;
+  }
+
+  .brands__item:hover {
+    color: #ffffff;
+    background-color: #64b0ce;
   }
 }
 
