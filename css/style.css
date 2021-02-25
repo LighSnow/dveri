@@ -6470,7 +6470,7 @@ yx-axis
 }
 
 .brands__list-rus {
-  margin: 0 -6px;
+  margin: 0 -5px;
 }
 
 .brands__item {
@@ -7372,6 +7372,10 @@ yx-axis
 
   .modal__content {
     padding: 20px;
+  }
+
+  .brands__list-rus {
+    margin: 0 -3px;
   }
 
   .brands__item {
