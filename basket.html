@@ -2885,14 +2885,18 @@
         <div class="basket__main">
           <div class="basket__stage"></div>
           <div class="basket__item">
-            <div class="basket__item-icons">
-              <span class="basket__icon icon-heart js-toggle active"></span>
-              <span class="basket__icon icon-compare js-toggle"></span>
-            </div>
-            <div class="basket__image">
-              <img src="./img/basket/basket-img-1.jpg" alt="" />
-            </div>
-            <div class="basket__info">
+            <div class="basket__item-info">
+
+              <div class="basket__item-left">
+                <div class="basket__item-icons">
+                  <span class="basket__icon icon-heart js-toggle active"></span>
+                  <span class="basket__icon icon-compare js-toggle"></span>
+                </div>
+                <div class="basket__image">
+                  <img src="./img/basket/basket-img-1.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="basket__body">
                 <h3 class="basket__body-title">СМАЛЬТА 11 оестеклённая,
                   cлоновая кость патина золото</h3>
@@ -2902,7 +2906,7 @@
                 <span class="basket__body-about">
                   Комплект: <span>коробка + наличники телескопические</span>
                 </span>
-                <div class="basket__body-select">
+                <div class="basket__body-select desc">
                   <div class="select">
                     <span class="select-text select-text-desc">Размер:</span>
                     <span class="select-text select-text-mob">1-й:</span>
@@ -2924,39 +2928,95 @@
                   </div>
                 </div>
               </div>
-              <div class="basket__body-right">
-                <div class="basket__body-counter">
-                  <div class="number number-picker">
-                    <span class="minus dp-numberPicker-sub">-</span>
-                    <input class="dp-numberPicker-input" type="text" value="1" />
-                    <span class="plus  dp-numberPicker-add ">+</span>
-                  </div>
-                  <span>333 х 11 607 ₽</span>
+            </div>
+
+            <div class="basket__mobile-price">
+              <div class="basket__body-select mob">
+                <div class="select">
+                  <span class="select-text select-text-mob">Размер:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
                 </div>
+                <div class="select">
+                  <span class="select-text">2-й:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__body-right mob">
+
                 <div class="basket__body-price">
+
                   <span class="old-price price">
                     412 607 ₽
                   </span>
                   <span class="new-price price">
                     311 607 ₽
                   </span>
+                  <span class="basket__body-counter-text">333 х 11 607 ₽</span>
+                </div>
+
+                <div class="basket__body-counter">
+                  <div class="number number-picker">
+                    <span class="minus dp-numberPicker-sub">-</span>
+                    <input class="dp-numberPicker-input" type="text" value="1" />
+                    <span class="plus  dp-numberPicker-add ">+</span>
+                  </div>
+
+                </div>
+
+                <div class="basket__delete-btn mob">
+                  <span class="icon-cancel"></span>
                 </div>
 
               </div>
-              <div class="basket__delete-btn">
-                <span class="icon-cancel"></span>
+
+            </div>
+
+            <div class="basket__body-right desc">
+              <div class="basket__body-counter">
+                <div class="number number-picker">
+                  <span class="minus dp-numberPicker-sub">-</span>
+                  <input class="dp-numberPicker-input" type="text" value="1" />
+                  <span class="plus  dp-numberPicker-add ">+</span>
+                </div>
+                <span class="basket__body-counter-text">333 х 11 607 ₽</span>
               </div>
+              <div class="basket__body-price">
+                <span class="old-price price">
+                  412 607 ₽
+                </span>
+                <span class="new-price price">
+                  311 607 ₽
+                </span>
+              </div>
+
+            </div>
+            <div class="basket__delete-btn desc">
+              <span class="icon-cancel"></span>
             </div>
           </div>
           <div class="basket__item">
-            <div class="basket__item-icons">
-              <span class="basket__icon icon-heart js-toggle active"></span>
-              <span class="basket__icon icon-compare js-toggle"></span>
-            </div>
-            <div class="basket__image">
-              <img src="./img/basket/basket-img-2.jpg" alt="" />
-            </div>
-            <div class="basket__info">
+            <div class="basket__item-info">
+
+              <div class="basket__item-left">
+                <div class="basket__item-icons">
+                  <span class="basket__icon icon-heart js-toggle active"></span>
+                  <span class="basket__icon icon-compare js-toggle"></span>
+                </div>
+                <div class="basket__image">
+                  <img src="./img/basket/basket-img-1.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="basket__body">
                 <h3 class="basket__body-title">СМАЛЬТА 11 оестеклённая,
                   cлоновая кость патина золото</h3>
@@ -2966,9 +3026,10 @@
                 <span class="basket__body-about">
                   Комплект: <span>коробка + наличники телескопические</span>
                 </span>
-                <div class="basket__body-select">
+                <div class="basket__body-select desc">
                   <div class="select">
-                    <span class="select-text">Размер:</span>
+                    <span class="select-text select-text-desc">Размер:</span>
+                    <span class="select-text select-text-mob">1-й:</span>
                     <select class="custom-select">
                       <option value="250x1900">250x1900</option>
                       <option value="350x1900">350x1900</option>
@@ -2987,43 +3048,105 @@
                   </div>
                 </div>
               </div>
-              <div class="basket__body-right">
-                <div class="basket__body-counter">
-                  <div class="number number-picker">
-                    <span class="minus dp-numberPicker-sub">-</span>
-                    <input class="dp-numberPicker-input" type="text" value="1" />
-                    <span class="plus  dp-numberPicker-add ">+</span>
-                  </div>
-                  <span>333 х 11 607 ₽</span>
+            </div>
+
+            <div class="basket__mobile-price">
+              <div class="basket__body-select mob">
+                <div class="select">
+                  <span class="select-text select-text-mob">Размер:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
                 </div>
+                <div class="select">
+                  <span class="select-text">2-й:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__body-right mob">
+
                 <div class="basket__body-price">
+
                   <span class="old-price price">
                     412 607 ₽
                   </span>
                   <span class="new-price price">
                     311 607 ₽
                   </span>
+                  <span class="basket__body-counter-text">333 х 11 607 ₽</span>
+                </div>
+
+                <div class="basket__body-counter">
+                  <div class="number number-picker">
+                    <span class="minus dp-numberPicker-sub">-</span>
+                    <input class="dp-numberPicker-input" type="text" value="1" />
+                    <span class="plus  dp-numberPicker-add ">+</span>
+                  </div>
+
+                </div>
+
+                <div class="basket__delete-btn mob">
+                  <span class="icon-cancel"></span>
                 </div>
 
               </div>
-              <div class="basket__delete-btn">
-                <span class="icon-cancel"></span>
+
+            </div>
+
+            <div class="basket__body-right desc">
+              <div class="basket__body-counter">
+                <div class="number number-picker">
+                  <span class="minus dp-numberPicker-sub">-</span>
+                  <input class="dp-numberPicker-input" type="text" value="1" />
+                  <span class="plus  dp-numberPicker-add ">+</span>
+                </div>
+                <span class="basket__body-counter-text">333 х 11 607 ₽</span>
               </div>
+              <div class="basket__body-price">
+                <span class="old-price price">
+                  412 607 ₽
+                </span>
+                <span class="new-price price">
+                  311 607 ₽
+                </span>
+              </div>
+
+            </div>
+            <div class="basket__delete-btn desc">
+              <span class="icon-cancel"></span>
             </div>
           </div>
           <div class="basket__item-delete">
-            <span>Вы удалили: <span class="basket__item-delete-title">СМАЛЬТА 11 оестеклённая, cлоновая кость патина
+            <span class="basket__item-delete-text">Вы удалили: <span class="basket__item-delete-title">СМАЛЬТА 11
+                оестеклённая, cлоновая кость патина
                 золото</span></span>
+            <a href="#" class="basket__item-delete-back">
+              <span>Отмена</span>
+              <span class="icon-return"></span>
+            </a>
+            <span class="icon-delete"></span>
           </div>
           <div class="basket__item">
-            <div class="basket__item-icons">
-              <span class="basket__icon icon-heart js-toggle active"></span>
-              <span class="basket__icon icon-compare js-toggle"></span>
-            </div>
-            <div class="basket__image">
-              <img src="./img/basket/basket-img-1.jpg" alt="" />
-            </div>
-            <div class="basket__info">
+            <div class="basket__item-info">
+
+              <div class="basket__item-left">
+                <div class="basket__item-icons">
+                  <span class="basket__icon icon-heart js-toggle active"></span>
+                  <span class="basket__icon icon-compare js-toggle"></span>
+                </div>
+                <div class="basket__image">
+                  <img src="./img/basket/basket-img-1.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="basket__body">
                 <h3 class="basket__body-title">СМАЛЬТА 11 оестеклённая,
                   cлоновая кость патина золото</h3>
@@ -3033,9 +3156,10 @@
                 <span class="basket__body-about">
                   Комплект: <span>коробка + наличники телескопические</span>
                 </span>
-                <div class="basket__body-select">
+                <div class="basket__body-select desc">
                   <div class="select">
-                    <span class="select-text">Размер:</span>
+                    <span class="select-text select-text-desc">Размер:</span>
+                    <span class="select-text select-text-mob">1-й:</span>
                     <select class="custom-select">
                       <option value="250x1900">250x1900</option>
                       <option value="350x1900">350x1900</option>
@@ -3054,39 +3178,95 @@
                   </div>
                 </div>
               </div>
-              <div class="basket__body-right">
-                <div class="basket__body-counter">
-                  <div class="number number-picker">
-                    <span class="minus dp-numberPicker-sub">-</span>
-                    <input class="dp-numberPicker-input" type="text" value="1" />
-                    <span class="plus  dp-numberPicker-add ">+</span>
-                  </div>
-                  <span>333 х 11 607 ₽</span>
+            </div>
+
+            <div class="basket__mobile-price">
+              <div class="basket__body-select mob">
+                <div class="select">
+                  <span class="select-text select-text-mob">Размер:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
                 </div>
+                <div class="select">
+                  <span class="select-text">2-й:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__body-right mob">
+
                 <div class="basket__body-price">
+
                   <span class="old-price price">
                     412 607 ₽
                   </span>
                   <span class="new-price price">
                     311 607 ₽
                   </span>
+                  <span class="basket__body-counter-text">333 х 11 607 ₽</span>
+                </div>
+
+                <div class="basket__body-counter">
+                  <div class="number number-picker">
+                    <span class="minus dp-numberPicker-sub">-</span>
+                    <input class="dp-numberPicker-input" type="text" value="1" />
+                    <span class="plus  dp-numberPicker-add ">+</span>
+                  </div>
+
+                </div>
+
+                <div class="basket__delete-btn mob">
+                  <span class="icon-cancel"></span>
                 </div>
 
               </div>
-              <div class="basket__delete-btn">
-                <span class="icon-cancel"></span>
+
+            </div>
+
+            <div class="basket__body-right desc">
+              <div class="basket__body-counter">
+                <div class="number number-picker">
+                  <span class="minus dp-numberPicker-sub">-</span>
+                  <input class="dp-numberPicker-input" type="text" value="1" />
+                  <span class="plus  dp-numberPicker-add ">+</span>
+                </div>
+                <span class="basket__body-counter-text">333 х 11 607 ₽</span>
               </div>
+              <div class="basket__body-price">
+                <span class="old-price price">
+                  412 607 ₽
+                </span>
+                <span class="new-price price">
+                  311 607 ₽
+                </span>
+              </div>
+
+            </div>
+            <div class="basket__delete-btn desc">
+              <span class="icon-cancel"></span>
             </div>
           </div>
           <div class="basket__item">
-            <div class="basket__item-icons">
-              <span class="basket__icon icon-heart js-toggle active"></span>
-              <span class="basket__icon icon-compare js-toggle"></span>
-            </div>
-            <div class="basket__image">
-              <img src="./img/basket/basket-img-1.jpg" alt="" />
-            </div>
-            <div class="basket__info">
+            <div class="basket__item-info">
+
+              <div class="basket__item-left">
+                <div class="basket__item-icons">
+                  <span class="basket__icon icon-heart js-toggle active"></span>
+                  <span class="basket__icon icon-compare js-toggle"></span>
+                </div>
+                <div class="basket__image">
+                  <img src="./img/basket/basket-img-1.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="basket__body">
                 <h3 class="basket__body-title">СМАЛЬТА 11 оестеклённая,
                   cлоновая кость патина золото</h3>
@@ -3096,9 +3276,10 @@
                 <span class="basket__body-about">
                   Комплект: <span>коробка + наличники телескопические</span>
                 </span>
-                <div class="basket__body-select">
+                <div class="basket__body-select desc">
                   <div class="select">
-                    <span class="select-text">Размер:</span>
+                    <span class="select-text select-text-desc">Размер:</span>
+                    <span class="select-text select-text-mob">1-й:</span>
                     <select class="custom-select">
                       <option value="250x1900">250x1900</option>
                       <option value="350x1900">350x1900</option>
@@ -3117,39 +3298,95 @@
                   </div>
                 </div>
               </div>
-              <div class="basket__body-right">
-                <div class="basket__body-counter">
-                  <div class="number number-picker">
-                    <span class="minus dp-numberPicker-sub">-</span>
-                    <input class="dp-numberPicker-input" type="text" value="1" />
-                    <span class="plus  dp-numberPicker-add ">+</span>
-                  </div>
-                  <span>333 х 11 607 ₽</span>
+            </div>
+
+            <div class="basket__mobile-price">
+              <div class="basket__body-select mob">
+                <div class="select">
+                  <span class="select-text select-text-mob">Размер:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
                 </div>
+                <div class="select">
+                  <span class="select-text">2-й:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__body-right mob">
+
                 <div class="basket__body-price">
+
                   <span class="old-price price">
                     412 607 ₽
                   </span>
                   <span class="new-price price">
                     311 607 ₽
                   </span>
+                  <span class="basket__body-counter-text">333 х 11 607 ₽</span>
+                </div>
+
+                <div class="basket__body-counter">
+                  <div class="number number-picker">
+                    <span class="minus dp-numberPicker-sub">-</span>
+                    <input class="dp-numberPicker-input" type="text" value="1" />
+                    <span class="plus  dp-numberPicker-add ">+</span>
+                  </div>
+
+                </div>
+
+                <div class="basket__delete-btn mob">
+                  <span class="icon-cancel"></span>
                 </div>
 
               </div>
-              <div class="basket__delete-btn">
-                <span class="icon-cancel"></span>
+
+            </div>
+
+            <div class="basket__body-right desc">
+              <div class="basket__body-counter">
+                <div class="number number-picker">
+                  <span class="minus dp-numberPicker-sub">-</span>
+                  <input class="dp-numberPicker-input" type="text" value="1" />
+                  <span class="plus  dp-numberPicker-add ">+</span>
+                </div>
+                <span class="basket__body-counter-text">333 х 11 607 ₽</span>
               </div>
+              <div class="basket__body-price">
+                <span class="old-price price">
+                  412 607 ₽
+                </span>
+                <span class="new-price price">
+                  311 607 ₽
+                </span>
+              </div>
+
+            </div>
+            <div class="basket__delete-btn desc">
+              <span class="icon-cancel"></span>
             </div>
           </div>
           <div class="basket__item">
-            <div class="basket__item-icons">
-              <span class="basket__icon icon-heart js-toggle active"></span>
-              <span class="basket__icon icon-compare js-toggle"></span>
-            </div>
-            <div class="basket__image">
-              <img src="./img/basket/basket-img-1.jpg" alt="" />
-            </div>
-            <div class="basket__info">
+            <div class="basket__item-info">
+
+              <div class="basket__item-left">
+                <div class="basket__item-icons">
+                  <span class="basket__icon icon-heart js-toggle active"></span>
+                  <span class="basket__icon icon-compare js-toggle"></span>
+                </div>
+                <div class="basket__image">
+                  <img src="./img/basket/basket-img-1.jpg" alt="" />
+                </div>
+              </div>
+
               <div class="basket__body">
                 <h3 class="basket__body-title">СМАЛЬТА 11 оестеклённая,
                   cлоновая кость патина золото</h3>
@@ -3159,9 +3396,10 @@
                 <span class="basket__body-about">
                   Комплект: <span>коробка + наличники телескопические</span>
                 </span>
-                <div class="basket__body-select">
+                <div class="basket__body-select desc">
                   <div class="select">
-                    <span class="select-text">Размер:</span>
+                    <span class="select-text select-text-desc">Размер:</span>
+                    <span class="select-text select-text-mob">1-й:</span>
                     <select class="custom-select">
                       <option value="250x1900">250x1900</option>
                       <option value="350x1900">350x1900</option>
@@ -3180,32 +3418,84 @@
                   </div>
                 </div>
               </div>
-              <div class="basket__body-right">
-                <div class="basket__body-counter">
-                  <div class="number number-picker">
-                    <span class="minus dp-numberPicker-sub">-</span>
-                    <input class="dp-numberPicker-input" type="text" value="1" />
-                    <span class="plus  dp-numberPicker-add ">+</span>
-                  </div>
-                  <span>333 х 11 607 ₽</span>
+            </div>
+
+            <div class="basket__mobile-price">
+              <div class="basket__body-select mob">
+                <div class="select">
+                  <span class="select-text select-text-mob">Размер:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
                 </div>
+                <div class="select">
+                  <span class="select-text">2-й:</span>
+                  <select class="custom-select">
+                    <option value="250x1900">250x1900</option>
+                    <option value="350x1900">350x1900</option>
+                    <option value="450x1900">450x1900</option>
+                    <option value="550x1900">550x1900</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__body-right mob">
+
                 <div class="basket__body-price">
+
                   <span class="old-price price">
                     412 607 ₽
                   </span>
                   <span class="new-price price">
                     311 607 ₽
                   </span>
+                  <span class="basket__body-counter-text">333 х 11 607 ₽</span>
+                </div>
+
+                <div class="basket__body-counter">
+                  <div class="number number-picker">
+                    <span class="minus dp-numberPicker-sub">-</span>
+                    <input class="dp-numberPicker-input" type="text" value="1" />
+                    <span class="plus  dp-numberPicker-add ">+</span>
+                  </div>
+
+                </div>
+
+                <div class="basket__delete-btn mob">
+                  <span class="icon-cancel"></span>
                 </div>
 
               </div>
-              <div class="basket__delete-btn">
-                <span class="icon-cancel"></span>
+
+            </div>
+
+            <div class="basket__body-right desc">
+              <div class="basket__body-counter">
+                <div class="number number-picker">
+                  <span class="minus dp-numberPicker-sub">-</span>
+                  <input class="dp-numberPicker-input" type="text" value="1" />
+                  <span class="plus  dp-numberPicker-add ">+</span>
+                </div>
+                <span class="basket__body-counter-text">333 х 11 607 ₽</span>
               </div>
+              <div class="basket__body-price">
+                <span class="old-price price">
+                  412 607 ₽
+                </span>
+                <span class="new-price price">
+                  311 607 ₽
+                </span>
+              </div>
+
+            </div>
+            <div class="basket__delete-btn desc">
+              <span class="icon-cancel"></span>
             </div>
           </div>
 
-          <div class="basket__step">
+          <div class="basket__step desc" >
             <a class="btn btn-back" href="#">
               <span class=" icon icon-next icon-next-revert"></span>
               Вернуться к покупкам
@@ -3220,7 +3510,7 @@
             </a>
           </div>
         </div>
-        <div class="basket__aside">
+        <div class="basket__aside desc">
           <div class="basket__aside-price">
             <h2 class="h2">Итого:</h2>
             <div class="basket__aside-price__row">
@@ -3229,7 +3519,7 @@
               <span>11 607 ₽</span>
             </div>
             <div class="basket__aside-price__row">
-             <span class="desc">Стоимость доставки:</span>
+              <span class="desc">Стоимость доставки:</span>
               <span class="mob">Доставка</span>
               <span>11 607 ₽</span>
             </div>
@@ -3252,7 +3542,9 @@
             </div>
             <div class="basket__aside-promo__info">
               ?
+              <div class="popup bot">Товары для сравнения не выбраны</div>
             </div>
+
           </div>
           <div class="basket__aside-price">
             <div class="basket__aside-price__total">
@@ -3273,6 +3565,34 @@
           </div>
           <a class="btn btn-complete btn-disabled" href="#">Завершить заказ</a>
           <a class="btn-next-buy" href="#">Продолжить покупки</a>
+        </div>
+        <div class="basket__aside basket__aside-mobile mob">
+          <div class="basket__aside-price">
+            <h2 class="h2">Итого:</h2>
+            <div class="basket__aside-price__row">
+              <span class="mob">Товары(4):</span>
+              <span>11 607 ₽</span>
+            </div>
+          </div>
+          <div class="basket__aside-price">
+            <div class="basket__aside-price__total">
+              Общая стоимость: <span>11 607 ₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="basket__step mob" >
+          <a class="btn btn-back" href="#">
+            <span class=" icon icon-next icon-next-revert"></span>
+            Вернуться к покупкам
+          </a>
+          <a class="btn btn-delete" href="#">
+            <span class="icon icon-delete"></span>
+            Очистить корзину
+          </a>
+          <a class="btn btn-next" href="#">
+            Оформление заказа
+            <span class=" icon icon-next"></span>
+          </a>
         </div>
       </div>
       
