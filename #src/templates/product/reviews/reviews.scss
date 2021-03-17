@@ -1,0 +1,249 @@
+//product review
+.product__review {
+  &-inner {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  .product__aside {
+    margin-right: 30px;
+
+    &-rating {
+      display: flex;
+      margin-bottom: 25px;
+    }
+
+    &-counter {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 0;
+    }
+
+    &-ratebar {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &-title {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &-btn {
+      justify-content: center;
+      display: flex;
+      max-width: 165px;
+      margin: 0 0 20px 0 !important;
+      padding: 10px 0;
+    }
+
+    .product__grade {
+      &-title {
+        font-weight: 500;
+        margin-bottom: 16px;
+        letter-spacing: 1px;
+      }
+
+      &-choice {
+
+        .choice__line {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
+          &-radio {
+            color: #fff;
+          }
+
+          &-stars {
+            i {
+              &::before {
+                font-size: 18px;
+              }
+            }
+          }
+
+          &-counter {
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .product__main {
+    font-size: 14px;
+    color: #212121;
+    //global
+    .comment-logo {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-color: #64afcd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 30px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    .comment-name {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .comment-text {
+      font-size: 16px;
+    }
+
+    //comment
+    .product__comment {
+      margin-bottom: 40px;
+
+      .user-wrapper {
+        display: flex;
+        align-items: center;
+
+        .jq-ry-container {
+          height: 18px;
+        }
+      }
+
+      //title
+      &-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+
+      &-logo {
+      }
+
+      //text
+      &-text {
+        padding-left: 95px;
+        font-size: 16px;
+        margin-bottom: 15px;
+
+        .comment-category {
+          margin-bottom: 15px;
+        }
+      }
+
+      &-dignity {
+      }
+
+      &-limitations {
+      }
+
+      &--content {
+      }
+
+      //images
+      &-images {
+        margin-bottom: 25px;
+        padding-left: 95px;
+        display: flex;
+
+        .comment-img-item {
+          margin-right: 10px;
+          position: relative;
+
+          .counter-commit-photo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            top: 0;
+            left: 0;
+            border-radius: 4px;
+            background-color: rgba(100, 175, 205, 0.7);
+          }
+
+          img {
+          }
+        }
+      }
+
+      //interview
+      &-interview {
+        font-weight: 500;
+        font-size: 14px;
+        padding-left: 95px;
+        margin-bottom: 30px;
+        color: #424242;
+
+        .interview-question {
+          margin-bottom: 15px;
+        }
+
+        .interview-answer {
+        }
+
+        .interview-btn {
+          font-weight: 500;
+          color: #212121;
+          width: 70px;
+          height: 30px;
+          border-radius: 6px;
+          border: 1px solid #e7e7e7;
+          background-color: transparent;
+
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+
+          &:hover {
+            border-color: #64afcd;
+            background-color: #64afcd;
+            color: #fff;
+          }
+        }
+      }
+
+      //answer
+      .comment__answer {
+        border: 1px solid #e7e7e7;
+        border-radius: 8px;
+        margin-left: 95px;
+        padding: 15px;
+
+        &-admin {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .admin-logo {
+          }
+
+          .admin-position {
+            font-size: 12px;
+          }
+
+          .admin-information {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+        &-content {
+          padding-left: 95px;
+        }
+      }
+    }
+
+  }
+
+}

@@ -13,7 +13,7 @@
 @import "vars";
 @import "mixins";
 @import "normalize";
-@import "global";
+@import "_global";
 
 
 
@@ -120,6 +120,16 @@ Table of contents
 ====================*/
 @import "../templates/modal/modal";
 
+/* ## Product page
+====================*/
+@import "../templates/product/product-door.scss";
+@import "../templates/product/reviews/reviews.scss";
+@import "../templates/product/popup/popup.scss";
+
+
+/* ## Breadcrums
+====================*/
+@import "../templates/breadcrumbs/breadcrumbs.scss";
 /* ## Brands
 ====================*/
 
