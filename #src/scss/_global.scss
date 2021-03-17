@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $font-main;
+  line-height: 1.26;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition-color, $transition-bg, $transition-opacity;
+
+  &::after,
+  &::before {
+    transition: inherit;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.btn {
+  &-blue {
+    background-color: #64b0ce;
+  }
+
+  &-white {
+    background-color: #fff;
+  }
+
+  &-dark-blue {
+    background-color: #085892;
+  }
+}

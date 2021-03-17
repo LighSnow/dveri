@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('_head.html')
+
+<body>
+	@@include('templates/header/header.html')
+	@@include('templates/header/mobile/mobile.html')
+	<div class="container">
+		@@include('templates/navigation/navigation.html')
+		@@include('templates/intro/intro.html')
+		@@include('templates/popular-category/popular-category.html')
+		@@include('templates/popular-goods/popular-goods.html')
+		@@include('templates/why-choose-us/why-choose-us.html')
+		@@include('templates/cooperation/cooperation.html')
+		@@include('templates/reviews/reviews.html')
+		@@include('templates/viewed-products/viewed-products.html')
+	</div>
+	@@include('templates/footer/footer.html')
+
+	<div class="scroll-top"></div>
+	<div class="overflow-navigation"></div>
+
+	<!-- Modals -->
+	@@include('templates/modal/measurer.html')
+	@@include('templates/modal/call.html')
+	@@include('templates/modal/alert.html')
+	@@include('templates/modal/reviews.html')
+
+
+	@@include('_script.html')
+
+</body>
+
+</html>

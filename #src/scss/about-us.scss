@@ -1,0 +1,72 @@
+.about-us {
+  padding: 25px 0px 0px 0px;
+
+  .h2 {
+    margin: 0px 0px 16px 0px;
+  }
+
+  .desc {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__row {
+    margin: 0px 0px 36px 0px;
+
+    &:first-child {
+      margin: 0px 0px 14px 0px;
+    }
+
+    p {
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  p {
+    margin: 0px 0px 20px 0px;
+  }
+
+  &__content {
+    margin: 0px 60px 0px 0px;
+  }
+
+  &__body {
+    display: flex;
+
+
+  }
+
+  &__content {
+    max-width: 530px;
+    width: 100%;
+
+    @media (max-width: 1200px) {
+      max-width: 410px;
+    }
+
+    @media (max-width: 767.98px) {
+      max-width: 100%;
+    }
+  }
+
+  &__image {
+    width: 50%;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 0px 0px 0px 39px;
+
+    @media (max-width: 767.98px) {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  &-image {}
+}

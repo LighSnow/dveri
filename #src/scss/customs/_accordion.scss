@@ -1,0 +1,6 @@
+.js-accordion-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

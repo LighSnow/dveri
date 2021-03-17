@@ -1,0 +1,35 @@
+.viewed-products {
+  padding-bottom: 30px;
+}
+
+.viewed-products__slider {
+  margin: -15px -10px;
+  .slick-arrow {
+    top: 40%;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+  .quick-view {
+    top: 170px;
+  }
+}
+
+.viewed-products__slider_item {
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+
+
+@media (max-width: 1200px) {
+  .viewed-products__slider {
+    margin: -15px 0;
+  }
+  .viewed-products__slider_item {
+    padding: 15px 2px;
+  }
+}

@@ -1,0 +1,141 @@
+.brands {
+  padding: 27px 0px 0px 0px;
+
+  .h2 {
+    margin: 0px 0px 15px 0px;
+  }
+
+  &__filter {
+    margin: 0px 0px 40px 0px;
+    @media (max-width: 767.98px) {
+      margin: 0px 0px 10px 0px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 6px 0px;
+
+    &-rus {
+      margin: 0 -5px;
+      @media (max-width: 1200px) {
+        margin: 0 -3px;
+      }
+    }
+  }
+
+  &__item {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $black;
+    border-radius: 3px;
+    margin: 0px 5.7px 0px 0px;
+    padding: 2px 6px;
+    cursor: pointer;
+    transition: all .3s;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      padding: 2px 4px;
+      margin: 0px 2px 0px 0px;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 14px;
+      margin: 0px 8px 0px 0px;
+    }
+
+    &-all {
+      color: $white;
+      text-transform: unset;
+      background-color: $blue;
+      padding: 2px 1px;
+      margin: 0px 22px 0px 0px;
+
+      @media (max-width: 1200px) {
+        padding: 1px 0;
+      }
+    }
+    @media (min-width: 1200px) {
+      &:hover {
+        color: $white;
+      background-color: $main;
+      }
+    }
+    &.active {
+      color: $white;
+      background-color: $main;
+    }
+  }
+
+  .cooperation__slider_item_title {
+    display: none;
+  }
+
+  .cooperation__slider_item_link {
+    margin: 0px 0px 5px 0px;
+
+    &:hover {
+      .cooperation__slider_item_img {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .cooperation__slider {
+    margin: 0px 0px 45px 0px;
+  }
+
+  .cooperation__slider_item {
+    padding: 0px 15px;
+  }
+
+  &__columns {
+    margin: 0px 0px 9px 0px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      padding: 0px 10px 0px 0px;
+      margin: 0px 0px 25px 0px;
+
+      @media (max-width: 767.98px) {
+        width: 50%;
+        padding: 0px 15px 0px 0px;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: $black;
+      text-transform: uppercase;
+      margin: 0px 0px 14px 0px;
+    }
+
+    &-link {
+      font-size: 16px;
+      font-weight: 500;
+      color: $black;
+
+      &+& {
+        margin: 15px 0px 0px 0px;
+      }
+
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+
+  &__columns-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

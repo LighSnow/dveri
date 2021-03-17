@@ -1,0 +1,66 @@
+.popup-link {
+  &:hover {
+    .popup {
+      opacity: 1;
+      visibility: visible;
+      z-index: 7777;
+    }
+  }
+}
+
+.popup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 41px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #b4b4b4;
+  background-color: #e7e7e7;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  &.bot {
+    top: calc(100% + 15px);
+    right: calc(100% - 40px);
+    &:before {
+      top: -10px;
+      right: 17px;
+    }
+  }
+  &.top {
+    bottom: calc(100% + 15px);
+    left: calc(100% - 40px);
+    &:before {
+      bottom: -10px;
+      left: 17px;
+      transform: rotate(180deg);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-image: url(../img/icons/popup-triangle.png);
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .popup {
+    display: none;
+  }
+  .popup-link {
+    &:hover {
+      .popup {
+        display: none;
+      }
+    }
+  }
+}

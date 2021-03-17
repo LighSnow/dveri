@@ -1,0 +1,23 @@
+@mixin adaptive1366 {
+  @media(max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin adaptive1024 {
+  @media(max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin adaptive767 {
+  @media(max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin adaptive374 {
+  @media(max-width: 374px) {
+    @content;
+  }
+}

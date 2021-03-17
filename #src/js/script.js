@@ -1,0 +1,12 @@
+
+@@include('components/customs.js',{})
+@@include('components/scroll.js',{})
+@@include('components/number-picker.js',{})
+@@include('components/tabs.js',{})
+@@include('../templates/header/header.js',{})
+@@include('../templates/navigation/navigation.js',{})
+@@include('../templates/header/mobile/mobile.js',{})
+@@include('../templates/intro/intro.js',{})
+@@include('../templates/cooperation/cooperation.js',{})
+@@include('../templates/viewed-products/viewed-products.js',{})
+@@include('../templates/reviews/reviews.js',{})

@@ -1,0 +1,88 @@
+.payment,
+.about-us {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px 0;
+  font-size: 14px;
+  line-height: 1.2;
+
+  .h2 {
+    margin: 0px 0px 12px 0px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px 0px 18px 0px;
+  }
+
+  span {
+    font-weight: 500;
+    margin: 0px 0px 16px 0px;
+
+    &.mb {
+      margin: 0px 0px 26px 0px;
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+      padding: 0px 0px 0px 9px;
+      margin: 0px 0px 18px 0px;
+      line-height: 1.25;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: $black;
+        top: 7px;
+        left: 0px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  p {
+    margin: 0px 0px 15px 0px;
+    font-weight: 500;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
+
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 96px;
+      margin: 0px 50px 0px 0px;
+
+      @media (max-width: 767.98px) {
+        // width: 50%;
+        margin: 0px 40px 20px 0px;
+      }
+
+      &:last-of-type {
+        margin: 0px 0px 0px 0px;
+
+        @media (max-width: 767.98px) {
+          // width: 50%;
+          margin: 0px 40px 20px 0px;
+        }
+      }
+    }
+  }
+}
+

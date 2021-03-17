@@ -1,0 +1,21 @@
+.close {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: $black;
+  }
+  &:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}

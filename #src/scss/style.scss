@@ -1,0 +1,136 @@
+// @mixin font($font_name, $file_name, $weight, $style) {
+// 	@font-face {
+// 		font-family: $font_name;
+// 		font-display: swap;
+// 		src: url("../fonts/#{$file_name}.woff") format("woff"),
+// 		url("../fonts/#{$file_name}.woff2") format("woff2");
+// 		font-weight: #{$weight};
+// 		font-style: #{$style};
+// 	}
+// }
+
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "normalize";
+@import "global";
+
+
+
+
+/*******************
+Table of contents
+
+## Slick
+## Customs
+## Header
+## Navigation
+## Intro
+## Popular Category
+## Popular Goods
+## Why Choose Us
+## Cooperation
+## Reviews
+## Viewed Products
+## Blog
+## Catalog
+## Delivery
+## Favourites
+## Installing
+## Footer
+## Modal
+## Brands
+*******************/
+
+
+// /* ## Slick
+// ====================*/
+@import "slick.scss";
+@import "slick-theme.scss";
+
+/* ## Customs
+====================*/
+@import "customs/customs";
+@import "icomoon";
+/* ## Nice-select
+====================*/
+@import "nice-select";
+
+/* ## Header
+====================*/
+@import "../templates/header/header";
+
+/* ## Navigation
+====================*/
+@import "../templates/navigation/navigation";
+
+/* ## Intro
+====================*/
+@import "../templates/intro/intro";
+
+/* ## Popular Category
+====================*/
+@import "../templates/popular-category/popular-category";
+
+/* ## Popular Goods
+====================*/
+@import "../templates/popular-goods/popular-goods";
+
+/* ## Why Choose Us
+====================*/
+@import "../templates/why-choose-us/why-choose-us";
+
+/* ## Cooperation
+====================*/
+@import "../templates/cooperation/cooperation";
+
+/* ## Reviews
+====================*/
+@import "../templates/reviews/reviews";
+
+/* ## Viewed Products
+====================*/
+@import "../templates/viewed-products/viewed-products";
+
+/* ## Blog
+====================*/
+@import "../templates/blog/blog";
+
+/* ## Catalog
+====================*/
+@import "../templates/catalog/catalog";
+
+/* ## Delivery
+====================*/
+@import "../templates/delivery/delivery";
+
+/* ## Favourites
+====================*/
+@import "../templates/favourites/favourites";
+
+/* ## Installing
+====================*/
+@import "installing";
+
+/* ## Footer
+====================*/
+@import "../templates/footer/footer";
+
+/* ## Modal
+====================*/
+@import "../templates/modal/modal";
+
+/* ## Brands
+====================*/
+
+@import "brands";
+@import "zamer";
+@import "payment";
+@import "about-us";
+@import "basket";
+
+// .navigation__basket_badge {
+//   .icon-shopping-cart {
+//     font-size: 34px;
+//   }
+// }
