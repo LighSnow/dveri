@@ -13,7 +13,7 @@
 @import "vars";
 @import "mixins";
 @import "normalize";
-@import "_global";
+@import "global";
 
 
 
@@ -120,9 +120,13 @@ Table of contents
 ====================*/
 @import "../templates/modal/modal";
 
+/* ## basket preview on all page
+====================*/
+@import "../templates/basket-adding/basket-adding.scss";
+
 /* ## Product page
 ====================*/
-@import "../templates/product/product-door.scss";
+@import "../templates/product/product-door";
 @import "../templates/product/reviews/reviews.scss";
 @import "../templates/product/popup/popup.scss";
 
@@ -130,6 +134,13 @@ Table of contents
 /* ## Breadcrums
 ====================*/
 @import "../templates/breadcrumbs/breadcrumbs.scss";
+
+/* ## fancybox
+====================*/
+@import "./plugins-styles/jquery.fancybox.scss";
+
+
+
 /* ## Brands
 ====================*/
 
