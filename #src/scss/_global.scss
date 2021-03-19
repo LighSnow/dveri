@@ -186,6 +186,8 @@ a {
  }
 
  .radio-global {
+  display: flex;
+  align-items: center;
    input {
      position: absolute;
      clip: rect(0 0 0 0);
@@ -396,5 +398,14 @@ a {
      font-weight: 500;
      color: #212121;
    }
+ }
+}
+
+
+@media (max-width: 767px) {
+ .radio-global {
+  label {
+   padding-left: 18px;
+  }
  }
 }

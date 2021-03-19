@@ -94,7 +94,7 @@ $(function () {
  })
  body.on('click', '.close-btn', function () {
   $(this).parents('.modal-block').removeClass('active');
-  if(!$('.popup-additional__wrapper').hasClass('active')) {
+  if (!$('.popup-additional__wrapper').hasClass('active')) {
    body.removeClass('smoke').css({
     'padding-right': '0px'
    });
