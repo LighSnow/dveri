@@ -23,12 +23,14 @@ let path = {
     icons: source_folder + "/icomoon/**/*.*",
     favicon: source_folder + "/favicon/**/*.*",
     svg: source_folder + "/svg/**/*.*",
+    allJs: source_folder + "/**/**/*.js",
+    allCss: source_folder + "/**/**/*.scss"
   },
   watch: {
     html: source_folder + "/**/*.html",
-    css: source_folder + "/scss/**/*.scss",
-    js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
+    css: source_folder + "/**/**/*.scss",
+    js: source_folder + "/**/**/*.js",
+    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
   clean: "./" + project_folder + "/"
 }
@@ -138,6 +140,7 @@ function libsCss() {
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
 }
+
 
 function js() {
   return src(path.src.js)
