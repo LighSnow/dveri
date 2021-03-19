@@ -19,3 +19,19 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+ .breadcrumbs {
+  padding: 13px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    li {
+      a {
+        font-size: 10px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+}
+}
