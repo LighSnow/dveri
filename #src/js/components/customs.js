@@ -3,7 +3,7 @@ $(function () {
 
     'use strict';
 
-    $('.js-toggle').on('click', function (e){
+    $('.js-toggle').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
     });
@@ -11,7 +11,7 @@ $(function () {
 
     // Toggle
     const toggle = $('.toggle__item');
-    toggle.on('click', function (e){
+    toggle.on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
     });
@@ -20,7 +20,7 @@ $(function () {
     // Accordion
     const accordionLink = $('.js-accordion-link');
     // const accordionContent = $('.js-accordion-content');
-    accordionLink.on('click', function (e){
+    accordionLink.on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
         let thisAccordionContent = $(this).attr('href');
@@ -30,7 +30,7 @@ $(function () {
 
 
     // Скрол на початок сторінки
-    $(document).on('scroll', function(){
+    $(document).on('scroll', function () {
         let documentScroll = $(this).scrollTop();
         if (documentScroll >= 124) {
             $('.scroll-top').addClass('active');
@@ -38,7 +38,7 @@ $(function () {
             $('.scroll-top').removeClass('active');
         }
     });
-    $('.scroll-top').on('click', function(){
+    $('.scroll-top').on('click', function () {
         $('html, body').animate({
             scrollTop: 0
         }, 2000);
@@ -50,19 +50,19 @@ $(function () {
     const modal = $('.modal');
     const modalLink = $('.js-modal-link');
     const modalClose = $('.modal__close');
-    modalLink.on('click', function (e){
+    modalLink.on('click', function (e) {
         e.preventDefault();
         let thisModal = $(this).attr('href');
         body.addClass('overflow-hidden');
         $(thisModal).fadeIn();
     });
-    modalClose.on('click', function (e){
+    modalClose.on('click', function (e) {
         e.preventDefault();
         body.removeClass('overflow-hidden');
         modal.fadeOut();
     });
-    modal.click( function(e){
-        if ( $(e.target).closest('.modal__content').length ) {
+    modal.click(function (e) {
+        if ($(e.target).closest('.modal__content').length) {
             return;
         }
         body.removeClass('overflow-hidden');
@@ -73,7 +73,7 @@ $(function () {
     // Alert
     const alertLink = $('.js-alert-link');
     const alertClose = $('.alert__close');
-    alertLink.on('click', function (e){
+    alertLink.on('click', function (e) {
         e.preventDefault();
         let thisAlert = $(this).attr('href');
         $(thisAlert).fadeIn();
@@ -82,7 +82,7 @@ $(function () {
         }
         setTimeout(alertFade, 5000);
     });
-    alertClose.on('click', function (e){
+    alertClose.on('click', function (e) {
         e.preventDefault();
         let thisAlert = $(this).attr('href');
         $(thisAlert).fadeOut();
@@ -90,5 +90,30 @@ $(function () {
 
 
     $('select').niceSelect();
+
+    $.validator.messages.required = '';
+    $(".delivery-form").validate({
+        rules: {
+            company: {
+                required: true,
+                minlength: 3
+            },
+            name: {
+                required: true,
+                minlength: 3
+            },
+            phone: {
+                required: true,
+                minlength: 11,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+        },
+    });
+
+    $('#phone').mask('+7 (000) 000-00-00');
+
 
 });

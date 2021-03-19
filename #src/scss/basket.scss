@@ -44,22 +44,51 @@
 	// .basket__stage
 
 	&__stage {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		width: 100%;
 		height: 35px;
-		background-image: url(../img/basket/basket-row.png);
-		background-position: center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		background: rgb(8, 88, 146);
+		background: linear-gradient(90deg, rgba(8, 88, 146, 1) 0%, rgba(100, 176, 206, 1) 50%);
 		margin: 0px 0px 30px 0px;
+		border-radius: 4px;
+		padding: 0 7px;
 
 		@media (max-width: 1200px) {
 			margin: 0px 0px 10px 0px;
-			background-image: url(../img/basket/basket-row-tablet.png);
 		}
 
-		@media (max-width: 590px) {
+		@media (max-width: 600px) {
 			margin: 0px 0px 7px 0px;
-			// background-image: url(../img/basket/basket-row-mob.png);
+			height: 30px;
+			padding: 0 6px;
+
+			&-arrow,
+			&-cart {
+				width: 21px;
+			}
+
+			&-delivery {
+				width: 23px;
+			}
+
+			&-money {
+				width: 28px;
+			}
+			&-check {
+				width: 24px;
+			}
+		}
+		&-icons {
+			display: flex;
+			align-items: center;
+			img + img {
+				margin: 0px 0px 0px 5px;
+			}
+		}
+		&-2 {
+			margin: 0px 50px 0px 0px;
 		}
 	}
 
@@ -1021,6 +1050,7 @@
 				display: flex;
 				max-width: 100%;
 				padding: 5px 4px 2px 4px;
+				position: static;
 
 				.basket__aside-price__total {
 					flex-direction: row;
@@ -1040,6 +1070,10 @@
 
 				.basket__aside-price__row {
 					padding: 0px 0px 0px 3px;
+					line-height: 1.2;
+					& + .basket__aside-price__row {
+						margin: 6px 0px 0px 0px;
+					}
 				}
 
 				.basket__aside-price {
@@ -1142,7 +1176,7 @@
 		@media (max-width: 767.98px) {
 			order: 2;
 			height: 70px;
-			margin: 6px 0px 0px 0px;
+			margin: 6px 0px 19px 0px;
 		}
 
 		.textarea {
@@ -1192,14 +1226,23 @@
 
 			@media (max-width: 767.98px) {
 				order: 1;
+				margin: 20px 0px 0px 0px;
 			}
 
 			.input {
 				margin: 0px 0px 3px 0px;
 			}
 		}
+		&.error {
+			border-color: #fd5e1c;
+		}
+		&.valid {
+			border-color: #68BB37;
+		}
 	}
-
+	label.error {
+		display: none;
+	}
 	.delivery-address-text {
 		font-size: 12px;
 		font-weight: 500;
@@ -1229,12 +1272,13 @@
 		margin: 0px 10px 0px 0px;
 
 		@media (max-width: 767.98px) {
-			margin: 0px 2px 0px 0px;
+			margin: 0px 5px 0px 0px;
 		}
 	}
 
 	&__label {
-		display: inline-block;
+		display: inline-flex;
+		align-items: center;
 		cursor: pointer;
 		font-size: 16px;
 		font-weight: 600;
@@ -1246,7 +1290,7 @@
 
 		@media (max-width: 767.98px) {
 			font-size: 12px;
-			margin: 0px 18px 0px 0px;
+			margin: 0px 4px 15px 0px;
 		}
 	}
 
@@ -1363,15 +1407,22 @@
 	background-color: rgb(231, 231, 231);
 	// .form-method__h2
 
-  @media (max-width: 1200px) {
-    padding: 8px 8px 8px 11px;
-  }
+	@media (max-width: 1200px) {
+		padding: 8px 8px 8px 11px;
+	}
+	@media (max-width: 600px) {
+		padding: 10px 8px 18px 10px;
+	}
 
 	&__h2 {
 		font-size: 20px;
 		font-weight: 700;
 		color: $black;
 		margin: 0px 0px 20px 0px;
+		@media (max-width: 600px) {
+			font-size: 16px;
+			margin: 0px 0px 6px 0px;
+		}
 	}
 
 	// .form-method__column
@@ -1395,11 +1446,32 @@
 			}
 			.form-method__price {
 				margin: 63px 0px 0px 0px;
+				@media (max-width: 1200px) {
+					font-size: 20px;
+					margin: 20px 0px 0px 0px;
+				}
+				@media (max-width: 600px) {
+					font-size: 16px;
+					margin: 18px 0px 0px 0px;
+				}
 			}
 		}
 		&--mb {
+			@media (max-width: 600px) {
+				margin: 13px 0px 0px 0px;
+			}
 			.form-method__row-sb {
 				margin: 0px 0px 6px 0px;
+				@media (max-width: 600px) {
+					flex-direction: column;
+					.form-method__label {
+						order: 2;
+						padding: 0px 22px 0px 0px;
+					}
+					.form-method__row-italic {
+						margin: 0px 0px 5px 0px;
+					}
+				}
 			}
 			.form-method__label {
 				max-width: 295px;
@@ -1418,6 +1490,10 @@
 		font-weight: 600;
 		color: $black;
 		margin: 0px 0px 10px 0px;
+		@media (max-width: 600px) {
+			font-size: 14px;
+			margin: 0px 0px 9px 0px;
+		}
 	}
 
 	// .form-method__row
@@ -1427,6 +1503,46 @@
 		align-items: center;
 		&-btns {
 			margin: 0px 0px 20px 0px;
+			@media (max-width: 600px) {
+				flex-direction: column;
+				align-items: flex-start;
+				margin: 0px 0px 0px 0px;
+			}
+
+			&--mob {
+				display: flex;
+
+				@media (max-width: 600px) {
+					width: 100%;
+					justify-content: space-between;
+					margin: 0px 0px 10px 0px;
+					&:last-of-type {
+						margin: 0px 0px 0px 0px;
+					}
+				}
+
+				.form-method__label {
+					display: none;
+					font-size: 12px;
+
+					@media (max-width: 600px) {
+						&.form-method__row-italic {
+							position: relative;
+							width: 150px;
+							.form-method-star {
+								position: absolute;
+								margin: 0;
+								right: 20px;
+								bottom: 2px;
+							}
+						}
+						&.active {
+							display: flex;
+						}
+						align-items: center;
+					}
+				}
+			}
 		}
 	}
 
@@ -1434,6 +1550,9 @@
 
 	&__h4 {
 		margin: 0px 0px 12px 0px;
+		@media (max-width: 600px) {
+			margin: 0px 0px 9px 0px;
+		}
 	}
 
 	// .form-method__row-sb
@@ -1441,14 +1560,24 @@
 	&__row-sb {
 		justify-content: space-between;
 		margin: 0px 0px 18px 0px;
+		@media (max-width: 600px) {
+			margin: 0px 0px 10px 0px;
+		}
 		.mr-8 {
 			margin: 0px 8px 0px 0px;
+			@media (max-width: 600px) {
+				margin: 0px 5px 0px 0px;
+			}
 		}
 	}
 
 	// .form-method__label
 
 	&__label {
+		font-size: 14px;
+		@media (max-width: 600px) {
+			font-size: 12px;
+		}
 		input {
 			height: 35px;
 			width: 61px;
@@ -1457,9 +1586,12 @@
 			border-radius: 2px;
 			padding: 0 11px;
 			margin: 0 14px;
-      @media (max-width: 1200px) {
-        margin: 0 10px;
-      }
+			@media (max-width: 1200px) {
+				margin: 0 10px;
+			}
+			@media (max-width: 600px) {
+				margin: 0 11px;
+			}
 		}
 	}
 
@@ -1467,7 +1599,15 @@
 
 	&__row-italic {
 		font-style: italic;
+		font-weight: 500;
+		font-size: 14px;
 		margin: 2px 0px 0px 0px;
+		@media (max-width: 600px) {
+			font-size: 12px;
+			&--w86 {
+				width: 86px;
+			}
+		}
 	}
 
 	// .form-method__row-tabs
@@ -1496,10 +1636,13 @@
 		font-size: 24px;
 		font-weight: 700;
 		margin: 8px 0px 0px 0px;
-    @media (max-width: 1200px) {
-      font-size: 20px;
-      margin: 20px 0px 0px 0px;
-    }
+		@media (max-width: 1200px) {
+			font-size: 20px;
+		}
+		@media (max-width: 600px) {
+			font-size: 16px;
+			margin: 13px 0px 0px 0px;
+		}
 	}
 
 	&-star {
@@ -1520,38 +1663,55 @@
 	line-height: 35px;
 	color: $black;
 	padding: 0 10px;
+	@media (max-width: 600px) {
+		font-size: 12px;
+	}
 
 	&.active {
 		color: $white;
 		background-color: $blue;
 	}
-
-	&:hover {
-		background-color: $main;
-		color: $white;
+	@media (min-width: 786px) {
+		&:hover {
+			background-color: $main;
+			color: $white;
+		}
+		&.active:hover {
+			color: $white;
+			background-color: $blue;
+		}
 	}
 
 	&--w160 {
 		min-width: 160px;
+		@media (max-width: 600px) {
+			min-width: 138px;
+		}
 
 		& + & {
 			margin: 0px 0px 0px 30px;
+			@media (max-width: 600px) {
+				margin: 0px 0px 0px 8px;
+			}
 		}
 	}
 
 	&--w120 {
 		min-width: 120px;
 		margin: 0px 20px 0px 0px;
-    @media (max-width: 1200px) {
-      min-width: 104px;
-      padding: 0 4px;
-      margin: 0px 8px 0px 0px;
-    }
+		@media (max-width: 1200px) {
+			min-width: 94px;
+			padding: 0 4px;
+			margin: 0px 5px 0px 0px;
+		}
 	}
 }
 
 .btns-toggle {
 	margin: 0px 0px 20px 0px;
+	@media (max-width: 600px) {
+		margin: 0px 0px 15px 0px;
+	}
 }
 
 .btn-dark-blue {
@@ -1580,4 +1740,10 @@ input::-webkit-inner-spin-button {
 
 input[type='number'] {
 	-moz-appearance: textfield;
+}
+
+.desc600 {
+	@media (max-width: 600px) {
+		display: none;
+	}
 }

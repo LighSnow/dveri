@@ -28,7 +28,6 @@ $(document).ready(function () {
         parent.find('.tab-content[data-block="' + dataBlock + '"').addClass('active').siblings().removeClass('active');
     });
 
-
     const toggleBtn = () => {
         const btns = document.querySelectorAll('.btns-toggle .btn');
         const column = document.querySelector('.form-method__column-toggle');
@@ -56,7 +55,16 @@ $(document).ready(function () {
             });
         });
     };
-
-
     toggleBtn();
+
+
+    if ($('.form-method__row-btns--mob').length > 0) {
+        $('body').on('click', '.tab-link', function () {
+            $(this).addClass('active').parent().siblings().find('.tab-link').removeClass('active');
+            $(this).next().addClass('active');
+            $(this).parents().siblings().find('label').removeClass('active');
+        });
+    }
+
+
 });

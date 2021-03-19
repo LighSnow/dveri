@@ -10,7 +10,20 @@
 				<h2 class="h2">Корзина</h2>
 				<div class="basket__inner">
 					<div class="basket__main basket__delivery">
-						<div class="basket__stage"></div>
+						<div class="basket__stage">
+							<div class="basket__stage-icons basket__stage-icons-1">
+								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
+								<img class="basket__stage-cart" src="./img/icons/cart.svg" alt="" />
+							</div>
+							<div class="basket__stage-icons basket__stage-icons-2">
+								<img class="basket__stage-arrow" src="./img/icons/arrow.svg" alt="" />
+								<img class="basket__stage-delivery" src="./img/icons/delivery.svg" alt="" />
+								<img class="basket__stage-shape" src="./img/icons/shape.svg" alt="" />
+							</div>
+							<div class="basket__stage-icons basket__stage-icons-3">
+								<img class="basket__stage-money" src="./img/icons/money.svg" alt="" />
+							</div>
+						</div>
 						<form class="delivery-form">
 							<div class="delivery-form__checkbox">
 								<input class="check__input fizic" type="radio" name="radio" id="fizic" />
@@ -46,16 +59,16 @@
 								<div class="form__columns form__columns-juridic">
 									<div class="form__column form__column-inputs">
 										<label class="input__label">
-											<input class="input" type="text" placeholder="Название организации" />
+											<input class="input" type="text"  name="company" placeholder="Название организации" />
 										</label>
 										<label class="input__label">
-											<input class="input" type="text" placeholder="Контактное лицо" />
+											<input class="input" type="text" name="name" placeholder="Контактное лицо" />
 										</label>
 										<label class="input__label">
-											<input class="input" type="text" placeholder="Телефон" />
+											<input class="input" type="text" id="phone" name="phone" placeholder="Телефон" />
 										</label>
 										<label class="input__label">
-											<input class="input" type="text" placeholder="E-mail" />
+											<input class="input" type="email" name="email" placeholder="E-mail" />
 										</label>
 									</div>
 									<div class="form__column form__column-textarea">
@@ -113,17 +126,37 @@
 													<input class="mr-8" type="number" value="0" />
 													<span>километров</span>
 												</label>
-												<span class="form-method__row-italic">35 рублей за каждый км. от МКАД <span class="form-method-star">*</span></span>
+												<span class="form-method__row-italic form-method__row-italic--w86">35 рублей за каждый км. от МКАД <span class="form-method-star">*</span></span>
 											</div>
 										</div>
 
 										<div class="form-method__column tab">
 											<h3 class="form-method__h3">Подъем на этаж:</h3>
 											<div class="form-method__row form-method__row-btns">
-												<a data-block="1" class="tab-link btn btn-white btn-white--w120 active" href="javascript:void(0)">Без подъема</a>
-												<a data-block="2" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">По лестнице</a>
-												<a data-block="3" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">На лифте</a>
-												<label class="form-method__label">
+												<div class="form-method__row-btns--mob">
+													<a data-block="1" class="tab-link btn btn-white btn-white--w120 active" href="javascript:void(0)">Без подъема</a>
+													<div class="form-method__label form-method__row form-method__row-italic active">
+														Заказ будет доставлен только до подъезда
+														<span class="form-method-star">*</span>
+													</div>
+												</div>
+												<div class="form-method__row-btns--mob">
+													<a data-block="2" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">По лестнице</a>
+													<label class="form-method__label" data-block="1">
+														<span>Поднять на</span>
+														<input type="number" value="0" />
+														<span>этаж</span>
+													</label>
+												</div>
+												<div class="form-method__row-btns--mob">
+													<a data-block="3" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">На лифте</a>
+													<label class="form-method__label" data-block="1">
+														<span>Поднять на</span>
+														<input type="number" value="0" />
+														<span>этаж</span>
+													</label>
+												</div>
+												<label class="form-method__label desc600">
 													<span>Поднять на</span>
 													<input type="number" value="0" />
 													<span>этаж</span>
@@ -131,7 +164,7 @@
 											</div>
 											<div class="form-method__row-tabs">
 												<div data-block="1" id="form-method__tab-1" class="tab-content form-method__column form-method__column-tab active form-method__column--fe">
-													<div class="form-method__row form-method__row-italic">
+													<div class="form-method__row form-method__row-italic desc600">
 														Заказ будет доставлен только до подъезда
 														<span class="form-method-star">*</span>
 													</div>
@@ -286,6 +319,10 @@
 								<span class="mob">Товары(4):</span>
 								<span>11 607 ₽</span>
 							</div>
+							<div class="basket__aside-price__row">
+								<span class="mob">Доставка</span>
+								<span>11 607 ₽</span>
+							</div>
 						</div>
 						<div class="basket__aside-price">
 							<div class="basket__aside-price__total">
@@ -296,11 +333,11 @@
 					</div>
 
 					<div class="basket__step mob">
-						<a class="btn btn-back" href="#">
+						<a class="btn btn-dark-blue" href="#">
 							<span class="icon icon-next icon-next-revert"></span>
 							Вернуться к покупкам
 						</a>
-						<a class="btn btn-next" href="#">
+						<a class="btn btn-blue" href="#">
 							Оформление заказа
 							<span class="icon icon-next"></span>
 						</a>

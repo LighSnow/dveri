@@ -5,4 +5,6 @@
 @@include('jquery.nice-select.min.js', {})
 @@include('jquery.rateyo.min.js', {})
 @@include('jquery.fancybox.min.js', {})
+@@include('jquery.validate.js', {})
+@@include('jquery.mask.js', {})
 
