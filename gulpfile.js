@@ -70,7 +70,12 @@ function browserSync(params) {
 
 function html() {
   return src(path.src.html)
-    .pipe(fileinclude())
+    .pipe(fileinclude({
+     context: {
+      nameToolsDoor: ['Ручки','Замки','Петли','Накладки','Фиксаторы', 'Цилиндры', 'Раздвижные системы'],
+      nameToolsGlass: ['Ручки','Замки','Петли','Цилиндры','Ограничители', 'Комплекты', 'Раздвижные системы'],
+     }
+    }))
     // .pipe(webphtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
