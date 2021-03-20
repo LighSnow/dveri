@@ -254,27 +254,11 @@
   }
 
   .product__aside {
-
-
-   &-rating {}
-
-   &-counter {}
-
-   &-ratebar {}
-
-   &-title {}
-
-   &-btn {}
-
    .product__grade {
-    &-title {}
 
     &-choice {
 
      .choice__line {
-
-
-      &:not(:last-child) {}
 
       &-radio {
        color: #fff;
@@ -307,19 +291,8 @@
 
    }
 
-   .comment-name {}
-
-   .comment-text {}
-
    //comment
    .product__comment {
-
-
-    .user-wrapper {
-
-
-     .jq-ry-container {}
-    }
 
     //title
     &-title {
@@ -335,200 +308,28 @@
     //text
     &-text {
      padding-left: 0;
-
-     .comment-category {}
     }
-
-    &-dignity {}
-
-    &-limitations {}
-
-    &-content {}
 
     //images
     &-images {
-
-
-     .comment-img-item {
-
-
-      .counter-commit-photo {}
-
-      img {}
-     }
+     padding-left: 0;
     }
 
     //interview
     &-interview {
      padding-left: 0;
-
-     .interview-question {}
-
-     .interview-answer {}
-
-     .interview-btn {
-
-
-      &:not(:last-child) {}
-
-      &:hover {}
-     }
     }
 
     //answer
     .comment__answer {
      margin-left: 0;
 
-     &-admin {
-
-
-      .admin-logo {}
-
-      .admin-position {}
-
-      .admin-information {}
-     }
-
      &-content {
       padding-left: 65px;
      }
     }
    }
-
   }
-
- }
-}
-
-
-@media (max-width: 660px) {
- //product review
- .product__review {
-  &-inner {}
-
-  .product__aside {
-
-
-   &-rating {}
-
-   &-counter {}
-
-   &-ratebar {}
-
-   &-title {}
-
-   &-btn {}
-
-   .product__grade {
-    &-title {}
-
-    &-choice {
-
-     .choice__line {
-
-
-      &:not(:last-child) {}
-
-      &-radio {}
-
-      &-stars {
-       i {
-        &::before {}
-       }
-      }
-
-      &-counter {}
-     }
-    }
-   }
-  }
-
-  .product__main {
-
-   //global
-   .comment-logo {}
-
-   .comment-name {}
-
-   .comment-text {}
-
-   //comment
-   .product__comment {
-
-
-    .user-wrapper {
-
-
-     .jq-ry-container {}
-    }
-
-    //title
-    &-title {}
-
-    &-logo {}
-
-    //text
-    &-text {
-
-
-     .comment-category {}
-    }
-
-    &-dignity {}
-
-    &-limitations {}
-
-    &-content {}
-
-    //images
-    &-images {
-
-
-     .comment-img-item {
-
-
-      .counter-commit-photo {}
-
-      img {}
-     }
-    }
-
-    //interview
-    &-interview {
-
-
-     .interview-question {}
-
-     .interview-answer {}
-
-     .interview-btn {
-
-
-      &:not(:last-child) {}
-
-      &:hover {}
-     }
-    }
-
-    //answer
-    .comment__answer {
-
-     &-admin {
-
-
-      .admin-logo {}
-
-      .admin-position {}
-
-      .admin-information {}
-     }
-
-     &-content {}
-    }
-   }
-
-  }
-
  }
 }
 
@@ -537,40 +338,94 @@
 
  //product review
  .product__review {
+  &-inner {
+   flex-direction: column;
+  }
+
+  .product__aside {
+   margin-right: 0;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-around;
+
+   &-wrapper {
+    margin-right: 30px;
+   }
+
+   &-rating {
+    margin-bottom: 10px;
+   }
+
+   &-counter {
+    font-size: 30px;
+    line-height: 30px;
+   }
+
+   .product__grade {
+
+    &-title {
+     margin-bottom: 10px;
+    }
+
+    &-choice {
+     .choice__line {
+      margin-bottom: 5px !important;
+     }
+    }
+   }
+  }
+ }
+}
+
+
+@media (max-width: 460px) {
+
+ //product review
+ .product__review {
   &-inner {}
 
   .product__aside {
+   flex-direction: column;
+   align-items: center;
 
+   &-wrapper {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
 
-   &-rating {}
+   &-rating {
+    margin: 0;
+    display: flex;
+    align-items: center;
+   }
 
-   &-counter {}
+   &-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+   }
 
-   &-ratebar {}
-
-   &-title {}
-
-   &-btn {}
+   &-btn {
+    flex: 0 0 80%;
+    max-width: 80%;
+    margin: 15px 0 20px 0 !important;
+   }
 
    .product__grade {
-    &-title {}
+    max-width: 200px;
+    width: 100%;
 
     &-choice {
 
      .choice__line {
-
-
-      &:not(:last-child) {}
-
-      &-radio {}
-
       &-stars {
        i {
-        &::before {}
+        margin-right: 10px;
        }
       }
-
-      &-counter {}
      }
     }
    }
@@ -579,88 +434,123 @@
   .product__main {
 
    //global
-   .comment-logo {}
-
-   .comment-name {}
-
-   .comment-text {}
+   .comment-logo {
+    margin-bottom: 5px;
+    width: 44px;
+    height: 44px;
+   }
 
    //comment
    .product__comment {
 
 
     .user-wrapper {
+     &:not(:first-child) {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+      align-items: flex-end;
+     }
 
-
-     .jq-ry-container {}
-    }
-
-    //title
-    &-title {}
-
-    &-logo {}
-
-    //text
-    &-text {
-
-
-     .comment-category {}
-    }
-
-    &-dignity {}
-
-    &-limitations {}
-
-    &-content {}
-
-    //images
-    &-images {
-
-
-     .comment-img-item {
-
-
-      .counter-commit-photo {}
-
-      img {}
+     .jq-ry-container {
+      padding: 0;
      }
     }
 
-    //interview
-    &-interview {
-
-
-     .interview-question {}
-
-     .interview-answer {}
-
-     .interview-btn {
-
-
-      &:not(:last-child) {}
-
-      &:hover {}
+    //text
+    &-text {
+     .comment-category {
+      margin-bottom: 2px;
      }
     }
 
     //answer
     .comment__answer {
+     padding: 8px;
 
-     &-admin {
-
-
-      .admin-logo {}
-
-      .admin-position {}
-
-      .admin-information {}
+     .user-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
      }
 
-     &-content {}
+     &-admin {
+      position: relative;
+      border-bottom: 1px solid #e7e7e7;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      .comment-date {
+       position: absolute;
+       right: 8px;
+       top: 16px;
+      }
+     }
+
+     &-content {
+      padding-left: 0;
+     }
     }
    }
+  }
+ }
+}
 
+
+@media (max-width: 400px) {
+
+ //product review
+ .product__review {
+  &-inner {}
+
+  &-title {
+   margin-bottom: 15px !important;
   }
 
+  .product__aside {
+   flex-direction: column;
+   align-items: center;
+
+   &-wrapper {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   &-rating {
+    margin: 0;
+    display: flex;
+    align-items: center;
+   }
+
+   &-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+   }
+
+   &-btn {
+    flex: 0 0 80%;
+    max-width: 80%;
+    margin: 15px 0 20px 0 !important;
+   }
+
+   .product__grade {
+    max-width: 200px;
+    width: 100%;
+
+    &-choice {
+
+     .choice__line {
+
+      &-stars {
+       i {
+        margin-right: 10px;
+       }
+      }
+     }
+    }
+   }
+  }
  }
 }

@@ -1253,6 +1253,7 @@ $.extend( $.validator, {
 				if ( value === "" ) {
 					value = true;
 				}
+    
 
 				// Force non-HTML5 browsers to return bool
 				value = !!value;
