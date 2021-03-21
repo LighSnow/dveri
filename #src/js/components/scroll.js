@@ -1,5 +1,5 @@
 (function ($) {
- const width = $(window).width;
+ const width = $(window).width();
  $(window).on("load", function () {
   const parent = $('.body-product');
   if (parent.find('.scroll').length > 0) {

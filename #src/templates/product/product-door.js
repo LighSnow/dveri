@@ -74,8 +74,16 @@ $(function () {
 
  // product card set choice
  body.on('click', '.choice-set', function () {
-  productChoiceSet($(this), $(this).parents('.product__choose').find('.current-set'));
+  const currentSet = $(this).text();
+  const newTitle = $(this).parents('.product__choose').find('.current-set');
+  if($(this).hasClass('without-text')) {
+   $('#without-text').show();
+  } else {
+   newTitle.text(`В комплекте: ${currentSet}`);
+  }
+  
  });
+
 
  //popyp product preview
  body.on('click', '.modal-link', function () {
@@ -134,12 +142,7 @@ $(function () {
 
 
 
- //functions
- const productChoiceSet = (elem, title) => {
-  const currentSet = elem.text();
-  const newTitle = title;
-  newTitle.text(`В комплекте: ${currentSet}`);
- }
+
 
  const productIconChoise = (elem) => {
   elem.addClass('current').siblings().removeClass('current');
