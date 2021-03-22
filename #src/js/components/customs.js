@@ -94,6 +94,7 @@ $(function () {
     $.validator.messages.required = '';
     $(".delivery-form").validate({
         rules: {
+            onfocusout: false,
             company: {
                 required: true,
                 minlength: 3
@@ -110,6 +111,11 @@ $(function () {
                 required: true,
                 email: true
             },
+            onfocusout: function (element) {
+                if (!this.checkable(element) && (element.name in this.submitted || !this.optional(element))) {
+                    this.element(element);
+                }
+            }
         },
     });
 
