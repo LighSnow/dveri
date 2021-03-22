@@ -2,23 +2,23 @@
 <html lang="ru">
 @@include('_head.html')
 
-<body class="body-product body-product-img">
+<body class="body-product">
 	@@include('templates/header/header.html')
 	@@include('templates/header/mobile/mobile.html')
 	<div class="container">
 		@@include('templates/navigation/navigation.html')
 		@@include('templates/breadcrumbs/breadcrumbs.html')
 		@@include('templates/product/product-door.html', {
-   sliderFor: '../../img/product/product-glass-slider-for.png',
-   forPage: 'glass',
+   sliderFor: '../../img/product/product-slider-for.png',
+   forPage: 'onyx',
    dopTools: {
-    '0': '../../img/product/glass-tool-1.png',
-    '1': '../../img/product/glass-tool-2.png',
-    '2': '../../img/product/glass-tool-3.png',
-    '3': '../../img/product/glass-tool-4.png',
-    '4': '../../img/product/glass-tool-5.png',
-    '5': '../../img/product/glass-tool-6.png',
-    '6': '../../img/product/glass-tool-7.png',
+    '0': '../../img/product/tool-0.png',
+    '1': '../../img/product/tool-1.png',
+    '2': '../../img/product/tool-2.png',
+    '3': '../../img/product/tool-3.png',
+    '4': '../../img/product/tool-4.png',
+    '5': '../../img/product/tool-5.png',
+    '6': '../../img/product/tool-6.png',
    }
   })
 		<div class="product__information">
@@ -115,6 +115,10 @@
 								<!-- /.product__characteristics product__characteristics-title -->
 							</div>
 							<!-- /.product__characteristics-info -->
+							<div class="product__characteristics-photo">
+								<img src="img/product/characteristics-phono-1.png" alt="">
+							</div>
+							<!-- /.product__characteristics-photo -->
 						</div>
 						<!-- /.product__item product__item-characteristics -->
 						<div class="product__characteristics-show-all">
@@ -221,7 +225,7 @@
 	<div class="scroll-top"></div>
 	<div class="overflow-navigation"></div>
 	@@include('templates/product/popup/popup.html', {
-  forPage: 'glass'
+  forPage: 'cardF'
  })
 	@@include('templates/basket-adding/basket-adding.html')
 	<!-- /.fast-preview-popup -->
