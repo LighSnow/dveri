@@ -145,6 +145,10 @@ function libsCss() {
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
 }
+function all_js() {
+  return src(path.src.all_js)
+  .pipe(browsersync.stream())
+}
 
 
 function js() {
