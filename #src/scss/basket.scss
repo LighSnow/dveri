@@ -896,6 +896,7 @@
 						right: 30px;
 						height: 12px;
 						width: 19px;
+						transform: rotate(180deg);
 					}
 				}
 
@@ -1326,7 +1327,7 @@
 }
 
 .form-desc {
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
 .delivery-method {

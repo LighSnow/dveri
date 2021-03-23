@@ -14,6 +14,10 @@
   z-index: 7777;
 
   &__icon {
+    position: relative;
+    &--l10 {
+      left: -10px;
+    }
     &:first-child {
       margin: 0px 15px 0px 0px;
     }
@@ -124,6 +128,13 @@
   color: $black;
   text-align: center;
 }
+.header__top_item_label--ul {
+  span {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+  }
+}
 
 .mobile-navigation__badge {
   position: absolute;
@@ -187,6 +198,9 @@
   .header__bot_info_work {
     width: 260px;
   }
+}
+.header-mobile__icon_link {
+  display: flex;
 }
 
 .mobile-menu__info_item {

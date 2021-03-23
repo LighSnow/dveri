@@ -200,7 +200,7 @@
   margin: 7px 0px 0px 0px;
 
   @media (max-width: 1200px) {
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 4px 0px;
   }
 }
 
@@ -247,7 +247,7 @@
   &:before {
     content: '';
     position: absolute;
-    top: -8px;
+    top: -6px;
     right: 25px;
     transform: rotate(-45deg);
     width: 11px;
@@ -378,7 +378,7 @@
   margin: 0px 7px 0px 0px;
 
   @media (max-width:1200px) {
-    margin: 0px 5px 0px 0px;
+    margin: 0px 2px 0px 0px;
   }
 }
 
@@ -449,6 +449,7 @@
 
   .header__bot_info_call {
     margin-top: 2px;
+    margin-left: -4px;
 
     img {
       width: 14px;

@@ -34,7 +34,7 @@
   &:before {
     content: '';
     position: absolute;
-    top: -8px;
+    top: -6px;
     left: 55px;
     transform: rotate(-45deg);
     width: 11px;
@@ -169,7 +169,9 @@
 
 .navigation-desktop__content_link {
   color: $black;
-  line-height: 28px;
+  @media (max-width: 1200px) {
+    line-height: 28px;
+  }
   &:hover {
     color: $main;
   }

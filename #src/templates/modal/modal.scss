@@ -105,6 +105,19 @@
   }
 }
 
+#modal-measurer {
+  .form-desc {
+    a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: $main;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
 
 
 @media (max-width: 1200px) {
