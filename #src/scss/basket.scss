@@ -952,6 +952,7 @@
 
 			@media (max-width: 1200px) {
 				padding: 9px 17px;
+				font-size: 14px;
 			}
 
 			&-disabled {
@@ -1167,7 +1168,7 @@
 
 	.basket__delivery {
 		@media (max-width: 767.98px) {
-			margin: 0px 0px 20px 0px;
+			margin: 0px 0px 10px 0px;
 		}
 	}
 
@@ -1188,7 +1189,12 @@
 	.input__label {
 		position: relative;
 		margin: 0px 0px 20px 0px;
-
+		@media (max-width: 767.67px) {
+			margin: 0px 0px 10px 0px;
+			&:last-child {
+				margin: 0px 0px 10px 0px;
+			}
+		}
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
@@ -1199,7 +1205,10 @@
 			right: -10px;
 			top: 1px;
 			color: #fd5e1c;
-
+			@media (max-width: 1200px) {
+				right: -6px;
+				top: -5px;
+			}
 			@media (max-width: 767.98px) {
 				right: 6px;
 				top: 4px;
@@ -1236,13 +1245,18 @@
 		}
 		&.error {
 			border-color: #fd5e1c;
+			color: #fd5e1c;
 		}
 		&.valid {
 			border-color: #68bb37;
 		}
 	}
 	label.error {
-		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		font-size: 12px;
+		color: #fd5e1c;
 	}
 	.delivery-address-text {
 		font-size: 12px;
@@ -1749,7 +1763,13 @@ input[type='number'] {
 	}
 }
 
+.basket__stage-complete {
+	background: #095993;
+}
+
 .pay {
+
+
 	.h2 {
 		text-transform: inherit;
 		font-size: 18px;
@@ -1779,5 +1799,9 @@ input[type='number'] {
 	.form__column-inputs {
 		max-width: 360px;
 		margin: 0px 0px 0px 0px;
+		@media (max-width: 1200px) {
+			max-width: 270px;
+			margin: 0px 0px 0px 0px;
+		}
 	}
 }

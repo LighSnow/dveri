@@ -6,11 +6,11 @@
 		@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
 		<div class="container">
 			@@include('templates/navigation/navigation.html')
-			<div class="basket pay">
+			<div class="basket">
 				<h2 class="h2">Корзина</h2>
 				<div class="basket__inner">
 					<div class="basket__main basket__delivery">
-						<div class="basket__stage">
+						<div class="basket__stage basket__stage-complete">
 							<div class="basket__stage-icons basket__stage-icons-1">
 								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
 								<img class="basket__stage-cart" src="./img/icons/cart.svg" alt="" />
@@ -24,52 +24,40 @@
 								<img class="basket__stage-money" src="./img/icons/money.svg" alt="" />
 							</div>
 						</div>
+						<form class="delivery-form payment-form">
+							<div class="delivery-form__checkbox">
+								<input class="check__input our-site" type="radio" name="radio" id="our-site" />
+								<label for="our-site" class="checkbox__label checkbox__label-our-site">
+									<span class="checkbox__radio"></span>
+									<span>На нашем сайте</span>
+								</label>
+								<input class="check__input our-magazine" type="radio" name="radio" id="our-magazine" checked />
+								<label for="our-magazine" class="checkbox__label checkbox__label-our-magazine">
+									<span class="checkbox__radio"></span>
+									<span>У нас в магазине</span>
+								</label>
+                <input class="check__input courier" type="radio" name="radio" id="courier" />
+								<label for="courier" class="checkbox__label checkbox__label-our-magazine">
+									<span class="checkbox__radio"></span>
+									<span>Наличными курьеру</span>
+								</label>
+                <div class="payment-form__inner">
+                  <div class="payment-form__tab our-site">
+                    <span>Вы можете оплатить свой заказ любым из этих способов:</span>
+                    <div class="payment-form__money">
+                      <div class="payment-form__item">
 
-						<h2 class="h2">Пожалуйста заполните свои данные для оплаты:
-						</h2>
-						<form class="delivery-form pay-form" id="pay-form">
-							<div class="form__columns">
-								<div class="form__column form__column-inputs">
-									<label class="input__label">
-										<input class="input" type="text" name="address" placeholder="Юридический адрес" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="inn" placeholder="ИНН" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text"  name="kpp" placeholder="КПП" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="orgn" placeholder="ОГРН" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="index" placeholder="Почтовый индекс" />
-									</label>
-								</div>
-								<div class="form__column form__column-inputs">
-									<label class="input__label">
-										<input class="input" type="text" name="bik" placeholder="БИК" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="bank" placeholder="Банк для Р/С" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text"  name="city" placeholder="Город банка для Р/С" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="correspondent-account" placeholder="Корреспондентский счет" />
-									</label>
-									<label class="input__label">
-										<input class="input" type="text" name="checking-account" placeholder="Расчетный счет" />
-									</label>
-								</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 							</div>
 						</form>
 
 						<div class="basket__step desc basket__step--mt">
 							<a class="btn btn-dark-blue" href="#">
 								<span class="icon icon-next icon-next-revert"></span>
-								Вернуться к покупкам
+								Вернуться к доставке
 							</a>
 						</div>
 					</div>
@@ -128,7 +116,7 @@
 								</div>
 							</div>
 						</div>
-						<a class="btn btn-complete " href="#">Завершить заказ</a>
+						<a class="btn btn-complete btn-disabled" href="#">Завершить заказ</a>
 						<a class="btn-next-buy" href="#">Продолжить покупки</a>
 					</div>
 

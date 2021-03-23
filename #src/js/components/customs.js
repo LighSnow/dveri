@@ -92,7 +92,7 @@ $(function () {
     $('select').niceSelect();
 
     $.validator.messages.required = '';
-    $(".delivery-form").validate({
+    $("#delivery-form").validate({
         rules: {
             onfocusout: false,
             company: {
@@ -121,7 +121,7 @@ $(function () {
 
     $('#phone').mask('+7 (000) 000-00-00');
 
-    $(".pay-form").validate({
+    $("#pay-form").validate({
         rules: {
             onfocusout: false,
             address: {
@@ -153,6 +153,14 @@ $(function () {
                 minlength: 3,
             },
             city: {
+                required: true,
+                minlength: 3,
+            },
+            ['correspondent-account']: {
+                required: true,
+                minlength: 3,
+            },
+            ['checking-account']: {
                 required: true,
                 minlength: 3,
             },
