@@ -10,14 +10,19 @@
     @@include('templates/navigation/navigation.html')
     @@include('templates/installing/installing.html')
     @@include('templates/viewed-products/viewed-products.html', {
-        title: "Посмотренные товары",
-        })
+     title: "Посмотренные товары",
+     class: 'modal-link',
+     dataAttr1: 'preview-product',
+     dataAttr2: 'basket-fast-add'
+     })
 </div>
 @@include('templates/footer/footer.html')
 
 <div class="scroll-top"></div>
 <div class="overflow-navigation"></div>
-
+ <!-- popup -->
+ @@include('templates/basket-adding/basket-adding.html')
+ @@include('templates/product-preview/product-preview.html')
 <!-- Modals -->
 @@include('templates/modal/measurer.html')
 @@include('templates/modal/call.html')

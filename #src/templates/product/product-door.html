@@ -42,6 +42,7 @@
      @@if(forPage == 'onyx') {
       <div class="product__slider slider-onyx">
      }
+     @@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
       <div class="product__slider-nav">
        <div class="slider__nav-item">
         <img src="../../img/product/product-slider-nav.png" alt="">
@@ -60,6 +61,7 @@
         <a class="slider-play-btn" href="javascript:void(0)"></a>
        </div>
       </div>
+     }
       @@if(forPage == 'twoDoor') {
        <div class="product__slider-for slider-big-photo">
       }
@@ -70,8 +72,8 @@
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
         <div class="slider__item-icons">
-         <a href="javascript:void(0)" class="item-heart item-icon js-toggle"><i class="icon-heart"></i></a>
-         <a href="javascript:void(0)" class="item-rating item-icon js-toggle"><i class="icon-compare"></i></a>
+         <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i class="icon-heart"></i></a>
+         <a href="#alert-comparison" class="item-rating item-icon js-toggle js-alert-link"><i class="icon-compare"></i></a>
         </div>
         <div class="slider__item-promo">
          <div class="slider-promo order">поД
@@ -105,8 +107,8 @@
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
         <div class="slider__item-icons">
-         <a href="javascript:void(0)" class="item-heart item-icon js-toggle"><i class="icon-heart"></i></a>
-         <a href="javascript:void(0)" class="item-rating item-icon js-toggle"><i class="icon-compare"></i></a>
+         <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i class="icon-heart"></i></a>
+         <a href="#alert-comparison" class="item-rating item-icon js-toggle js-alert-link"><i class="icon-compare"></i></a>
         </div>
         <div class="slider__item-promo">
          <div class="slider-promo order">поД
@@ -141,8 +143,8 @@
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
         <div class="slider__item-icons">
-         <a href="javascript:void(0)" class="item-heart item-icon js-toggle"><i class="icon-heart"></i></a>
-         <a href="javascript:void(0)" class="item-rating item-icon js-toggle"><i class="icon-compare"></i></a>
+         <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i class="icon-heart"></i></a>
+         <a href="#alert-comparison" class="item-rating item-icon js-toggle js-alert-link"><i class="icon-compare"></i></a>
         </div>
         <div class="slider__item-promo">
          <div class="slider-promo order">поД
@@ -177,8 +179,8 @@
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
         <div class="slider__item-icons">
-         <a href="javascript:void(0)" class="item-heart item-icon js-toggle"><i class="icon-heart"></i></a>
-         <a href="javascript:void(0)" class="item-rating item-icon js-toggle"><i class="icon-compare"></i></a>
+         <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i class="icon-heart"></i></a>
+         <a href="#alert-comparison" class="item-rating item-icon js-toggle js-alert-link"><i class="icon-compare"></i></a>
         </div>
         <div class="slider__item-promo">
          <div class="slider-promo order">поД
@@ -213,8 +215,8 @@
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
         <div class="slider__item-icons">
-         <a href="javascript:void(0)" class="item-heart item-icon js-toggle"><i class="icon-heart"></i></a>
-         <a href="javascript:void(0)" class="item-rating item-icon js-toggle"><i class="icon-compare"></i></a>
+         <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i class="icon-heart"></i></a>
+         <a href="#alert-comparison" class="item-rating item-icon js-toggle js-alert-link"><i class="icon-compare"></i></a>
         </div>
         <div class="slider__item-promo">
          <div class="slider-promo order">поД
@@ -245,6 +247,7 @@
            class="icon-search"></i></a>
         </div>
        </div>
+       
       </div>
      </div>
      <span class="article article-tablet">Артикул: ЕЛ2503</span>
