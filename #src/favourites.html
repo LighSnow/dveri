@@ -2,35 +2,40 @@
 <html lang="ru">
 
 <head>
-    @@include('_head.html')
+ @@include('_head.html')
 </head>
 
 <body>
 
 
-    @@include('templates/header/header.html')
-    @@include('templates/header/mobile/mobile.html')
-    <div class="container">
-        @@include('templates/navigation/navigation.html')
-        @@include('templates/favourites/favourites.html')
-        @@include('templates/viewed-products/viewed-products.html', {
-			title: "Посмотренные товары",
-			})
-    </div>
-    @@include('templates/footer/footer.html')
+ @@include('templates/header/header.html')
+ @@include('templates/header/mobile/mobile.html')
+ <div class="container">
+  @@include('templates/navigation/navigation.html')
+  @@include('templates/favourites/favourites.html')
+  @@include('templates/viewed-products/viewed-products.html', {
+   title: "Посмотренные товары",
+   class: 'modal-link',
+   dataAttr1: 'preview-product',
+   dataAttr2: 'basket-fast-add'
+   })
+ </div>
+ @@include('templates/footer/footer.html')
 
-    <div class="scroll-top"></div>
-    <div class="overflow-navigation"></div>
+ <div class="scroll-top"></div>
+ <div class="overflow-navigation"></div>
+ <!-- popup -->
+ @@include('templates/basket-adding/basket-adding.html')
+ @@include('templates/product-preview/product-preview.html')
+ <!-- Modals -->
+ @@include('templates/modal/measurer.html')
+ @@include('templates/modal/call.html')
+ @@include('templates/modal/alert.html')
+ @@include('templates/modal/reviews.html')
 
-    <!-- Modals -->
-    @@include('templates/modal/measurer.html')
-    @@include('templates/modal/call.html')
-    @@include('templates/modal/alert.html')
-    @@include('templates/modal/reviews.html')
 
-
-    <!-- JS -->
-    @@include('_script.html')
+ <!-- JS -->
+ @@include('_script.html')
 
 </body>
 
