@@ -13,7 +13,9 @@
     <div class="container">
         @@include('templates/navigation/navigation.html')
         @@include('templates/favourites/favourites.html')
-        @@include('templates/viewed-products/viewed-products.html')
+        @@include('templates/viewed-products/viewed-products.html', {
+			title: "Посмотренные товары",
+			})
     </div>
     @@include('templates/footer/footer.html')
 

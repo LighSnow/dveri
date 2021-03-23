@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html')
+
+	<body>
+		@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
+		<div class="container">
+			@@include('templates/navigation/navigation.html')
+			<div class="basket pay">
+				<h2 class="h2">Корзина</h2>
+				<div class="basket__inner">
+					<div class="basket__main basket__delivery">
+						<div class="basket__stage">
+							<div class="basket__stage-icons basket__stage-icons-1">
+								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
+								<img class="basket__stage-cart" src="./img/icons/cart.svg" alt="" />
+							</div>
+							<div class="basket__stage-icons basket__stage-icons-2">
+								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
+								<img class="basket__stage-delivery" src="./img/icons/delivery.svg" alt="" />
+							</div>
+							<div class="basket__stage-icons basket__stage-icons-3">
+								<img class="basket__stage-arrow" src="./img/icons/arrow.svg" alt="" />
+								<img class="basket__stage-money" src="./img/icons/money.svg" alt="" />
+							</div>
+						</div>
+
+						<h2 class="h2">Пожалуйста заполните свои данные для оплаты:
+						</h2>
+						<form class="delivery-form pay-form">
+							<div class="form__columns">
+								<div class="form__column form__column-inputs">
+									<label class="input__label">
+										<input class="input" type="text" name="address" placeholder="Юридический адрес" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="text" name="inn" placeholder="ИНН" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="text"  name="kpp" placeholder="КПП" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="email" name="orgn" placeholder="ОГРН" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="email" name="index" placeholder="Почтовый индекс" />
+									</label>
+								</div>
+								<div class="form__column form__column-inputs">
+									<label class="input__label">
+										<input class="input" type="text" name="bik" placeholder="БИК" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="text" name="bank" placeholder="Банк для Р/С" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="text"  name="city" placeholder="Город банка для Р/С" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="email" name="correspondent-account" placeholder="Корреспондентский счет" />
+									</label>
+									<label class="input__label">
+										<input class="input" type="email" name="checking-account" placeholder="Расчетный счет" />
+									</label>
+								</div>
+							</div>
+						</form>
+
+						<div class="basket__step desc basket__step--mt">
+							<a class="btn btn-dark-blue" href="#">
+								<span class="icon icon-next icon-next-revert"></span>
+								Вернуться к покупкам
+							</a>
+						</div>
+					</div>
+
+					<div class="basket__aside desc">
+						<div class="basket__aside-price">
+							<h2 class="h2">Итого:</h2>
+							<div class="basket__aside-price__row">
+								<span class="desc">Стоимость товаров (4):</span>
+								<span class="mob">Товары(4):</span>
+								<span>11 607 ₽</span>
+							</div>
+							<div class="basket__aside-price__row">
+								<span class="desc">Стоимость доставки:</span>
+								<span class="mob">Доставка</span>
+								<span>11 607 ₽</span>
+							</div>
+							<div class="basket__aside-price__row">
+								<span class="desc">Сумма скидки:</span>
+								<span class="mob">Скидка</span>
+								<span>11 607 ₽</span>
+							</div>
+							<div class="basket__aside-price__row">
+								<span class="desc">Скидка по промокоду:</span>
+								<span class="mob">Промокод</span>
+								<span>607 ₽</span>
+							</div>
+						</div>
+
+						<div class="basket__aside-promo">
+							<div class="basket__aside-promo__input">
+								<input type="text" placeholder="Ввести промокод" />
+								<div class="dp-numberPicker-add"></div>
+							</div>
+							<div class="basket__aside-promo__info">
+								?
+								<div class="popup bot">Если у вас есть промокод, введите его, чтоб получить дополнительную скидку</div>
+							</div>
+						</div>
+						<div class="basket__aside-price">
+							<div class="basket__aside-price__total">
+								Общая стоимость:
+								<span>11 607 ₽</span>
+							</div>
+							<div class="form-apply">
+								<div class="apply-check">
+									<label class="check">
+										<input type="checkbox" class="check__input" />
+										<span class="check__box"></span>
+									</label>
+								</div>
+								<div class="form-desc">
+									Я ознакомлен и согласен с информацией о
+									<a href="#">персональных данных</a>
+									, доставке и гарантии..
+								</div>
+							</div>
+						</div>
+						<a class="btn btn-complete " href="#">Завершить заказ</a>
+						<a class="btn-next-buy" href="#">Продолжить покупки</a>
+					</div>
+
+					<div class="basket__aside basket__aside-mobile mob">
+						<div class="basket__aside-price">
+							<h2 class="h2">Итого:</h2>
+							<div class="basket__aside-price__row">
+								<span class="mob">Товары(4):</span>
+								<span>11 607 ₽</span>
+							</div>
+							<div class="basket__aside-price__row">
+								<span class="mob">Доставка</span>
+								<span>11 607 ₽</span>
+							</div>
+						</div>
+						<div class="basket__aside-price">
+							<div class="basket__aside-price__total">
+								Общая стоимость:
+								<span>11 607 ₽</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="basket__step mob">
+						<a class="btn btn-dark-blue" href="#">
+							<span class="icon icon-next icon-next-revert"></span>
+							Вернуться к покупкам
+						</a>
+						<a class="btn btn-blue" href="#">
+							Оформление заказа
+							<span class="icon icon-next"></span>
+						</a>
+					</div>
+				</div>
+				<!-- @@include('templates/viewed-products/viewed-products.html') -->
+			</div>
+		</div>
+		@@include('templates/footer/footer.html')
+
+		<div class="scroll-top"></div>
+		<div class="overflow-navigation"></div>
+
+		<!-- Modals -->
+		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('templates/modal/reviews.html') @@include('_script.html')
+	</body>
+</html>

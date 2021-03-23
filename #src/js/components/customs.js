@@ -121,5 +121,50 @@ $(function () {
 
     $('#phone').mask('+7 (000) 000-00-00');
 
+    $(".pay-form").validate({
+        rules: {
+            onfocusout: false,
+            address: {
+                required: true,
+                minlength: 3
+            },
+            inn: {
+                required: true,
+                minlength: 3
+            },
+            kpp: {
+                required: true,
+                minlength: 3,
+            },
+            orgn: {
+                required: true,
+                minlength: 3,
+            },
+            index: {
+                required: true,
+                minlength: 3,
+            },
+            bik: {
+                required: true,
+                minlength: 3,
+            },
+            bank: {
+                required: true,
+                minlength: 3,
+            },
+            city: {
+                required: true,
+                minlength: 3,
+            },
+            onfocusout: function (element) {
+                if (!this.checkable(element) && (element.name in this.submitted || !this.optional(element))) {
+                    this.element(element);
+                }
+            }
+        },
+    });
+
+
+
 
 });

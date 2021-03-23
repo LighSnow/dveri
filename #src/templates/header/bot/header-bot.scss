@@ -187,7 +187,9 @@
   color: $white;
   transition: .3s;
 }
-
+.icon-shopping-cart {
+  display: flex;
+}
 .header__bot_basket_info {}
 
 .header__bot_basket_info_label {

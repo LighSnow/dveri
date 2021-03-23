@@ -1238,7 +1238,7 @@
 			border-color: #fd5e1c;
 		}
 		&.valid {
-			border-color: #68BB37;
+			border-color: #68bb37;
 		}
 	}
 	label.error {
@@ -1746,5 +1746,38 @@ input[type='number'] {
 .desc600 {
 	@media (max-width: 600px) {
 		display: none;
+	}
+}
+
+.pay {
+	.h2 {
+		text-transform: inherit;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: normal;
+	}
+
+	.basket__stage-icons-2 {
+		margin: 0px 33px 0px 0px;
+	}
+
+	.btn-complete {
+		background-image: linear-gradient(to top, #fd4b04 0, #fd692a 100%);
+		&:hover {
+			background-image: linear-gradient(to top, #f60 0, #fd692a 100%);
+		}
+	}
+}
+
+.pay-form {
+	.form__columns {
+		display: flex;
+		margin: 0px 0px 0px 0px;
+		justify-content: space-between;
+	}
+
+	.form__column-inputs {
+		max-width: 360px;
+		margin: 0px 0px 0px 0px;
 	}
 }
