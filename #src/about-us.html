@@ -119,8 +119,16 @@
       </div>
     </div>
     @@include('templates/viewed-products/viewed-products.html', {
+<<<<<<< HEAD
 			title: "Посмотренные товары",
 			})
+=======
+     title: "Посмотренные товары",
+     class: 'modal-link',
+     dataAttr1: 'preview-product',
+     dataAttr2: 'basket-fast-add'
+     })
+>>>>>>> cc16091117467c6748775c17d7d07264c747d595
   </div>
   @@include('templates/footer/footer.html')
 
@@ -133,7 +141,9 @@
   @@include('templates/modal/alert.html')
   @@include('templates/modal/reviews.html')
 
-
+  <!-- popup -->
+  @@include('templates/basket-adding/basket-adding.html')
+  @@include('templates/product-preview/product-preview.html')
   <!-- JS -->
   @@include('_script.html')
 

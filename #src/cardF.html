@@ -206,12 +206,14 @@
 		@@include('templates/viewed-products/viewed-products.html', {
 		title: "Похожие товары",
 		class: 'modal-link',
-		dataAttr: 'preview-product'
+		dataAttr1: 'preview-product',
+  dataAttr2: 'basket-fast-add'
 		})
 		@@include('templates/viewed-products/viewed-products.html', {
 		title: "С этим товаром покупают",
 		class: 'modal-link',
-		dataAttr: 'preview-product'
+		dataAttr1: 'preview-product',
+  dataAttr2: 'basket-fast-add'
 		})
 		@@include('templates/product/reviews/reviews.html')
 		@@include('templates/viewed-products/viewed-products.html', {
@@ -225,9 +227,10 @@
 	<div class="scroll-top"></div>
 	<div class="overflow-navigation"></div>
 	@@include('templates/product/popup/popup.html', {
-  forPage: 'cardF'
+  forPage: 'door'
  })
-	@@include('templates/basket-adding/basket-adding.html')
+ @@include('templates/basket-adding/basket-adding.html')
+ @@include('templates/product-preview/product-preview.html')
 	<!-- /.fast-preview-popup -->
 
 	@@include('_script.html')

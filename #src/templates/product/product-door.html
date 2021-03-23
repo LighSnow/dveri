@@ -1,4 +1,9 @@
-<div class="product product-onyx">
+@@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
+ <div class="product">
+}
+@@if(forPage == 'onyx') {
+ <div class="product product-onyx">
+}
  <div class="product__inner">
   <div class="product__inner-left">
    <div class="product__title">
@@ -20,7 +25,7 @@
     }
    <div class="product__card">
     <div class="product__photo">
-     @@if(forPage == 'twoDoor' || forPage == 'cardF' || forPage == 'glass') {
+     @@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
      <div class="product__photo-info">
       <span class="product-status">Под заказ</span>
       <span class="product-status product-status-yes">В наличии</span>
@@ -31,8 +36,12 @@
       </div>
      </div>
      }
-     <div class="product__slider slider-onyx">
-      @@if(forPage == 'twoDoor' || forPage == 'cardF' || forPage == 'glass') {
+     @@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
+     <div class="product__slider">
+     }
+     @@if(forPage == 'onyx') {
+      <div class="product__slider slider-onyx">
+     }
       <div class="product__slider-nav">
        <div class="slider__nav-item">
         <img src="../../img/product/product-slider-nav.png" alt="">
@@ -51,8 +60,12 @@
         <a class="slider-play-btn" href="javascript:void(0)"></a>
        </div>
       </div>
+      @@if(forPage == 'twoDoor') {
+       <div class="product__slider-for slider-big-photo">
       }
+      @@if(forPage == 'onyx' || forPage == 'door' || forPage == 'glass') {
       <div class="product__slider-for">
+      }
        <div class="slider__for-item">
         <a class="fancybox-link" href="@@sliderFor"></a>
         <img src=@@sliderFor alt="">
@@ -317,11 +330,11 @@
        </div>
       </div>
       <div class="product__buy-act">
-       @@if(forPage == 'twoDoor' || forPage == 'cardF' || forPage == 'glass') {
+       @@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
        <div class="product__act-info">
         <p>Цена указана за полотно! Цена за комплект <span data-start-price="14599"
           class="price-counter-sum">14599</span> ₽ </p>
-        <p class="current-set">В комплекте: <span class="change-text-set">какойто текст html</span></p>
+        <p class="current-set">В комплекте: <span class="change-text-set">какойто текст html</span><span style="display: none;" class="without-set-text">какойто текст html</span></p>
        </div>
        }
        <div class="product__act-btn">
@@ -340,7 +353,7 @@
         <option value="">123</option>
        </select>
      }
-     @@if(forPage == 'twoDoor' || forPage == 'cardF' || forPage == 'glass') {
+     @@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
      <div class="product__choose-styles product__styles">
 
       @@if(forPage == 'twoDoor') {
