@@ -110,14 +110,14 @@ $(function () {
  // выбор комплекта (смена цены и названия)
  body.on('click', '.choice-set', function () {
   const currentSet = $(this).text();
-  const newTitle = $(this).parents('.product__choose').find('#change-text-set');
-  const startText = $(this).parents('.product__choose').find('.without-text').text()
+  const newTitle = $(this).parents('.product__choose').find('.change-text-set');
+  const startText = $(this).parents('.product__choose').find('.without-set-text').text();
   let counterPrice = $(this).parents('.product__choose').find('.price-counter-sum');
   const setPrice = +$(this).attr('data-price');
   const totalPrice = +counterPrice.attr('data-start-price')
 
   if ($(this).hasClass('without-text')) {
-   newTitle.text();
+   newTitle.text(startText);
    counterPrice.text(counterPrice.attr('data-start-price'))
   } else {
    newTitle.text(`${currentSet}`);

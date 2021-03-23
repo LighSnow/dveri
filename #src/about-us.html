@@ -118,7 +118,12 @@
         </p>
       </div>
     </div>
-    @@include('templates/viewed-products/viewed-products.html')
+    @@include('templates/viewed-products/viewed-products.html', {
+     title: "Посмотренные товары",
+     class: 'modal-link',
+     dataAttr1: 'preview-product',
+     dataAttr2: 'basket-fast-add'
+     })
   </div>
   @@include('templates/footer/footer.html')
 
@@ -131,7 +136,9 @@
   @@include('templates/modal/alert.html')
   @@include('templates/modal/reviews.html')
 
-
+  <!-- popup -->
+  @@include('templates/basket-adding/basket-adding.html')
+  @@include('templates/product-preview/product-preview.html')
   <!-- JS -->
   @@include('_script.html')
 

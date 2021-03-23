@@ -28,27 +28,19 @@
 
    .product__choose {
     padding: 0 35px 0 25px;
+
     .product__buy-act {
      padding: 0;
+
      .product__act-btn {
       a.buy-click {
        max-width: 210px;
        text-align: center;
+
        &::before {
-        transform: translate(100%,-55%);
+        transform: translate(100%, -55%);
        }
       }
-     }
-    }
-    .product__buy-price {
-     flex-direction: row;
-     max-width: max-content;
-
-    
-
-     .price-counter {
-      margin-bottom: 0;
-      margin-right: 30px;
      }
     }
    }
@@ -189,6 +181,10 @@
 
       .slick-slide {
        height: 78px;
+
+       &:not(:last-child) {
+        margin-bottom: 10px;
+       }
       }
      }
     }
@@ -198,6 +194,24 @@
      border-radius: 4px;
      max-width: 380px;
      position: relative;
+     &.slider-big-photo {
+      .slider__for-item {
+       padding: 40px 0;
+      }
+     }
+     .slick-list {
+      height: 100%;
+     }
+
+     .slick-track {
+      height: 100%;
+     }
+
+     .slick-slide {
+      height: 100%;
+      display: block;
+      justify-content: center;
+     }
 
      .slider__for-item {
       max-width: 380px;
@@ -409,7 +423,7 @@
 
      .product__act-btn {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
 
       a {
        color: #fff;
@@ -770,8 +784,7 @@
    .product__characteristics-info {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
-    width: 100%;
+    width: 50%;
 
     .product__info-title {
      font-size: 24px;
@@ -980,8 +993,6 @@
       display: none;
      }
 
-
-
      .product-status {
       padding-left: 20px;
      }
@@ -997,7 +1008,11 @@
 
      .product__slider-for {
       max-width: 250px;
-
+      &.slider-big-photo {
+       .slider__for-item {
+        padding: 20px 0;
+       }
+      }
       .slider__for-item {
        max-width: 250px;
 
@@ -1158,6 +1173,8 @@
     margin-bottom: 20px;
 
     .product__characteristics-info {
+     width: 100%;
+
      .product__info-title {
       margin-bottom: 20px;
      }
@@ -1504,6 +1521,10 @@
        max-width: 450px;
        width: 100%;
 
+       .slider__item-view {
+        display: none;
+       }
+
        img {
         width: auto !important;
        }
@@ -1766,6 +1787,10 @@
      .product__characteristics-row {
       text-align: end;
       height: 17px;
+
+      h4 {
+       margin: 0 !important;
+      }
 
       span {
        display: none !important;
