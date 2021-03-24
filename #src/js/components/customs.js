@@ -6,6 +6,22 @@ $(function () {
     $('.js-toggle').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
+
+        if ($('.brands__item-all').length > 0) {
+            (!$('.brands__item-all').is(e.target)) ?
+                $('.brands__item-all').removeClass('active') :
+                $('.brands__item').removeClass('active');
+        }
+
+        if ($(window).width() > 768) {
+            if ($('.form-method__row-btns--mob').length > 0) {
+                ($('.tab-link-without').is(e.target)) ?
+                    $('.tab-link-without').parent()
+                        .siblings('.form-method__label')
+                        .removeClass('active') :
+                    $('.form-method__label').addClass('active');
+            }
+        }
     });
 
 

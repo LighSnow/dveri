@@ -1,3 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="35" viewBox="0 0 21 35">
-  <path id="shape" d="M802.688,274H786.5a24.374,24.374,0,0,0,0-35h16.188a34.226,34.226,0,0,1,0,35Z" transform="translate(-786.5 -239)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="35" viewBox="0 0 21 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="463.5" y="239" width="21" height="35" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.15"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="-1.997" dy="0.105"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="shape" class="cls-1" d="M479.688,274H463.5a24.374,24.374,0,0,0,0-35h16.188A34.23,34.23,0,0,1,479.688,274Z" transform="translate(-463.5 -239)"/>
 </svg>

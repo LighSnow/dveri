@@ -109,6 +109,11 @@
   bottom: 30px;
   left: 0;
   max-width: 460px;
+  @media (max-width: 767.98px) {
+    br {
+      display: none;
+    }
+  }
 }
 
 

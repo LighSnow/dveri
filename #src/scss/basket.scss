@@ -50,10 +50,18 @@
 		width: 100%;
 		height: 35px;
 		background: rgb(8, 88, 146);
-		background: linear-gradient(90deg, rgba(8, 88, 146, 1) 0%, rgba(100, 176, 206, 1) 50%);
+		background: linear-gradient(90deg, rgba(8, 88, 146, 1) 0%, rgba(100, 176, 206, 1) 25%);
 		margin: 0px 0px 30px 0px;
 		border-radius: 4px;
 		padding: 0 7px;
+
+		&-1 {
+			background: rgb(8, 88, 146);
+			background: linear-gradient(90deg, rgba(8, 88, 146, 1) 0%, rgba(100, 176, 206, 1) 83%);
+		}
+		&-final {
+			background: rgb(8, 88, 146);
+		}
 
 		@media (max-width: 1200px) {
 			margin: 0px 0px 10px 0px;
@@ -185,10 +193,10 @@
 
 			&-back {
 				font-size: 15px;
-				color: $blue;
+				color: $main;
 
 				&:hover {
-					color: $main;
+					color: $blue;
 				}
 			}
 
@@ -547,6 +555,7 @@
 	&__body-price {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		margin: 0px 28px 0px 0px;
 
 		@media (max-width: 1200px) {
@@ -643,8 +652,7 @@
 				}
 			}
 
-			&-dark-blue {
-				background-color: $blue;
+			&.btn-blue.btn-back {
 				padding: 15px 22px 15px 17px;
 
 				@media (max-width: 1200px) {
@@ -653,10 +661,6 @@
 
 				@media (max-width: 400px) {
 					padding: 6px 8px 6px 4px;
-				}
-
-				&:hover {
-					background-color: $main;
 				}
 
 				.icon {
@@ -833,6 +837,7 @@
 					@media (max-width: 1200px) {
 						height: 36px;
 						padding: 0 5px;
+						line-height: 34px;
 					}
 				}
 			}
@@ -1144,7 +1149,7 @@
 			margin: 13px 0px 0px 0px;
 		}
 		@media (max-width: 767.98px) {
-			margin: 15px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
 		}
 	}
 
@@ -1189,12 +1194,12 @@
 	.input__label {
 		position: relative;
 		margin: 0px 0px 20px 0px;
-		@media (max-width: 767.67px) {
-			margin: 0px 0px 10px 0px;
-			&:last-child {
-				margin: 0px 0px 10px 0px;
-			}
-		}
+		// @media (max-width: 767.67px) {
+		// 	margin: 0px 0px 10px 0px;
+		// 	&:last-child {
+		// 		margin: 0px 0px 10px 0px;
+		// 	}
+		// }
 		&:last-child {
 			margin: 0px 0px 0px 0px;
 		}
@@ -1590,6 +1595,15 @@
 
 	&__label {
 		font-size: 14px;
+		@media (min-width: 768px) {
+			&-dn {
+				display: none;
+				&.active {
+					display: block;
+				}
+			}
+		}
+
 		@media (max-width: 600px) {
 			font-size: 12px;
 		}
@@ -1768,9 +1782,7 @@ input[type='number'] {
 }
 
 .pay {
-
-
-	.h2 {
+	.h3 {
 		text-transform: inherit;
 		font-size: 18px;
 		font-weight: 700;

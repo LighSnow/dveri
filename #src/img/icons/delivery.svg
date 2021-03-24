@@ -1,3 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="27.989" height="27.989" viewBox="0 0 27.989 27.989">
-  <path id="delivery" d="M751.574,263.54a1.08,1.08,0,0,1-.574-.951V250.124l5.246,2.585v4.543a1.05,1.05,0,1,0,2.1,0v-3.493l.7.341,4.921,2.426L763.952,270Zm14.491-7.027,12.91-6.375.014,13.092-12.937,6.755Zm-5.9-4.216-.7-.355,12.714-6.5.7.355,5.048,2.485L765,254.681Zm-8.112-4.018,12.477-6.16a1.018,1.018,0,0,1,.91,0l4.362,2.142-12.7,6.5Z" transform="translate(-751 -242.011)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="27.969" viewBox="0 0 28 27.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="751" y="242.031" width="28" height="27.969" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="1.732" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.3"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="-1.975" dy="-0.313"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="delivery" class="cls-1" d="M769.8,244.26l-12.7,6.5-5.048-2.484,12.477-6.161a1.017,1.017,0,0,1,.909,0Zm8.126,4.019L765,254.681l-4.839-2.384-0.7-.356,12.715-6.5,0.7,0.355Zm-13.959,8.247L763.952,270l-12.378-6.46a1.081,1.081,0,0,1-.574-0.951V250.124l5.245,2.584v4.544a1.05,1.05,0,1,0,2.1,0v-3.493l0.7,0.34Zm15.009-6.388-12.91,6.374-0.014,13.474,12.938-6.756Z" transform="translate(-751 -242.031)"/>
 </svg>
