@@ -7,10 +7,10 @@
 		<div class="container">
 			@@include('templates/navigation/navigation.html')
 			<div class="basket pay">
-				<h2 class="h2">Корзина</h2>
+				<h2 class="h2">Варианты оплаты</h2>
 				<div class="basket__inner">
 					<div class="basket__main basket__delivery">
-						<div class="basket__stage">
+						<div class="basket__stage basket__stage-final">
 							<div class="basket__stage-icons basket__stage-icons-1">
 								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
 								<img class="basket__stage-cart" src="./img/icons/cart.svg" alt="" />
@@ -25,8 +25,8 @@
 							</div>
 						</div>
 
-						<h2 class="h2">Пожалуйста заполните свои данные для оплаты:
-						</h2>
+						<h3 class="h3">Пожалуйста заполните свои данные для оплаты:
+						</h3>
 						<form class="delivery-form pay-form" id="pay-form">
 							<div class="form__columns">
 								<div class="form__column form__column-inputs">
@@ -67,7 +67,7 @@
 						</form>
 
 						<div class="basket__step desc basket__step--mt">
-							<a class="btn btn-dark-blue" href="#">
+							<a class="btn btn-blue btn-back" href="#">
 								<span class="icon icon-next icon-next-revert"></span>
 								Вернуться к покупкам
 							</a>

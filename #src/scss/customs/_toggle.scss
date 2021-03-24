@@ -22,14 +22,15 @@
   cursor: pointer;
   transition: .3s;
   &:hover {
-    border-color: $black;
-  }
-  &.active {
     border-color: $main;
     color: $main;
+  }
+  &.active {
+    border-color: $blue;
+    color: $blue;
     &:hover {
-      border-color: $main;
-      color: $main;
+      border-color: $blue;
+      color: $blue;
     }
   }
 }

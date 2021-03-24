@@ -10,7 +10,7 @@
 				<h2 class="h2">Корзина</h2>
 				<div class="basket__inner">
 					<div class="basket__main basket__delivery">
-						<div class="basket__stage">
+						<div class="basket__stage basket__stage-1">
 							<div class="basket__stage-icons basket__stage-icons-1">
 								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
 								<img class="basket__stage-cart" src="./img/icons/cart.svg" alt="" />
@@ -134,14 +134,14 @@
 											<h3 class="form-method__h3">Подъем на этаж:</h3>
 											<div class="form-method__row form-method__row-btns">
 												<div class="form-method__row-btns--mob">
-													<a data-block="1" class="tab-link btn btn-white btn-white--w120 active" href="javascript:void(0)">Без подъема</a>
-													<div class="form-method__label form-method__row form-method__row-italic active">
+													<a data-block="1" class="tab-link tab-link-without btn btn-white btn-white--w120 active js-toggle" href="javascript:void(0)">Без подъема</a>
+													<label data-block="1" class="form-method__label form-method__row form-method__row-italic active">
 														Заказ будет доставлен только до подъезда
 														<span class="form-method-star">*</span>
-													</div>
+													</label>
 												</div>
 												<div class="form-method__row-btns--mob">
-													<a data-block="2" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">По лестнице</a>
+													<a data-block="2" class="tab-link btn btn-white btn-white--w120 js-toggle" href="javascript:void(0)">По лестнице</a>
 													<label class="form-method__label" data-block="1">
 														<span>Поднять на</span>
 														<input type="number" value="0" />
@@ -149,14 +149,14 @@
 													</label>
 												</div>
 												<div class="form-method__row-btns--mob">
-													<a data-block="3" class="tab-link btn btn-white btn-white--w120" href="javascript:void(0)">На лифте</a>
+													<a data-block="3" class="tab-link btn btn-white btn-white--w120 js-toggle" href="javascript:void(0)">На лифте</a>
 													<label class="form-method__label" data-block="1">
 														<span>Поднять на</span>
 														<input type="number" value="0" />
 														<span>этаж</span>
 													</label>
 												</div>
-												<label class="form-method__label desc600">
+												<label class="form-method__label form-method__label-dn desc600">
 													<span>Поднять на</span>
 													<input type="number" value="0" />
 													<span>этаж</span>
@@ -243,7 +243,7 @@
 						</div>
 
 						<div class="basket__step desc basket__step--mt">
-							<a class="btn btn-dark-blue" href="#">
+							<a class="btn btn-blue btn-back" href="#">
 								<span class="icon icon-next icon-next-revert"></span>
 								Вернуться к покупкам
 							</a>

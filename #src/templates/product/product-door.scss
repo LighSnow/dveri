@@ -1893,11 +1893,13 @@
 
  .body-product {
   .tab-nav {
+    height: 40px;
    max-width: 410px;
    overflow: auto;
   }
  }
 }
+
 
 @media (max-width: 330px) {
  .product {
