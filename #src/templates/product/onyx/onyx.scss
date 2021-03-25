@@ -70,12 +70,66 @@
  .product__choose {
   width: auto;
 
-  .product__buy-price {
-   flex-direction: row;
-   max-width: max-content;
-   .price-counter {
-    margin-bottom: 0;
-    margin-right: 30px;
+  .product__buy {
+   &-price {
+    flex-direction: row;
+    max-width: max-content;
+
+    .price-counter {
+     margin-bottom: 0;
+     margin-right: 30px;
+    }
+   }
+  }
+
+  .product__settings {
+   .setting-name {
+    color: #212121;
+    font-weight: 800;
+    font-size: 14px;
+   }
+
+   .product__settings-row {
+    display: flex;
+    justify-content: space-between;
+
+    .nice-select {
+     height: 35px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 0 0 0 10px;
+     width: 115px;
+
+     &::after {
+      display: none;
+     }
+
+     &::before {
+      content: '\e91e';
+      font-family: 'icomoon';
+      color: #212121;
+      position: absolute;
+      transform: rotate(90deg) translate(-50%, -50%);
+      top: 8%;
+      right: 30%;
+      font-size: 11px;
+     }
+    }
+
+    // align-items: center;
+    &--size {
+     display: flex;
+     align-items: center;
+    }
+
+    &--color {
+     position: relative;
+
+     .color__wrapper {
+      position: absolute;
+     }
+    }
    }
   }
  }

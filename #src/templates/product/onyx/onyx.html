@@ -120,12 +120,48 @@
        </div>
       </div>
      </div>
-     <select class="nice-select" name="" id="">
-      <option selected value="">123</option>
-      <option value="">123</option>
-      <option value="">123</option>
-      <option value="">123</option>
-     </select>
+     <div class="product__choose-settings product__settings">
+       <div class="product__settings-row">
+        <div class="product__settings-row--size">
+         <label for="select-size-onyx" class="setting-name">Размер:</label>
+         <select class="nice-select" name="" id="select-size-onyx">
+          <option selected value="0">550x1900</option>
+          <option value="1">600x1900</option>
+          <option value="2">450x2000</option>
+          <option value="3">500x2000</option>
+          <option value="4">550x2000</option>
+          <option value="5">600x2000</option>
+          <option value="6">700x2000</option>
+          <option value="7">800x2000</option>
+          <option value="8">1200x2400</option>
+          <option value="9">1400x2500</option>
+          <option value="10">1800x2800</option>
+         </select>
+        </div>
+        <div class="product__settings-row--color">
+          <input class="color__input" type="text" id="color-choose-input">
+          <div class="color__wrapper">
+           @@for(let i = 1;i <= 8; i++) {
+            <div class="color__wrapper-block">
+             <img src="../../../img/product/coating-`+i+`.png" alt="">
+             <div class="color__wrapper-text">
+              Эмаль слоновая кость патина коричневая
+             </div>
+            </div>
+           }
+           @@for(let i = 1;i <= 8; i++) {
+            <div class="color__wrapper-block">
+             <img src="../../../img/product/coating-`+i+`.png" alt="">
+             <div class="color__wrapper-text">
+              Эмаль слоновая кость патина коричневая
+             </div>
+            </div>
+           }
+          </div>
+        </div>
+       </div>
+     </div>
+     
     </div>
    </div>
    <div class="social__block">
