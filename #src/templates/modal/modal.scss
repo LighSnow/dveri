@@ -115,6 +115,11 @@
         color: $blue;
       }
     }
+    @media (max-width: 767.98px) {
+      br {
+        display: none;
+      }
+    }
   }
 }
 

@@ -7,9 +7,9 @@
 		<div class="container">
 			@@include('templates/navigation/navigation.html')
 			<div class="basket">
-				<h2 class="h2">Корзина</h2>
+				<h2 class="h2">ВАРИАНТЫ ОПЛАТЫ</h2>
 				<div class="basket__inner">
-					<div class="basket__main basket__delivery">
+					<div class="basket__main basket__delivery basket__pay">
 						<div class="basket__stage basket__stage-complete">
 							<div class="basket__stage-icons basket__stage-icons-1">
 								<img class="basket__stage-check" src="./img/icons/check.svg" alt="" />
@@ -24,38 +24,75 @@
 								<img class="basket__stage-money" src="./img/icons/money.svg" alt="" />
 							</div>
 						</div>
-						<form class="delivery-form payment-form">
-							<div class="delivery-form__checkbox">
-								<input class="check__input our-site" type="radio" name="radio" id="our-site" />
-								<label for="our-site" class="checkbox__label checkbox__label-our-site">
-									<span class="checkbox__radio"></span>
-									<span>На нашем сайте</span>
-								</label>
-								<input class="check__input our-magazine" type="radio" name="radio" id="our-magazine" checked />
-								<label for="our-magazine" class="checkbox__label checkbox__label-our-magazine">
-									<span class="checkbox__radio"></span>
-									<span>У нас в магазине</span>
-								</label>
-                <input class="check__input courier" type="radio" name="radio" id="courier" />
-								<label for="courier" class="checkbox__label checkbox__label-our-magazine">
-									<span class="checkbox__radio"></span>
-									<span>Наличными курьеру</span>
-								</label>
-                <div class="payment-form__inner">
-                  <div class="payment-form__tab our-site">
-                    <span>Вы можете оплатить свой заказ любым из этих способов:</span>
-                    <div class="payment-form__money">
-                      <div class="payment-form__item">
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
+						<h3 class="h3">Как вы хотите оплатить свой заказ?</h3>
+						<form class="delivery-form payment-form tab">
+							<div class="delivery-form__checkbox">
+								<div class="payment-form__checkbox">
+									<input class="check__input our-site" type="radio" name="radio" id="our-site" />
+									<label for="our-site" class="checkbox__label checkbox__label-our-site tab-link active" data-block="1">
+										<span class="checkbox__radio"></span>
+										<span>На нашем сайте</span>
+									</label>
+									<input class="check__input our-magazine" type="radio" name="radio" id="our-magazine" />
+									<label for="our-magazine" class="checkbox__label checkbox__label-our-magazine tab-link" data-block="2">
+										<span class="checkbox__radio"></span>
+										<span>У нас в магазине</span>
+									</label>
+									<input class="check__input courier" type="radio" name="radio" id="courier" />
+									<label for="courier" class="checkbox__label checkbox__label-our-magazine tab-link" data-block="3">
+										<span class="checkbox__radio"></span>
+										<span>Наличными курьеру</span>
+									</label>
+								</div>
+								<div class="payment-form__inner">
+									<div class="payment-form__tab our-site tab-content active" data-block="1">
+										<span>Вы можете оплатить свой заказ любым из этих способов:</span>
+										<div class="payment-form__money">
+											<div class="payment-form__item js-toggle">
+												<img src="./img/icons/bank-cart.svg" alt="" />
+												<span>Банковской картой</span>
+											</div>
+											<div class="payment-form__item payment-form__item-qiwi js-toggle">
+												<img src="./img/icons/qiwi.svg" alt="" />
+												<span
+													>Qiwi<br />
+													Wallet</span
+												>
+											</div>
+											<div class="payment-form__item payment-form__item-sber js-toggle">
+												<img src="./img/icons/sber.svg" alt="" />
+												<span>Сбербанк Онлайн</span>
+											</div>
+											<div class="payment-form__item payment-form__item-pay-pal js-toggle">
+												<img src="./img/icons/pay-pall.svg" alt="" />
+												<span>Pay Pal</span>
+											</div>
+											<div class="payment-form__item payment-form__item-yandex js-toggle">
+												<img src="./img/icons/yandex.svg" alt="" />
+												<span
+													>Яндекс<br />
+													Деньги</span
+												>
+											</div>
+										</div>
+									</div>
+									<div class="payment-form__tab our-site tab-content" data-block="2">
+										<p>
+											Вы можете оплатить свой заказ у нас в магазине картой или наличными по адресу:<br />
+											г. Реутов ул. Академика В. Н. Челомея д. 12 ТЦ Алладин этаж 2.<br />
+											Магазин работает с 10.00 до 20.00
+										</p>
+									</div>
+									<div class="payment-form__tab our-site tab-content" data-block="3">
+										<span class="mb">Вы можете оплатить свой заказ наличными нашей службе доставки при получении дверей. </span>
+									</div>
+								</div>
 							</div>
 						</form>
 
 						<div class="basket__step desc basket__step--mt">
-							<a class="btn btn-dark-blue" href="#">
+							<a class="btn btn-blue btn-back" href="#">
 								<span class="icon icon-next icon-next-revert"></span>
 								Вернуться к доставке
 							</a>
@@ -112,7 +149,7 @@
 								<div class="form-desc">
 									Я ознакомлен и согласен с информацией о
 									<a href="#">персональных данных</a>
-									, доставке и гарантии..
+									, доставке и гарантии.
 								</div>
 							</div>
 						</div>
@@ -141,13 +178,9 @@
 					</div>
 
 					<div class="basket__step mob">
-						<a class="btn btn-dark-blue" href="#">
+						<a class="btn btn-blue btn-back" href="#">
 							<span class="icon icon-next icon-next-revert"></span>
 							Вернуться к покупкам
-						</a>
-						<a class="btn btn-blue" href="#">
-							Оформление заказа
-							<span class="icon icon-next"></span>
 						</a>
 					</div>
 				</div>

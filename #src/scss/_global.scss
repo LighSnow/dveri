@@ -469,12 +469,12 @@ a {
 	}
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
  .modal-block.added-popup {
   .added-popup__inner {
    padding: 8px;
   }
-  
+
   .added-popup__inner-title {
    font-size: 16px;
   }
@@ -486,7 +486,7 @@ a {
  }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
  .modal-block.added-popup {
   .btn-product {
    padding: 8px 16px 8px 40px;
@@ -502,4 +502,10 @@ a {
 input,
 textarea {
 	outline: none;
+}
+
+.smoke {
+	.navigation.fixed {
+		transform: translateX(-50.7%);
+	}
 }
