@@ -131,7 +131,7 @@
 
       .slider__for-item {
        max-width: 250px;
-      
+
       }
      }
     }
@@ -226,9 +226,11 @@
       position: relative;
       height: 100%;
       display: none !important;
+
       &:first-child {
        display: flex !important;
       }
+
       .fancybox-link {
        position: absolute;
        width: 100%;
@@ -449,9 +451,10 @@
 
        &.buy-click {
         max-width: 170px;
-        background: linear-gradient(to top,#fd4b04 0,#fd692a 100%);
+        background: linear-gradient(to top, #fd4b04 0, #fd692a 100%);
+
         &:hover {
-         background: linear-gradient(to top,#f60 0,#fd692a 100%);
+         background: linear-gradient(to top, #f60 0, #fd692a 100%);
         }
        }
 
@@ -1017,9 +1020,11 @@
     .product__slider {
      grid-template-columns: 1fr;
      grid-column-gap: 0;
+
      .product__slider-nav {
       display: none;
      }
+
      .product__slider-for {
       max-width: 250px;
 
@@ -1922,9 +1927,18 @@
 
  .body-product {
   .tab-nav {
-    height: 40px;
+   height: 45px;
    max-width: 410px;
    overflow: auto;
+   .tab-link {
+    margin-right: 1px;
+    height: 26px;
+    font-size: 12px;
+    padding: 0 5px;
+    &.active {
+     height: 30px;
+    }
+   }
   }
  }
 }

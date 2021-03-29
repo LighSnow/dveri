@@ -69,45 +69,46 @@ $(function () {
   }
  }
 
-  let starSvg = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.44" height="17.59" viewBox="0 0 16.44 17.59">' +
+ let starSvg =
+  '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.44" height="17.59" viewBox="0 0 16.44 17.59">' +
   '<defs>' +
-   '<style>' +
+  '<style>' +
   '.cls-1 {' +
   'fill: #fe8a61;' +
   'fill-rule: evenodd;' +
-  'filter: url(#filter);}' +                                
+  'filter: url(#filter);}' +
   '</style>' +
   '<filter id="filter" x="1433" y="2666.41" width="16.44" height="17.59" filterUnits="userSpaceOnUse">' +
-    '<feOffset result="offset" dy="1" in="SourceAlpha"/>' +
-    '<feGaussianBlur result="blur"/>' +
-    '<feFlood result="flood" flood-opacity="0.18"/>' +
-    '<feComposite result="composite" operator="in" in2="blur"/>' +
-    '<feBlend result="blend" in="SourceGraphic"/>' +
- '</filter>' +
-'</defs>' +
-'<path id="ико_copy_6" data-name="ико copy 6" class="cls-1" d="M1286.94,2717.54m162.51-44.84-5.68-.87-2.55-5.43-2.54,5.43-5.69.87,4.12,4.22-0.97,5.96,5.08-2.81,5.09,2.81-0.97-5.96Z" transform="translate(-1433 -2666.41)"/>' +
-'</svg>'
+  '<feOffset result="offset" dy="1" in="SourceAlpha"/>' +
+  '<feGaussianBlur result="blur"/>' +
+  '<feFlood result="flood" flood-opacity="0.18"/>' +
+  '<feComposite result="composite" operator="in" in2="blur"/>' +
+  '<feBlend result="blend" in="SourceGraphic"/>' +
+  '</filter>' +
+  '</defs>' +
+  '<path id="ико_copy_6" data-name="ико copy 6" class="cls-1" d="M1286.94,2717.54m162.51-44.84-5.68-.87-2.55-5.43-2.54,5.43-5.69.87,4.12,4.22-0.97,5.96,5.08-2.81,5.09,2.81-0.97-5.96Z" transform="translate(-1433 -2666.41)"/>' +
+  '</svg>'
 
-  $(".rating-block.static-rating").rateYo({
-   rating: 3.5,
-   starWidth: '15px',
-   normalFill: "#dbdbdb",
-   ratedFill: "#fe8a61",
-   spacing: "2px",
-   readOnly: true,
-   starSvg: starSvg
+ $(".rating-block.static-rating").rateYo({
+  rating: 3.5,
+  starWidth: '15px',
+  normalFill: "#dbdbdb",
+  ratedFill: "#fe8a61",
+  spacing: "2px",
+  readOnly: true,
+  starSvg: starSvg
 
-  });
+ });
 
-  $(".rating-block.no-static-rating").rateYo({
-   rating: 3.5,
-   starWidth: '15px',
-   normalFill: "#dbdbdb",
-   ratedFill: "#fe8a61",
-   spacing: "2px",
-   starSvg: starSvg
-  });
- 
+ $(".rating-block.no-static-rating").rateYo({
+  rating: 3.5,
+  starWidth: '15px',
+  normalFill: "#dbdbdb",
+  ratedFill: "#fe8a61",
+  spacing: "2px",
+  starSvg: starSvg
+ });
+
 
 
  // comment fancybox
@@ -167,7 +168,9 @@ $(function () {
  body.on('click', '.modal-link', function () {
   const thisBtn = $(this).attr('data-modal');
   const thisName = $(this).find('span').text();
-
+  if(mediaWidth < 1200 && $(this).parents('.modal-block').hasClass('popup-additional__wrapper')) {
+   body.find('.additional-popup').addClass('smoke')
+  }
   body.addClass('smoke').css({
    'padding-right': scrollWidth + 'px'
   });
@@ -181,11 +184,16 @@ $(function () {
   if ($('.modal-block').hasClass('popup-additional__wrapper') && $(this).parents('.product__tools-items').length > 0) {
    $('.modal-block').find('.current-title').text(thisName);
   }
+  // video
+  if(thisBtn == 'video-modal') {
+   $('#video-product').attr('src', $(this).attr('data-src-video'));
+  }
  });
 
  // класс закрытия popup
  body.on('click', '.close-btn', function () {
   $(this).parents('.modal-block').removeClass('active');
+  body.find('.additional-popup').removeClass('smoke')
   if (!$('.popup-additional__wrapper').hasClass('active')) {
    body.removeClass('smoke').css({
     'padding-right': '0px'
@@ -213,11 +221,15 @@ $(function () {
   const addAdditionalModal = body.find('.add-addittional-popup');
   const addedModal = body.find('.added-popup');
   const previewModal = body.find('.preview-popup');
+  const videoModal = body.find('.video-popup');
   let axisPositionX = e.pageX;
 
 
   // закрытиеmodalPreview
   if (modal.hasClass('active') && !modal.is(e.target) && modal.has(e.target).length === 0) {
+   if(modal.hasClass('video-popup')) {
+    videoModal.find('iframe').attr('src', '')
+   }
    modal.removeClass('active');
    body.removeClass('smoke').css({
     'padding-right': '0px'
@@ -242,6 +254,7 @@ $(function () {
    // закрытие добавление в корзину в попапе с доп элементами
    if (!addAdditionalModal.is(e.target) && addAdditionalModal.has(e.target).length === 0) {
     addAdditionalModal.removeClass('active');
+    additionalContent.removeClass('smoke')
    }
   } else if (additionalModal.hasClass('active')) {
    // закрытие попап с просмотром доп эементов
