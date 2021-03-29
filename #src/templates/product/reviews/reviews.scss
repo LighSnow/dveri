@@ -27,6 +27,7 @@
   &-title {
    font-size: 14px;
    margin-bottom: 20px;
+   width: max-content;
   }
 
   &-btn {
@@ -189,6 +190,17 @@
      border-radius: 6px;
      border: 1px solid #e7e7e7;
      background-color: transparent;
+
+     &.current {
+      background-color: #085892;
+      border-color: #085892;
+      color: #fff;
+      &:hover {
+       background-color: #085892;
+       border-color: #085892;
+       color: #fff;
+      }
+     }
 
      &:not(:last-child) {
       margin-right: 15px;

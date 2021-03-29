@@ -144,7 +144,10 @@
       position: relative;
       cursor: pointer;
       height: 78px;
-      margin-bottom: 10px;
+
+      &:not(:last-child) {
+       margin-bottom: 10px;
+      }
 
       .slider-play-btn {
        position: absolute;
@@ -157,7 +160,7 @@
        background-color: #64b0ce;
 
        &::before {
-        content: url("../img/product/play-btn.png");
+        content: url("../img/product/play-btn.svg");
         position: absolute;
         left: 50%;
         top: 50%;
@@ -198,6 +201,7 @@
      border-radius: 4px;
      max-width: 380px;
      position: relative;
+     height: max-content;
 
      &.slider-big-photo {
       .slider__for-item {
@@ -214,10 +218,10 @@
      }
 
      .slick-slide {
-      height: 100%;
+      // height: 100%;
       display: block;
       justify-content: center;
-      
+
       .slick-initialized.slick-slider .slick-slide,
       .slick-initialized.slick-slider .slick-slide:first-child {
        display: flex !important;
@@ -456,6 +460,10 @@
 
        &.buy-click {
         max-width: 170px;
+        background: linear-gradient(to top,#fd4b04 0,#fd692a 100%);
+        &:hover {
+         background: linear-gradient(to top,#f60 0,#fd692a 100%);
+        }
        }
 
        &::before {
@@ -656,7 +664,7 @@
     flex-direction: column;
 
     .quantity-counter {
-     max-width: 80%;
+     max-width: 102%;
     }
 
     .table-elements {
@@ -753,7 +761,7 @@
        width: 18px;
        height: 18px;
        transform: translate(60%, -50%);
-       background-image: url("../img/product/btn-basket.png");
+       background-image: url("../img/product/btn-basket.svg");
       }
      }
     }
@@ -1018,7 +1026,7 @@
     }
 
     .product__slider {
-     grid-template-columns: 0 1fr;
+     grid-template-columns: 1fr;
      grid-column-gap: 0;
 
      .product__slider-for {
@@ -1040,6 +1048,7 @@
      }
 
      .product__slider-nav {
+      display: none;
       .slider__nav-item {
 
        .slider-play-btn {
@@ -1825,6 +1834,12 @@
      display: flex;
     }
    }
+
+   .product__table {
+    span {
+     font-size: 12px;
+    }
+   }
   }
  }
 
@@ -1900,6 +1915,17 @@
      .quantity-counter {
       width: 100px;
      }
+    }
+   }
+  }
+ }
+
+ .product__information {
+  &-item {
+
+   .product__table {
+    span {
+     padding: 0 10px;
     }
    }
   }

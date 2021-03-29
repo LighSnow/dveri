@@ -11,3 +11,4 @@
 @@include('../templates/viewed-products/viewed-products.js',{})
 @@include('../templates/reviews/reviews.js', {})
 @@include('../templates/product/product-door.js', {})
+@@include('../templates/product/onyx/onyx.js', {})
