@@ -101,7 +101,7 @@ a {
 
 		&::before {
 			content: '';
-			background-image: url('../img/product/btn-click.png');
+			background-image: url('../img/product/btn-click.svg');
 			transform: translate(55%, -55%);
 		}
 	}
@@ -111,7 +111,7 @@ a {
 		text-align: center;
 
 		&::before {
-			content: url(../../img/product/btn-basket.png);
+			content: url(../../img/product/btn-basket.svg);
 			transform: translate(80%, -50%);
 		}
 	}
@@ -119,7 +119,7 @@ a {
 	.buy-basket-btn {
 		&::before {
 			content: '';
-			background-image: url('../img/product/btn-basket.png');
+			background-image: url('../img/product/btn-basket.svg');
 		}
 	}
 
@@ -299,7 +299,7 @@ a {
 		align-items: center;
 
 		&::after {
-			content: url(../../img/product/order-icon.png);
+			content: url(../../img/product/order-icon.svg);
 			position: absolute;
 			left: 0;
 			top: -1px;
@@ -314,7 +314,7 @@ a {
 		display: none;
 
 		&::after {
-			content: url(../../img/product/order-icon-yes.png);
+			content: url(../../img/product/order-icon-yes.svg);
 		}
 	}
 
@@ -469,12 +469,12 @@ a {
 	}
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
  .modal-block.added-popup {
   .added-popup__inner {
    padding: 8px;
   }
-  
+
   .added-popup__inner-title {
    font-size: 16px;
   }
@@ -486,7 +486,7 @@ a {
  }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
  .modal-block.added-popup {
   .btn-product {
    padding: 8px 16px 8px 40px;
@@ -502,4 +502,10 @@ a {
 input,
 textarea {
 	outline: none;
+}
+
+.smoke {
+	.navigation.fixed {
+		transform: translateX(-50.7%);
+	}
 }

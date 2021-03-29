@@ -6,7 +6,7 @@ body {
   color: $black;
   overflow-x: hidden;
   &.overflow-hidden {
-    padding-right: 17px;
+    padding-right: 17px !important;
     overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
