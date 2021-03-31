@@ -104,7 +104,16 @@
     }
   }
 }
-
+#modal-call {
+  .form-desc {
+    a {
+      color: $main;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
 #modal-measurer {
   .form-desc {
     a {

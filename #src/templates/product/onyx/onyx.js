@@ -155,7 +155,6 @@ $(function () {
         }
     });
 
-
     function slickCarousel() {
         $('.js-slider-glass').slick({
             infinite: true,
@@ -164,11 +163,9 @@ $(function () {
         });
     }
 
-
     function destroyCarousel(callback) {
         if ($('.js-slider-glass').hasClass('slick-initialized')) {
             $('.js-slider-glass').slick('unslick');
         }
     }
-
 })
