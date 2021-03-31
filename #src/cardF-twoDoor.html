@@ -207,20 +207,20 @@
    title: "Похожие товары",
    class: 'modal-link',
    dataAttr1: 'preview-product',
-   dataAttr2: 'basket-fast-add'
+   dataAttr2: 'basket-fast-add-twodoor'
    })
    @@include('templates/viewed-products/viewed-products.html', {
    title: "С этим товаром покупают",
    class: 'modal-link',
    dataAttr1: 'preview-product',
-   dataAttr2: 'basket-fast-add'
+   dataAttr2: 'basket-fast-add-twodoor'
    })
    @@include('templates/product/reviews/reviews.html')
    @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'modal-link',
     dataAttr1: 'preview-product',
-    dataAttr2: 'basket-fast-add'
+    dataAttr2: 'basket-fast-add-twodoor'
     })
 	</div>
 	@@include('templates/footer/footer.html')
@@ -232,6 +232,7 @@
  @@include('templates/modal/alert.html')
 	@@include('templates/product/popup/popup.html')
 	@@include('templates/basket-adding/basket-adding.html')
+	@@include('templates/basket-adding/basket-adding-twodoor.html')
  @@include('templates/product-preview/product-preview.html')
 	<!-- /.fast-preview-popup -->
 

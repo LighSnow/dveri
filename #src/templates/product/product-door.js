@@ -4,8 +4,16 @@ $(function () {
  const scrollWidth = $(window).outerWidth() - $(window).width();
  const mediaWidth = $(window).width();
 
-
+ console.log(scrollWidth);
  // плагины старт
+ /* This is basic - uses default settings */
+
+
+
+ $("a.fancybox-link-img").fancybox({
+  'hideOnContentClick': true
+ });
+
  //инициализируем галерею ДО запуска слайдера
  const gallery = $('.slider__for-item .fancybox-link');
  //при клике на ссылку в слайде запускаем галерею
@@ -168,12 +176,6 @@ $(function () {
  body.on('click', '.modal-link', function () {
   const thisBtn = $(this).attr('data-modal');
   const thisName = $(this).find('span').text();
-  if(mediaWidth < 1200 && $(this).parents('.modal-block').hasClass('popup-additional__wrapper')) {
-   body.find('.additional-popup').addClass('smoke')
-  }
-  body.addClass('smoke').css({
-   'padding-right': scrollWidth + 'px'
-  });
 
   body.find('.modal-block[data-modal="' + thisBtn + '"]').addClass('active');
 
@@ -181,6 +183,19 @@ $(function () {
    'display': 'block',
    'width': '30px'
   });
+
+  body.addClass('smoke').css({
+   'padding-right': scrollWidth + 'px'
+  });
+
+  if(mediaWidth < 1200 && $(this).parents('.modal-block').hasClass('popup-additional__wrapper')) {
+   body.find('.additional-popup').addClass('smoke')
+  }
+
+  if($(this).parents('.additional-popup').length > 0) {
+   $('.additional-popup').addClass('smoke')
+  }
+
   if ($('.modal-block').hasClass('popup-additional__wrapper') && $(this).parents('.product__tools-items').length > 0) {
    $('.modal-block').find('.current-title').text(thisName);
   }

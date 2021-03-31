@@ -724,8 +724,8 @@
     }
 
     &.table-count {
-     flex: 0 0 90px;
-     max-width: 90px;
+     flex: 0 0 95px;
+     max-width: 95px;
      flex-direction: column;
 
      .table-cost-tablet {
@@ -741,8 +741,8 @@
     }
 
     &.table-controls {
-     flex: 0 0 25%;
-     max-width: 25%;
+     flex: 0 0 23%;
+     max-width: 23%;
 
      .buy-basket-btn {
       padding: 8px 15px 8px 40px;
@@ -1626,15 +1626,15 @@
 
      .product__styles-choice {
       margin-right: 10px;
-      scrollbar-width: none;
+      //scrollbar-width: none;
 
-      &::-webkit-scrollbar-thumb {
-       display: none;
-      }
-
-      &::-webkit-scrollbar {
-       display: none;
-      }
+      //&::-webkit-scrollbar-thumb {
+      // display: none;
+      //}
+      //
+      //&::-webkit-scrollbar {
+      // display: none;
+      //}
      }
     }
 
@@ -1756,8 +1756,8 @@
     &-line {
 
      &.table-count {
-      flex: 0 0 90px;
-      max-width: 90px;
+      flex: 0 0 100px;
+      max-width: 100px;
 
       .table-cost-tablet {
        font-size: 12px;

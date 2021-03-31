@@ -101,18 +101,20 @@
  background-color: #fff;
  transform: scale(0);
  border-radius: 4px;
-&.smoke {
- &::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 33, 33, 0.5);
-  z-index: 9998;
+
+ &.smoke {
+  &::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(33, 33, 33, 0.5);
+   z-index: 9998;
+  }
  }
-}
+
  .close-btn {
   right: 15px;
   top: 15px;
@@ -232,13 +234,13 @@
    justify-content: center;
 
    button {
-    background: linear-gradient(to top,#fd4b04 0,#fd692a 100%) !important;
+    background: linear-gradient(to top, #fd4b04 0, #fd692a 100%) !important;
     padding: 10px !important;
 
     &:hover,
     &:active,
     &:focus {
-     background: linear-gradient(to top,#f60 0,#fd692a 100%) !important;
+     background: linear-gradient(to top, #f60 0, #fd692a 100%) !important;
     }
    }
   }
@@ -290,6 +292,10 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  .text-mob {
+   display: none;
+  }
 
   .comment-file-name {
    position: relative;
@@ -501,7 +507,7 @@
 
 @media (max-width: 500px) {
  .dop-popup {
-  max-width: 320px;
+  max-width: 95%;
 
   &__inner {
    padding: 8px;
@@ -547,12 +553,15 @@
     justify-content: space-between;
 
     a {
-     max-width: 140px;
      text-align: center;
-     padding: 6px 15px 6px 40px !important;
-
+     padding: 6px 15px 6px 35px !important;
+     max-width: 170px !important;
+     &::before {
+      left: -4px !important;
+     }
      &:not(:last-child) {
-      margin: 0 !important;
+      margin-right: 5px !important;
+      margin-bottom: 0 !important;
      }
     }
    }
@@ -560,7 +569,7 @@
  }
 
  .comment-popup {
-  max-width: 300px;
+  max-width: 90%;
 
   .bred-kakoyta {
    flex-direction: column-reverse;
@@ -568,6 +577,7 @@
    .product__rating {
     flex-direction: column;
     align-items: flex-start;
+
     .jq-ry-container {
      padding: 0;
     }
@@ -582,6 +592,20 @@
    label {
     font-size: 14px;
     margin-bottom: 5px;
+   }
+  }
+
+  .comment-popup__btn {
+   .comment-file-name {
+    font-size: 15px;
+    padding-left: 25px;
+   }
+   span {
+    display: none;
+   }
+
+   .text-mob {
+    display: block;
    }
   }
  }
