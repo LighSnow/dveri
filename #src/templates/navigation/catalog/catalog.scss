@@ -156,7 +156,10 @@
     content: '\2012';
     position: absolute;
     left: 0;
-    top: 5px;
+    top: -1px;
+    @media (max-width: 1200px) {
+      top: 5px;
+    }
   }
   &.title {
     padding-left: 0;

@@ -10,6 +10,9 @@ body {
     overflow: hidden;
     touch-action: none;
     -ms-touch-action: none;
+    @media (max-width: 1200px) {
+      padding-right: 0px !important;
+    }
   }
 }
 
@@ -136,11 +139,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 @media (max-width: 1200px) {
-  body {
-    &.overflow-hidden {
-      padding-right: 0;
-    }
-  }
   .container {
     width: 100%;
     max-width: 768px;

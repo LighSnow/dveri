@@ -190,5 +190,46 @@ $(function () {
 
 
 
+    // const personalAreaClose = $('.personal-area__close');
+    // const personaAreaClose = document.querySelector('.personal-area__close');
+    // personaAreaClose.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     // console.log(e.target.parentNode);
+    //     let step = document.querySelectorAll('.personal-area__step');
+    //     if (e.target.parentNode.classList.contains('.personal-area__close-link')) {
+    //         console.log(e.target);
+    //     };
+    //     // step.forEach(item => {
+
+    //     // });
+    // });
+
+    let step = document.querySelectorAll('.personal-area__step');
+    // console.log(step);
+
+    step.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (!item.classList.contains('hide')) {
+                step.forEach(item => {
+                    item.classList.remove('hide');
+                });
+                document.querySelector('.delete').addEventListener('click', () => {
+                    document.querySelector('.personal-area__block').classList.add('hide');
+                })
+                item.classList.add('hide');
+            }
+        });
+    });
+
+    // personalAreaClose.on('click', function (e) {
+    //     e.preventDefault();
+    //     console.log('this');
+    //     let target = $(event.target);
+    //     let step1 = $('.personal-area__step-1');
+    //     if (target.is(step1)) {
+    //         step1.addClass('hide');
+    //     }
+    // });
 
 });

@@ -1,0 +1,375 @@
+.personal-area {
+	padding: 24px 0px 38px 0px;
+	letter-spacing: 0.3px;
+	font-weight: 600;
+
+	@media (max-width: 1200px) {
+		padding: 15px 0px 38px 0px;
+	}
+	@media (max-width: 767.97px) {
+		padding: 21px 0px 19px 0px;
+	}
+
+	// .personal-area__nav
+	.h2 {
+		margin: 0px 0px 5px 0px;
+
+		@media (max-width: 767.97px) {
+			// margin: 0px 0px px 0px;
+		}
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 600;
+		margin: 0px 0px 15px 0px;
+		color: $black;
+		@media (max-width: 767.97px) {
+			position: relative;
+			padding: 34px 0px 0px 0px;
+			margin: 0px 0px 8px 0px;
+		}
+	}
+
+	// .personal-area__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		li {
+			display: flex;
+		}
+	}
+
+	// .personal-area__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 0px 8px 0px;
+		@media (max-width: 767.97px) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+
+	// .personal-area__link
+
+	&__link {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 17px;
+		padding: 6px 0;
+		color: $blue;
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		letter-spacing: 0.3px;
+		align-self: flex-start;
+
+		&:hover {
+			text-decoration: underline;
+			text-underline-offset: 2px;
+		}
+
+		@media (min-width: 1200px) {
+			&:hover {
+				color: $main;
+			}
+		}
+	}
+
+	// .personal-area__acc
+
+	&__acc {
+		display: flex;
+		align-items: center;
+
+		@media (max-width: 767.97px) {
+			position: absolute;
+			top: -9px;
+			right: 0;
+		}
+	}
+
+	// .personal-area__img
+
+	&__img {
+		width: 68px;
+		height: 68px;
+		border-radius: 50%;
+		background-color: $main;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $white;
+		margin: 0px 29px 0px 0px;
+		@media (max-width: 767.97px) {
+			width: 50px;
+			height: 50px;
+			order: 2;
+			margin: 0px 0px 0px 11px;
+		}
+	}
+
+	// .personal-area__info
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 32px 0px 0px 0px;
+		@media (max-width: 767.97px) {
+			order: 1;
+			margin: 5px 0px 0px 0px;
+		}
+
+		.personal-area__link {
+			align-self: flex-end;
+			@media (max-width: 767.97px) {
+				position: absolute;
+				bottom: -31px;
+				right: 0;
+			}
+		}
+	}
+
+	// .personal-area__name
+
+	&__name {
+		font-size: 16px;
+		margin: 0px 0px 5px 0px;
+		@media (max-width: 767.97px) {
+			margin: 0px 0px 0px 0px;
+		}
+
+		span {
+			text-transform: uppercase;
+		}
+	}
+
+	// .personal-area__block
+
+	&__block {
+	}
+
+	// .personal-area__block-title
+
+	&__block-title {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		margin: 0px 0px 2px 0px;
+
+		br {
+			display: none;
+		}
+		@media (max-width: 767.97px) {
+			font-size: 14px;
+			margin: 0px 0px 8px 0px;
+			br {
+				display: block;
+			}
+		}
+	}
+
+	// .personal-area__status
+
+	&__status {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border: 2px solid #e7e7e7;
+		border-radius: 8px;
+		padding: 15px 19px;
+		@media (max-width: 767.97px) {
+			padding: 9px 7px 21px 7px;
+		}
+	}
+
+	// .personal-area__number
+
+	&__number {
+		align-self: flex-start;
+		font-size: 18px;
+		font-weight: 700;
+		background-color: #d3fbc4;
+		border-radius: 4px;
+		padding: 2px 12px;
+		margin: 0px 0px 15px -12px;
+		br {
+			display: none;
+		}
+		@media (max-width: 767.97px) {
+			font-size: 14px;
+			align-self: auto;
+			padding: 6px 12px;
+			margin: 0 0 15px 0px;
+			br {
+				display: block;
+			}
+		}
+	}
+
+	// .personal-area__item-title
+
+	&__item-title {
+		font-size: 20px;
+		font-weight: 700;
+		color: $dark;
+		margin: 0px 0px 9px 0px;
+		text-transform: uppercase;
+		@media (max-width: 767.97px) {
+			font-size: 16px;
+			margin: 0px 0px 8px 0px;
+		}
+	}
+
+	// .personal-area__item-row
+
+	&__item-row {
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0px 0px 6px 0px;
+		@media (max-width: 767.97px) {
+			font-size: 14px;
+		}
+	}
+
+	&__item-row--flc {
+		br {
+			display: none;
+		}
+		@media (max-width: 767.97px) {
+			br {
+				display: block;
+			}
+			flex-direction: column;
+			align-items: flex-start;
+
+			.personal-area__item-status {
+				margin: 8px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__item-row--fz16 {
+		font-size: 16px;
+	}
+
+	// .personal-area__item-status
+
+	&__item-status {
+		min-width: 156px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		height: 29px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 27px;
+		padding: 0 20px;
+		text-align: center;
+		margin: 0px 0px 0px 18px;
+		@media (max-width: 767.97px) {
+			padding: 0 16px;
+			margin: 0px 0px 0px 13px;
+		}
+	}
+	&__item__link {
+		@media (max-width: 767.97px) {
+			padding: 2px 0;
+		}
+	}
+
+	// .personal-area__item-status--red
+
+	&__item-status--red {
+		border-color: #ff0000;
+		color: #ff0000;
+		background-color: #fec1c1;
+	}
+
+	&__item-status--green {
+		border-color: #24ff00;
+		color: #1cbc02;
+		background-color: #d3fbc4;
+	}
+
+	// .personal-area__item-status--gray
+
+	&__item-status--gray {
+		border-color: $dark;
+		color: $dark;
+		background-color: #e7e7e7;
+	}
+
+	svg {
+		fill: $black;
+	}
+
+	&__close {
+		position: absolute;
+		bottom: 19px;
+		right: 17px;
+		@media (max-width: 767.97px) {
+			position: static;
+			align-self: flex-end;
+		}
+
+		&-link {
+			display: flex;
+			align-items: center;
+			font-size: 14px;
+			font-weight: 600;
+			color: $black;
+			&-blue {
+				color: $blue;
+			}
+		}
+	}
+
+	&__step {
+		display: flex;
+		align-items: center;
+	}
+
+	&__step-2 {
+		// display: none;
+	}
+
+	.hide {
+		display: none;
+	}
+	&__close-link {
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		font-weight: 600;
+		// color: $black;
+
+		svg {
+			transition: 0.2s linear;
+			margin: 0px 0px 0px 11px;
+		}
+
+		&:hover {
+			color: $main;
+			svg {
+				fill: $main;
+			}
+		}
+	}
+	.slash {
+		margin: 0 3px;
+	}
+	.delete {
+		margin: 0px 0px 0px 13px;
+	}
+	&_step {
+	}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html')
+
+	<body>
+		@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
+		<div class="container">
+			@@include('templates/navigation/navigation.html')
+			<section class="personal-area">
+				<h1 class="h2">ЛИЧНЫЙ КАБИНЕТ</h1>
+
+				<div class="personal-area__nav">
+					<ul class="personal-area__list">
+						<li>
+							<a class="personal-area__link" href="#">История заказов</a>
+						</li>
+						<li>
+							<a class="personal-area__link" href="#">Перейти в корзину</a>
+						</li>
+						<li>
+							<a class="personal-area__link" href="#">Открыть каталог</a>
+						</li>
+					</ul>
+
+					<div class="personal-area__acc">
+						<div class="personal-area__img">a</div>
+						<div class="personal-area__info">
+							<span class="personal-area__name">Анастэйша <span>ВИП</span></span>
+							<a href="#" class="personal-area__link">Выйти</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="personal-area__block">
+					<h2 class="personal-area__block-title">Заказы в статусе<br> «Принят, ожидается оплата»</h2>
+					<div class="personal-area__status">
+						<div class="personal-area__number">Заказ №3928 от 05.11.2020,<br> 1 товар на сумму 4 490 ₽</div>
+						<div class="personal-area__item">
+							<h3 class="personal-area__item-title">ОПЛАТА</h3>
+							<div class="personal-area__item-row">Счет №3928/1 от 05.11.2020,</div>
+							<div class="personal-area__item-row">
+								<span>Наличными</span>
+								<div class="personal-area__item-status personal-area__item-status--green">Оплачено</div>
+							</div>
+							<div class="personal-area__item-row personal-area__item-row--fz16">Сумма к оплате по счету: 4 490 ₽</div>
+							<a href="#" class="personal-area__item__link personal-area__link">Изменить способ оплаты</a>
+						</div>
+						<div class="personal-area__item">
+							<h3 class="personal-area__item-title">Доставка</h3>
+							<div class="personal-area__item-row personal-area__item-row--flc">
+								<span>Отгрузка №3928/2<br> стоимость доставки 1 200 ₽</span>
+								<div class="personal-area__item-status personal-area__item-status--red">Не отгружено</div>
+							</div>
+							<div class="personal-area__item-row personal-area__item-row--flc">
+								<span>Статус отгрузки</span>
+								<div class="personal-area__item-status personal-area__item-status--gray">Ожидает обработки</div>
+							</div>
+							<div class="personal-area__item-row personal-area__item-row--fz16">Доставка: по Москве и за МКАД</div>
+							<a href="#" class="personal-area__item__link personal-area__link">Подробнее о заказе</a>
+						</div>
+
+						<div class="personal-area__close">
+							<div class="personal-area__step personal-area__step-1 ">
+								<a class="personal-area__close-link" href="#">
+									<span>Отменить заказ</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
+										<g>
+											<g><path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z" /></g>
+										</g>
+									</svg>
+								</a>
+							</div>
+							<div class="personal-area__step personal-area__step-2 hide">
+								<span>Уверены?</span>
+								<a href="#" class="personal-area__close-link personal-area__close-link-blue delete">Да</a>
+								<span class="slash">/</span>
+								<a href="#" class="personal-area__close-link">Нет</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		@@include('templates/footer/footer.html')
+
+		<div class="scroll-top"></div>
+		<div class="overflow-navigation"></div>
+
+		<!-- Modals -->
+		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('templates/modal/reviews.html') @@include('_script.html')
+	</body>
+</html>
