@@ -1,0 +1,170 @@
+.contacts {
+	padding: 24px 0px 17px 0px;
+	letter-spacing: 0.3px;
+	@media (max-width: 767.97px) {
+		padding: 20px 0px 35px 0px;
+	}
+
+	// .contacts__row
+	.h2 {
+		margin: 0px 0px 15px 0px;
+		@media (max-width: 767.97px) {
+			margin: 0px 0px 12px 0px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px 0px 26px 0px;
+		justify-content: space-between;
+		@media (max-width: 767.97px) {
+			flex-direction: column;
+			margin: 0px 0px 14px 0px;
+		}
+	}
+
+	// .contacts__column
+
+	&__column {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: 767.97px) {
+			width: 100%;
+		}
+		&-items {
+			width: 53%;
+			@media (max-width: 767.97px) {
+				margin: 0px 0px 15px 0px;
+			}
+		}
+		&-map {
+			@media (max-width: 1200px) {
+				width: 312px;
+			}
+		}
+	}
+
+	// .contacts__item
+
+	&__item {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		padding: 0px 13px 0px 0px;
+		margin: 0px 0px 21px 0px;
+		@media (max-width: 767.97px) {
+			width: 100%;
+			margin: 0px 0px 5px 0px;
+		}
+	}
+
+	// .contacts__item-image
+
+	&__item-image {
+		flex: 0 0 40px;
+		margin: 0px 29px 0px 0px;
+		@media (max-width: 1200px) {
+			display: none;
+		}
+	}
+
+	// .contacts__item-info
+
+	&__item-info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .contacts__item-title
+
+	&__item-title {
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	// .contacts__item-link
+
+	&__item-link {
+		font-size: 14px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	// .contacts__item-text
+
+	&__item-text {
+		font-size: 14px;
+		font-weight: 500;
+		color: $black;
+	}
+
+	// .contacts__callback
+
+	&__callback {
+	}
+
+	// .contacts__callback-subtitle
+
+	&__callback-subtitle {
+		font-size: 16px;
+		font-weight: 700;
+		margin: 0px 0px 13px 0px;
+		@media (max-width: 767.97px) {
+			font-size: 14px;
+			margin: 0px 0px 8px 0px;
+		}
+	}
+
+	// .contacts__callback-text
+
+	&__callback-text {
+		font-size: 14px;
+		font-weight: 500;
+		@media (max-width: 767.97px) {
+			font-size: 11px;
+		}
+	}
+
+	.map {
+		height: auto;
+		@media (max-width: 767.97px) {
+			height: 228px;
+		}
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+	}
+	.form-group {
+		margin: 0px 0px 13px 0px;
+	}
+	.form-group-textarea {
+		textarea {
+			height: 180px;
+			resize: none;
+			width: 100%;
+			padding: 10px 20px;
+			@media (max-width: 767.97px) {
+				height: 130px;
+			}
+		}
+	}
+	.form-group-row {
+    @media (max-width: 767.97px) {
+      margin: 0px 0px 8px 0px;
+    }
+	}
+	.label {
+	}
+	.input {
+	}
+	.form-btn {
+		justify-content: flex-start;
+	}
+	.btn {
+		width: 240px;
+		height: 35px;
+		background: $main;
+	}
+}
