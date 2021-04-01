@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html')
+
+	<body>
+		@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
+		<div class="container">
+			@@include('templates/navigation/navigation.html')
+			<div class="contacts">
+				<h1 class="h2">НАШИ КОНТАКТЫ</h1>
+				<div class="contacts__row">
+					<div class="contacts__column contacts__column-items">
+						<div class="contacts__item">
+							<div class="contacts__item-image">
+								<img src="./img/icons/phone-call.png" alt="" />
+							</div>
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Телефоны:</h3>
+								<a class="contacts__item-link" href="tel:+74993915911">+7 (499) 391-59-11</a>
+								<a class="contacts__item-link" href="tel:+79625584115">+7 (962) 558-41-15</a>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__item-image">
+								<img src="./img/icons/clock.png" alt="" />
+							</div>
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Часы работы:</h3>
+								<span class="contacts__item-text">Без выходных </span>
+								<span class="contacts__item-text">С 9.00 по 20.00</span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__item-image">
+								<img src="./img/icons/listing-option.png" alt="" />
+							</div>
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Реквизиты:</h3>
+								<span class="contacts__item-text">ИП: Маноли Н. В. </span>
+								<span class="contacts__item-text">ИНН: 695012174710</span>
+								<span class="contacts__item-text">ОГРН: 319508100157134</span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__item-image">
+								<img src="./img/icons/email.png" alt="" />
+							</div>
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Email:</h3>
+								<a class="contacts__item-link" href="mailto:dveriunas@mail.ru">dveriunas@mail.ru</a>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__item-image">
+								<img src="./img/icons/map.png" alt="" />
+							</div>
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Офис:</h3>
+								<span class="contacts__item-text">Москва ул. Кетчерская д. 7 строение 2 офис 204</span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__item-info">
+								<h3 class="contacts__item-title">Магазин:</h3>
+								<span class="contacts__item-text">Реутов ул. Академика Челомея д. 12 ТЦ Алладин этаж 2</span>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__column contacts__column-map">
+						<div class="map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ed213eb6b15fa12205202065b2dcd527dce1219a5a12a44b27cd5a68d3f90be&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__callback">
+					<h2 class="h2">Обратная связь</h2>
+
+					<form class="form">
+						<span class="contacts__callback-subtitle">Ваш вопрос или пожелание:</span>
+						<div class="form-group form-group-textarea">
+							<textarea class="input" name="comment" ></textarea>
+						</div>
+						<span class="contacts__callback-subtitle">Email для получения ответа:</span>
+						<div class="form-group form-group-row">
+							<label class="label">
+								<input class="input" type="text"/>
+							</label>
+						</div>
+						<span class="contacts__callback-text">Ответ поступит на указанный email.</span>
+						<div class="form-btn">
+							<button class="btn">Отправить сообщение</button>
+						</div>
+					</form>
+				</div>
+			</div>
+      @@include('templates/viewed-products/viewed-products.html', {
+        title: "Посмотренные товары",
+        class: 'modal-link',
+        dataAttr1: 'preview-product',
+        dataAttr2: 'basket-fast-add'
+        })
+		</div>
+		@@include('templates/footer/footer.html')
+
+		<div class="scroll-top"></div>
+		<div class="overflow-navigation"></div>
+
+		<!-- Modals -->
+		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('templates/modal/reviews.html') @@include('_script.html')
+	</body>
+</html>
