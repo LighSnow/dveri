@@ -18,6 +18,7 @@
 			</div>
 			<div class="product__card">
 				<div class="product__photo">
+					<a class="link-for-fancybox" href="product__photo-onyx"></a>
 					<div class="product__photo-onyx">
 						<div data-onyx="1" class="onyx-item onyx-1"><img src="../../../img/product/onyx/onyx-1-1.png" alt=""></div>
 						<div data-onyx="2" class="onyx-item onyx-2"><img src="../../../img/product/onyx/onyx-2-1.png" alt=""></div>
@@ -27,8 +28,8 @@
 						<div data-onyx="6" class="onyx-item onyx-6"><img src="" alt=""></div>
 						<div data-onyx="7" class="onyx-item onyx-7"><img src="../../../img/product/onyx/onyx-glass-1-1.png" alt="">
 						</div>
-						<div data-onyx="8" class="onyx-item onyx-8"><img src="../../../img/product/onyx/onyx-grid-1-1.png" alt="">
-						</div>
+						<div data-onyx="8" class="onyx-item onyx-8"><img src="" alt=""></div>
+						<div data-onyx="9" class="onyx-item onyx-9"><img src="" alt=""></div>
 					</div>
 					<span class="article article-tablet">Артикул: ЕЛ2503</span>
 				</div>
@@ -151,18 +152,18 @@
 										id="color-choose-input" value="Эмаль слоновая кость патина коричневая-0">
 								</div>
 								<div class="color__wrapper scroll">
-									<div class="color__wrapper-block current">
+									<div class="color__wrapper-block current" data-onyx-main="1" data-onyx-choose="0">
 										<img src="../../../img/product/coating-1.png" alt="">
 										<div class="color__wrapper-text">
 											Эмаль слоновая кость патина коричневая-0
 										</div>
 									</div>
-									@@for(let i = 1;i <= 7; i++) { <div class="color__wrapper-block">
+									@@for(let i = 1;i <= 7; i++) { <div class="color__wrapper-block" data-onyx-main="1" data-onyx-choose=`+i+`>
 										<img src="../../../img/product/coating-`+i+`.png" alt="">
 										<div class="color__wrapper-text">Эмаль слоновая кость патина коричневая-`+i+`</div>
 								</div>
 								}
-								@@for(let i = 1;i <= 8; i++) { <div class="color__wrapper-block">
+								@@for(let i = 1;i <= 8; i++) { <div class="color__wrapper-block" data-onyx-main="1" data-onyx-choose=`+i+`>
 									<img src="../../../img/product/coating-`+i+`.png" alt="">
 									<div class="color__wrapper-text">Эмаль слоновая кость патина коричневая-`+i+`</div>
 							</div>
@@ -278,15 +279,15 @@
 <div class="product__settings-row column">
 	<h2 class="setting-name setting-name-top">Остекление:</h2>
 	<div class="product__settings-row--controls">
-		<button class="controls-btn onyx-select" data-glass="0" type="button">Глухая</button>
-		<button class="active controls-btn onyx-select" data-glass="1" type="button">Со стеклом</button>
-		<p>Для остекления модели используется стекло толщиной 4 мм сатинат, сатинат бронза с различными видами обработки.
+		<button class="controls-btn onyx-select" data-glass-show="0" type="button">Глухая</button>
+		<button class="active controls-btn onyx-select" data-glass-show="2" type="button">Со стеклом</button>
+		<p data-glass-show="1">Для остекления модели используется стекло толщиной 4 мм сатинат, сатинат бронза с различными видами обработки.
 			Остекление может быть вместо любой филенки в любых комбинациях.</p>
 	</div>
 </div>
 
-<div class="product__settings-row" data-glass="1">
-	<div class="product__settings-row--inner lattice-type">
+<div class="product__settings-row" data-glass-show="1">
+	<div class="product__settings-row--inner lattice-type" data-onyx-main="9">
 		<h2 class="setting-name setting-name-top">Внутренняя решетка:</h2>
 		<select class="onyx-select nice-select" name="inner-lattice" id="">
 			<option selected value="0">Без решетки</option>
@@ -310,17 +311,17 @@
 	</div>
 </div>
 
-<div class="product__settings-row grid" data-glass="1">
+<div class="product__settings-row grid" data-glass-show="1">
 	<div class="product__settings-row--glasstype">
 		<h2 class="setting-name setting-name-top">Варианты стекла:</h2>
 		<div class="glasstype__inner">
-			<div class="glasstype__inner-item">
+			<div class="glasstype__inner-item" data-onyx-main="8" data-onyx-choose="1">
 				<div class="glasstype__inner-img">
 					<img src="../../../img/product/onyx/glass-type-1.png" alt="">
 				</div>
 				<div class="glasstype__inner-text">Фрезерованный широкий резной</div>
 			</div>
-			<div class="glasstype__inner-item">
+			<div class="glasstype__inner-item" data-onyx-main="8" data-onyx-choose="2">
 				<div class="glasstype__inner-img">
 					<img src="../../../img/product/onyx/glass-type-2.png" alt="">
 				</div>

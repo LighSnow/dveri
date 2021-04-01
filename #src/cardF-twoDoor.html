@@ -3,15 +3,15 @@
 @@include('_head.html')
 
 <body class="body-product body-product-twodoor">
-	@@include('templates/header/header.html')
-	@@include('templates/header/mobile/mobile.html')
-	<div class="container">
-		@@include('templates/navigation/navigation.html')
-		@@include('templates/breadcrumbs/breadcrumbs.html')
-		@@include('templates/product/product-door.html', {
-   sliderFor: '../../img/product/product-twodoor-slider-for.png',
-   forPage: 'twoDoor',
-   dopTools: {
+@@include('templates/header/header.html')
+@@include('templates/header/mobile/mobile.html')
+<div class="container">
+    @@include('templates/navigation/navigation.html')
+    @@include('templates/breadcrumbs/breadcrumbs.html')
+    @@include('templates/product/product-door.html', {
+    sliderFor: '../../img/product/product-twodoor-slider-for.png',
+    forPage: 'twoDoor',
+    dopTools: {
     '0': '../../img/product/tool-0.png',
     '1': '../../img/product/tool-1.png',
     '2': '../../img/product/tool-2.png',
@@ -19,225 +19,579 @@
     '4': '../../img/product/tool-4.png',
     '5': '../../img/product/tool-5.png',
     '6': '../../img/product/tool-6.png',
-   }
-  })
-		<div class="product__information">
-			<div class="product__information-wrapper tab">
-				<div class="product__information-navigations tab-nav">
-					<a data-block="1" href="javascript:void(0)" class="tab-link product__information-nav active">описние</a>
-					<a data-block="2" href="javascript:void(0)" class="tab-link product__information-nav">размеры</a>
-					<a data-block="3" href="javascript:void(0)" class="tab-link product__information-nav">доставка</a>
-					<a data-block="4" href="javascript:void(0)" class="tab-link product__information-nav">установка</a>
-					<!-- /.product__information-nav -->
-				</div>
-				<div class="product__information-content hidden-body-simple">
-					<div data-block="1" class="tab-content product__information-item active">
-						<div class="product__item-text">
-							Межкомнатная дверь «ЛУ-27», остекленная, венге создана для установки в дизайнерские интерьеры.
-							Она имеет великолепный дизайн,
-							выдержанный в стилевом направлении хай-тек, полностью соответствующий последним модным трендам.
-							Ее главной «изюминкой» выступает
-							дизайнерское оформление дверного полотна изысканной композицией из глухих филенок и матового
-							стекла сатинато, расположенной в верхней
-							и нижней его части. Дверь изготовлена по каркасно-сборной технологии в качестве внутреннего
-							каркаса использован натуральный массив сосны, усиленный панелями МДФ, для внешней облицовки –
-							немецкий экошпон, стилизованный под ценную древесину.
-						</div>
-						<div class="product__item-characteristics">
-							<div class="product__characteristics-info">
-								<div class="product__info-title">Характеристики:</div>
-								<!-- /.product__info-title -->
-        <div class="product__characteristics-title">
-									<div class="product__characteristics-row">
-										<h4>Артикул</h4>
-										<span></span>
-          <h4>ТК2503</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Изготовитель</h4>
-										<span></span>
-          <h4>Двери Белоруссии</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Стиль двери</h4>
-										<span></span>
-          <h4>Классика</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Материал</h4>
-										<span></span>
-          <h4>Ламинированная пленка</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Толщина в полотне</h4>
-										<span></span>
-          <h4>38 мм</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Полотно</h4>
-										<span></span>
-          <h4>Каркас массив хвойных пород / МДФ</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Цвет полотна</h4>
-										<span></span>
-          <h4>Венге</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-									<div class="product__characteristics-row">
-										<h4>Стекло</h4>
-										<span></span>
-          <h4>Матовое</h4>
-									</div>
-         <div class="product__characteristics-row">
-										<h4>Стекло</h4>
-										<span></span>
-          <h4>Матовое</h4>
-									</div>
-         <div class="product__characteristics-row">
-										<h4>Стекло</h4>
-										<span></span>
-          <h4>Матовое</h4>
-									</div>
-         <div class="product__characteristics-row">
-										<h4>Стекло</h4>
-										<span></span>
-          <h4>Матовое</h4>
-									</div>
-									<!-- /.product__characteristics-row -->
-								</div>
-								<!-- /.product__characteristics product__characteristics-title -->
-							</div>
-							<!-- /.product__characteristics-info -->
-							<div class="product__characteristics-photo">
-								<img src="img/product/characteristics-phono-1.png" alt="">
-							</div>
-							<!-- /.product__characteristics-photo -->
-						</div>
-						<!-- /.product__item product__item-characteristics -->
-						<div class="product__characteristics-show-all">
-							<a class="show-all-btn" href="javascript:void(0)">Показать всё</a>
-						</div>
-						<!-- /.product__item product__item-text -->
-					</div>
-					<!-- /.product__information-item -->
-					<div data-block="2" class="tab-content product__information-item">
-						<div class="product__item-table product__table">
-							<div class="product__table-header-1 column-title">Размер полотна (мм)</div>
-							<div class="product__table-header-2 column-title">Размер проема (мм)</div>
-							<div class="product__table-column-1 product__table-column">
-								<span class="column-title">Ширина</span>
-								<span>550</span><span>600</span><span>600</span>
-								<span>700</span><span>800</span><span>900</span>
-								<span>1200 (600+600)</span><span>1400 (600+800)</span><span>1500 (600+900)</span>
-							</div>
-							<div class="product__table-column-2 product__table-column">
-								<span class="column-title">Высота</span>
-								<span>от 67 до 70</span><span>от 97 до 100</span>
-							</div>
-							<div class="product__table-column-3 product__table-column">
-								<span class="column-title">Ширина</span>
-								<span>от 630 до 650</span><span>от 670 до 730</span><span>от 670 до 730</span>
-								<span>от 770 до 830</span><span>от 870 до 930</span><span>от 980 до 1030</span>
-								<span>от 1280 до 1330</span><span>от 1480 до 1530</span><span>от 1580 до 1630</span>
-							</div>
-							<div class="product__table-column-4 product__table-column">
-								<span class="column-title">Высота</span>
-								<span>от 1950 до 1980</span><span>от 2050 до 2080</span>
-							</div>
-						</div>
-						<!-- /.product__item product__item-table -->
-					</div>
-					<!-- /.product__information-item -->
-					<div data-block="3" class="tab-content product__information-item">
-						<div class="product__item-info">
-							<h3>Порядок доставки продукции</h3>
-							<p>Приобретенную у нас продукцию мы доставляем в удобное для наших покупателей время. Заказать
-								доставку можно в любой день недели, включая выходные:
-								<span>
+    }
+    })
+    <div class="product__information">
+        <div class="product__information-wrapper tab">
+            <div class="product__information-navigations tab-nav">
+                <a data-block="1" href="javascript:void(0)" class="tab-link product__information-nav active">описние</a>
+                <a data-block="2" href="javascript:void(0)" class="tab-link product__information-nav">размеры</a>
+                <a data-block="3" href="javascript:void(0)" class="tab-link product__information-nav">доставка</a>
+                <a data-block="4" href="javascript:void(0)" class="tab-link product__information-nav">установка</a>
+                <!-- /.product__information-nav -->
+            </div>
+            <div class="product__information-content hidden-body-simple">
+                <div data-block="1" class="tab-content product__information-item active">
+                    <div class="product__item-text">
+                        Межкомнатная дверь «ЛУ-27», остекленная, венге создана для установки в дизайнерские интерьеры.
+                        Она имеет великолепный дизайн,
+                        выдержанный в стилевом направлении хай-тек, полностью соответствующий последним модным трендам.
+                        Ее главной «изюминкой» выступает
+                        дизайнерское оформление дверного полотна изысканной композицией из глухих филенок и матового
+                        стекла сатинато, расположенной в верхней
+                        и нижней его части. Дверь изготовлена по каркасно-сборной технологии в качестве внутреннего
+                        каркаса использован натуральный массив сосны, усиленный панелями МДФ, для внешней облицовки –
+                        немецкий экошпон, стилизованный под ценную древесину.
+                    </div>
+                    <div class="product__item-characteristics">
+                        <div class="product__characteristics-info">
+                            <div class="product__info-title">Характеристики:</div>
+                            <!-- /.product__info-title -->
+                            <div class="product__characteristics-title">
+                                <div class="product__characteristics-row">
+                                    <h4>Артикул</h4>
+                                    <span></span>
+                                    <h4>ТК2503</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Изготовитель</h4>
+                                    <span></span>
+                                    <h4>Двери Белоруссии</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Стиль двери</h4>
+                                    <span></span>
+                                    <h4>Классика</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Материал</h4>
+                                    <span></span>
+                                    <h4>Ламинированная пленка</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Толщина в полотне</h4>
+                                    <span></span>
+                                    <h4>38 мм</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Полотно</h4>
+                                    <span></span>
+                                    <h4>Каркас массив хвойных пород / МДФ</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Цвет полотна</h4>
+                                    <span></span>
+                                    <h4>Венге</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                                <div class="product__characteristics-row">
+                                    <h4>Стекло</h4>
+                                    <span></span>
+                                    <h4>Матовое</h4>
+                                </div>
+                                <div class="product__characteristics-row">
+                                    <h4>Стекло</h4>
+                                    <span></span>
+                                    <h4>Матовое</h4>
+                                </div>
+                                <div class="product__characteristics-row">
+                                    <h4>Стекло</h4>
+                                    <span></span>
+                                    <h4>Матовое</h4>
+                                </div>
+                                <div class="product__characteristics-row">
+                                    <h4>Стекло</h4>
+                                    <span></span>
+                                    <h4>Матовое</h4>
+                                </div>
+                                <!-- /.product__characteristics-row -->
+                            </div>
+                            <!-- /.product__characteristics product__characteristics-title -->
+                        </div>
+                        <!-- /.product__characteristics-info -->
+                        <div class="product__characteristics-photo">
+                            <img src="img/product/characteristics-phono-1.png" alt="">
+                        </div>
+                        <!-- /.product__characteristics-photo -->
+                    </div>
+                    <!-- /.product__item product__item-characteristics -->
+                    <div class="product__characteristics-show-all">
+                        <a class="show-all-btn" href="javascript:void(0)">Показать всё</a>
+                    </div>
+                    <!-- /.product__item product__item-text -->
+                </div>
+                <!-- /.product__information-item -->
+                <div data-block="2" class="tab-content product__information-item">
+                    <div class="product__item-table product__table">
+                        <div class="product__table-header-1 column-title">Размер полотна (мм)</div>
+                        <div class="product__table-header-2 column-title">Размер проема (мм)</div>
+                        <div class="product__table-column-1 product__table-column">
+                            <span class="column-title">Ширина</span>
+                            <span>550</span><span>600</span><span>600</span>
+                            <span>700</span><span>800</span><span>900</span>
+                            <span>1200 (600+600)</span><span>1400 (600+800)</span><span>1500 (600+900)</span>
+                        </div>
+                        <div class="product__table-column-2 product__table-column">
+                            <span class="column-title">Высота</span>
+                            <span>от 67 до 70</span><span>от 97 до 100</span>
+                        </div>
+                        <div class="product__table-column-3 product__table-column">
+                            <span class="column-title">Ширина</span>
+                            <span>от 630 до 650</span><span>от 670 до 730</span><span>от 670 до 730</span>
+                            <span>от 770 до 830</span><span>от 870 до 930</span><span>от 980 до 1030</span>
+                            <span>от 1280 до 1330</span><span>от 1480 до 1530</span><span>от 1580 до 1630</span>
+                        </div>
+                        <div class="product__table-column-4 product__table-column">
+                            <span class="column-title">Высота</span>
+                            <span>от 1950 до 1980</span><span>от 2050 до 2080</span>
+                        </div>
+                    </div>
+                    <!-- /.product__item product__item-table -->
+                </div>
+                <!-- /.product__information-item -->
+                <div data-block="3" class="tab-content product__information-item">
+                    <div class="product__item-info">
+                        <h3>Порядок доставки продукции</h3>
+                        <p>Приобретенную у нас продукцию мы доставляем в удобное для наших покупателей время. Заказать
+                            доставку можно в любой день недели, включая выходные:
+                            <span>
 									с 14 до 18 часов – днем;
 									<br>
 									с 18 до 22 часов – вечером.
 								</span>
-							</p>
-							<p>Время доставки оговаривается на этапе оформления заказа. Но если у наших клиентов
-								впоследствии возникают какие-либо накладки, мы всегда идем им навстречу. Время доставки
-								может быть изменено по телефонному звонку.</p>
-						</div>
-						<div class="product__item-info">
-							<h3>Во сколько обойдется доставка?</h3>
-							<p>Расценки на доставку продукции у нас одни из самых низких в столичном регионе:</p>
-							<p>В любую точку Москвы – 1200 рублей;</p>
-							<p>В любую точку МО – 1200 рублей + 35 руб/км от МКАД до места получения;</p>
-							<p>В другие регионы – 1500 рублей + стоимость услуг выбранной компании-перевозчика.</p>
-						</div>
-						<div class="product__item-info">
-							<h3>Стоимость подъема на нужный этаж</h3>
-							<p class="another-fw">Подъем на нужный этаж является дополнительной услугой нашей компании. Ее мы
-								выполняем бережно
-								и аккуратно. Наши расценки на подъем
-								1 единицы таковы:</p>
-							<p class="another-fw">Для межкомнатных дверей: 150 рублей – на лифте; 150 руб/этаж – без лифта.</p>
-							<p>Для стальных входных дверей: 1000 рублей – на грузовом лифте; 700 руб/этаж – без грузового
-								лифта.</p>
-							<p>Дополнительно у нас можно заказать профессиональный монтаж двери, который мы выполняем в
-								максимально короткий срок. Полный комплекс услуг – доставка, подъем на этаж и установка
-								входных и межкомнатных дверей гарантирует 100% качества и экономии.</p>
-						</div>
-					</div>
-					<!-- /.product__information-item -->
-					<div data-block="4" class="tab-content product__information-item">
+                        </p>
+                        <p>Время доставки оговаривается на этапе оформления заказа. Но если у наших клиентов
+                            впоследствии возникают какие-либо накладки, мы всегда идем им навстречу. Время доставки
+                            может быть изменено по телефонному звонку.</p>
+                    </div>
+                    <div class="product__item-info">
+                        <h3>Во сколько обойдется доставка?</h3>
+                        <p>Расценки на доставку продукции у нас одни из самых низких в столичном регионе:</p>
+                        <p>В любую точку Москвы – 1200 рублей;</p>
+                        <p>В любую точку МО – 1200 рублей + 35 руб/км от МКАД до места получения;</p>
+                        <p>В другие регионы – 1500 рублей + стоимость услуг выбранной компании-перевозчика.</p>
+                    </div>
+                    <div class="product__item-info">
+                        <h3>Стоимость подъема на нужный этаж</h3>
+                        <p class="another-fw">Подъем на нужный этаж является дополнительной услугой нашей компании. Ее
+                            мы
+                            выполняем бережно
+                            и аккуратно. Наши расценки на подъем
+                            1 единицы таковы:</p>
+                        <p class="another-fw">Для межкомнатных дверей: 150 рублей – на лифте; 150 руб/этаж – без
+                            лифта.</p>
+                        <p>Для стальных входных дверей: 1000 рублей – на грузовом лифте; 700 руб/этаж – без грузового
+                            лифта.</p>
+                        <p>Дополнительно у нас можно заказать профессиональный монтаж двери, который мы выполняем в
+                            максимально короткий срок. Полный комплекс услуг – доставка, подъем на этаж и установка
+                            входных и межкомнатных дверей гарантирует 100% качества и экономии.</p>
+                    </div>
+                </div>
+                <!-- /.product__information-item -->
+                <div data-block="4" class="tab-content product__information-item">
+                    <div class="installing__price">
+                        <div class="installing__price-header">
+                            <h2>Выезд мастера на установку</h2>
+                            <span>(1-одной единственной двери на объекте от 3 600 ₽)</span>
+                            <h2>Стоимость установки межкомнатных дверей от 2-х и более:</h2>
+                        </div>
+                        <table class="installing__price-table table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Основные работы</th>
+                                <th>Цена</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Установка стандартной двери</td>
+                                <td>2 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Установка эмалированной двери</td>
+                                <td>2 400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Установка шпонированой двери</td>
+                                <td>2 400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Установка дверей из массива <span>(дуб, ольха)</span></td>
+                                <td>2 600 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Установка глянцевых дверей</td>
+                                <td>2 600 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Установка дверей PROFILDOORS, Оникс</td>
+                                <td>2 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Установка стандартной двустворчатой двери</td>
+                                <td>3 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Установка двустворчатой двери <span>(эмаль, шпон)</span> </td>
+                                <td>4 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Установка складной двери</td>
+                                <td>4 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Установка скрытой двери</td>
+                                <td>4 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Установка Рото-двери</td>
+                                <td>5 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Установка раздвижной одностворчатой <span>(без обрамления)</span> </td>
+                                <td>2 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Установка раздвижной двустворчатой <span>(без обрамления)</span></td>
+                                <td>5 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Установка стеклянной двери</td>
+                                <td>3 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Установка двери система “COMPACK”</td>
+                                <td>5 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Расходный материал <span>(пена, саморезы, клей)</span></td>
+                                <td>200 ₽</td>
+                            </tr>
+                            </tbody>
+                            </tr>
+                        </table>
+                        <div class="installing__price-text">
+                            <span>Гарантия на установку 1 год.</span>
+                            <span> Цены указаны за наличный расчёт. При необходимости оплаты по безналичному расчёту по согласованию. </span>
+                            <span> Проведение работ с пылесосом осуществляется по предварительному согласованию. </span>
+                            <span> Уборка и вынос строительного мусора в обязанности установщика межкомнатных дверей не входит.</span>
+                        </div>
+                    </div>
+                    <div class="installing__price">
+                        <div class="installing__price-header">
+                            <h2>Также ознакомтесь с прайсом на возможные дополнительные работы:</h2>
+                        </div>
+                        <table class="installing__price-table table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Основные работы</th>
+                                <th>Цена</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Демонтаж старой двери (обычной)</td>
+                                <td>250 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Демонтаж старой двери (сложной)</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Установка доборов до 150 мм</td>
+                                <td>800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Установка доборов свыше 150 мм</td>
+                                <td>1 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Установка  доборов свыше 200 мм
+                                </td>
+                                <td>1 200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Установка портала до 200 мм</td>
+                                <td>2 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Установка портала свыше 200 мм</td>
+                                <td>3 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Обрамление входной двери</td>
+                                <td>2 300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Врезка замка <span> (сантехнический, магнитный, под цилиндр)</span></td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Коррекция дверной коробки <span>(паз под добор)</span>  1 комплект
+                                </td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Коррекция полотна по высоте 1 сторона</td>
+                                <td>800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Коррекция дверей <span>(эмаль, глянец , массив)</span></td>
+                                <td>1000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Коррекция наличника вдоль
+                                </td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Коррекция наличника телескоп</td>
+                                <td>300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Установка арки , сборного портала</td>
+                                <td>4 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Установка фрамуги</td>
+                                <td>1 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Установка плинтуса МДФ, деревянного , 1 погонный метр</td>
+                                <td>300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Установка порога металлического</td>
+                                <td>300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Установка порога деревянного</td>
+                                <td>300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Установка дверей не стандартных свыше 200 см</td>
+                                <td>+30%</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Расширение проема, 1 сторона <span> (пеноблок, штук)</span> за 1 метр</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Расширение проема <span>(кирпич , бетон)</span> за 1 метр</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Сужение проема брусом, за 1 сторону</td>
+                                <td>400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Подпил плинтуса под наличник</td>
+                                <td>100 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Врезка ригеля / доп. петли</td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>Врезка скрытой петли</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>Установка скрытого порога</td>
+                                <td>1 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>Установка дверного ограничителя</td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>Установка доводчика</td>
+                                <td>1 00 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Ложный выезд мастера </td>
+                                <td>1 00 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>Выезд мастеров за МКАД </td>
+                                <td>35 ₽ / км</td>
+                            </tr>
+                            </tbody>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="installing__price">
+                        <div class="installing__price-header">
+                            <h2>Прайс по входным дверям:</h2>
+                        </div>
+                        <table class="installing__price-table table">
+                            <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Работы с входными дверями</th>
+                                <th>Цена</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Установка металлической двери до 100 кг</td>
+                                <td>3 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Установка металлической двери до 140 кг</td>
+                                <td>4 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Демонтаж деревянной входной двери</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Демонтаж железной входной двери</td>
+                                <td>1 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Закладка пеноблоком (верх до 20 см) с нашим материалом</td>
+                                <td>2 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Закладка пеноблоком <span>(верх свыше 20 см)</span> с нашим материалом</td>
+                                <td>3 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Расширение проема (бетон, монолит) 1 погонный метр
+                                </td>
+                                <td>1 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Сужение проема брусом</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Установка доборов и пыльников</td>
+                                <td>2 300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Замена панели</td>
+                                <td>3 000 ₽</td>
+                            </tr>
+                            </tbody>
+                            </tr>
+                        </table>
+                        <div class="installing__price-text">
+      <span>Информация данная во всех трех таблицах носит исключительно информационный характер, а установку
+        осуществляют наши партнеры!</span>
 
-					</div>
-					<!-- /.product__information-item -->
-				</div>
-				<!-- /.product__information-content -->
-				<!-- /.product__information-navigations -->
-			</div>
-			<!-- /.product__information-wrapper -->
-		</div>
-		<!-- /.product__information -->
-		@@include('templates/viewed-products/viewed-products.html', {
-   title: "Похожие товары",
-   class: 'modal-link',
-   dataAttr1: 'preview-product',
-   dataAttr2: 'basket-fast-add-twodoor'
-   })
-   @@include('templates/viewed-products/viewed-products.html', {
-   title: "С этим товаром покупают",
-   class: 'modal-link',
-   dataAttr1: 'preview-product',
-   dataAttr2: 'basket-fast-add-twodoor'
-   })
-   @@include('templates/product/reviews/reviews.html')
-   @@include('templates/viewed-products/viewed-products.html', {
+                        </div>
+                    </div>
+                </div>
+                <!-- /.product__information-item -->
+            </div>
+            <!-- /.product__information-content -->
+            <!-- /.product__information-navigations -->
+        </div>
+        <!-- /.product__information-wrapper -->
+    </div>
+    <!-- /.product__information -->
+    @@include('templates/viewed-products/viewed-products.html', {
+    title: "Похожие товары",
+    class: 'modal-link',
+    dataAttr1: 'preview-product',
+    dataAttr2: 'basket-fast-add-twodoor'
+    })
+    @@include('templates/viewed-products/viewed-products.html', {
+    title: "С этим товаром покупают",
+    class: 'modal-link',
+    dataAttr1: 'preview-product',
+    dataAttr2: 'basket-fast-add-twodoor'
+    })
+    @@include('templates/product/reviews/reviews.html')
+    @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'modal-link',
     dataAttr1: 'preview-product',
     dataAttr2: 'basket-fast-add-twodoor'
     })
-	</div>
-	@@include('templates/footer/footer.html')
+</div>
+@@include('templates/footer/footer.html')
 
-	<div class="scroll-top"></div>
-	<div class="overflow-navigation"></div>
- @@include('templates/modal/measurer.html')
- @@include('templates/modal/call.html')
- @@include('templates/modal/alert.html')
-	@@include('templates/product/popup/popup.html')
-	@@include('templates/basket-adding/basket-adding.html')
-	@@include('templates/basket-adding/basket-adding-twodoor.html')
- @@include('templates/product-preview/product-preview.html')
-	<!-- /.fast-preview-popup -->
+<div class="scroll-top"></div>
+<div class="overflow-navigation"></div>
+@@include('templates/modal/measurer.html')
+@@include('templates/modal/call.html')
+@@include('templates/modal/alert.html')
+@@include('templates/product/popup/popup.html')
+@@include('templates/basket-adding/basket-adding.html')
+@@include('templates/basket-adding/basket-adding-twodoor.html')
+@@include('templates/product-preview/product-preview.html')
+<!-- /.fast-preview-popup -->
 
-	@@include('_script.html')
-	</div>
+@@include('_script.html')
+</div>
 </body>
 
 </html>

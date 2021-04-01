@@ -8,7 +8,9 @@ $(function () {
  // плагины старт
  /* This is basic - uses default settings */
 
-
+ $("a.link-for-fancybox").fancybox({
+  'hideOnContentClick': true
+ });
 
  $("a.fancybox-link-img").fancybox({
   'hideOnContentClick': true
