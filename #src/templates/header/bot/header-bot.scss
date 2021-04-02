@@ -30,6 +30,7 @@
   align-items: center;
   justify-content: flex-start;
   line-height: 1;
+  position: relative;
 }
 
 .header__bot_phone_item_icon {
@@ -51,6 +52,8 @@
   &.whatsapp-icon {
     top: 1px;
     left: -6px;
+    display: flex;
+    z-index: 10;
 
     @media (max-width: 1200px) {
       top: 3px;
