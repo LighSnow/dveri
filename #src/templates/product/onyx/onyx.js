@@ -177,10 +177,19 @@ $(function () {
         }
     });
 
+    // кастомный fancybox для оникса
+    body.on('click', '.custom-fancybox', function () {
+        const modal = body.find('div[data-block="custom-fancybox"]');
+        const door = $(this).find('.product__photo');
+        modal.addClass('show');
+        door.clone().appendTo(modal.find('.onyx-preview__inner'));
+        body.addClass('smoke').css({'padding-right': '17px'});
+    });
     // закрытия элементов
     $(document).on('mouseup', function (e) {
         const settings = $('.color__wrapper');
         const settingsBtn = $('.js-setting-input');
+        const onyxModal = $('.onyx-preview');
         const target = e.target;
 
         // закрытие блока выбора цвета двери
@@ -188,7 +197,14 @@ $(function () {
             settings.fadeOut().removeClass('open');
             settingsBtn.removeClass('open');
         }
+
+        if (onyxModal.hasClass('show') && !onyxModal.is(target) && onyxModal.has(target).length === 0) {
+            onyxModal.removeClass('show');
+            onyxModal.find('.onyx-preview__inner').empty();
+            body.removeClass('smoke').css({'padding-right': '0px'});
+        }
     });
+
 
     function slickCarousel() {
         $('.js-slider-glass').slick({

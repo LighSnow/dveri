@@ -4,7 +4,7 @@ $(function () {
  const scrollWidth = $(window).outerWidth() - $(window).width();
  const mediaWidth = $(window).width();
 
- console.log(scrollWidth);
+
  // плагины старт
  /* This is basic - uses default settings */
 
@@ -180,15 +180,15 @@ $(function () {
   const thisName = $(this).find('span').text();
 
   body.find('.modal-block[data-modal="' + thisBtn + '"]').addClass('active');
-
   $('#scroll-row').css({
    'display': 'block',
    'width': '30px'
   });
-
   body.addClass('smoke').css({
    'padding-right': scrollWidth + 'px'
   });
+
+
 
   if(mediaWidth < 1200 && $(this).parents('.modal-block').hasClass('popup-additional__wrapper')) {
    body.find('.additional-popup').addClass('smoke')
@@ -230,6 +230,10 @@ $(function () {
   $(this).text(text == 'Показать всё' ? 'Скрыть' : 'Показать всё');
  });
 
+
+
+
+
  // закрытие блоков нажатием за пределы
  $(document).on('mouseup', function (e) {
   const modal = body.find('.modal-block');
@@ -239,10 +243,11 @@ $(function () {
   const addedModal = body.find('.added-popup');
   const previewModal = body.find('.preview-popup');
   const videoModal = body.find('.video-popup');
+  const fancyBox = $('.fancybox-container');
   let axisPositionX = e.pageX;
 
 
-  // закрытиеmodalPreview
+  // // закрытиеmodalPreview
   if (modal.hasClass('active') && !modal.is(e.target) && modal.has(e.target).length === 0) {
    if(modal.hasClass('video-popup')) {
     videoModal.find('iframe').attr('src', '')
@@ -257,7 +262,7 @@ $(function () {
    if (!addedModal.is(e.target) && addedModal.has(e.target).length === 0) {
     addedModal.removeClass('active');
    }
-  } else if (previewModal.hasClass('active') && !addedModal.hasClass('active')) {
+  } else if (previewModal.hasClass('active') && !addedModal.hasClass('active') && !fancyBox.has('fancybox-is-open')) {
    if (!previewModal.is(e.target) && previewModal.has(e.target).length === 0) {
     previewModal.removeClass('active');
     body.removeClass('smoke').css({
@@ -271,21 +276,20 @@ $(function () {
    // закрытие добавление в корзину в попапе с доп элементами
    if (!addAdditionalModal.is(e.target) && addAdditionalModal.has(e.target).length === 0) {
     addAdditionalModal.removeClass('active');
-    additionalContent.removeClass('smoke')
+    additionalContent.removeClass('smoke');
+    // console.log('asd')
    }
   } else if (additionalModal.hasClass('active')) {
    // закрытие попап с просмотром доп эементов
    if (!additionalContent.is(e.target) && additionalContent.has(e.target).length === 0 && axisPositionX < mediaWidth - scrollWidth) {
-
     additionalModal.removeClass('active');
     body.removeClass('smoke').css({
      'padding-right': '0px'
     });
    }
   }
+
  });
-
-
  // функции вызова
  const showSomeItems = (num, el) => {
   el.each((i, elem) => {

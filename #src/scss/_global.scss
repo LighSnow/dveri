@@ -14,12 +14,12 @@ body {
 
   &::-webkit-scrollbar-thumb {
     background-color: #b3b3b3;
-    width: 17px;
+    //width: 17px;
   }
 
   &::-webkit-scrollbar {
     background-color: #f2f2f2;
-    width: 17px;
+    //width: 17px;
   }
 
   &.lock {
@@ -140,7 +140,8 @@ a {
     justify-content: flex-end;
   }
 
-  .show-all-btn {
+  .show-all-btn,
+  .show-all-btn-link {
     font-size: 13px;
     font-weight: 500;
     color: #005fa8;
