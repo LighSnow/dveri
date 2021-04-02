@@ -5,7 +5,7 @@ $(document).ready(function() {
         value: 333, // Initial value
         step: 1, // Incremental/decremental step on up/down change.
         format: false,
-        editable: true,
+        editable: false,
         addText: "+",
         subText: "-",
         formatter: function (val) {

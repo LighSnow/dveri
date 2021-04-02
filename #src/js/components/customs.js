@@ -69,20 +69,22 @@ $(function () {
     modalLink.on('click', function (e) {
         e.preventDefault();
         let thisModal = $(this).attr('href');
-        body.addClass('overflow-hidden');
-        $(thisModal).fadeIn();
+        $(thisModal).addClass('active');
+        $('body').addClass('smoke overflow-hidden');
     });
     modalClose.on('click', function (e) {
         e.preventDefault();
         body.removeClass('overflow-hidden');
-        modal.fadeOut();
+        modal.removeClass('active');
+        $('body').removeClass('smoke overflow-hidden');
     });
     modal.click(function (e) {
         if ($(e.target).closest('.modal__content').length) {
             return;
         }
         body.removeClass('overflow-hidden');
-        modal.fadeOut();
+        modal.removeClass('active');
+        $('body').removeClass('smoke overflow-hidden');
     });
 
 

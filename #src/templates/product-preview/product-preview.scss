@@ -5,7 +5,9 @@
  margin-bottom: 30px;
  max-width: 960px;
  @include centerCenterPopup;
-
+ &.show-important {
+  transform: translate(-50%, -50%) scale(1) !important;
+ }
  .preview-popup__title {
   display: flex;
   width: 100%;
@@ -114,7 +116,13 @@
       justify-content: center;
       position: relative;
       height: 100%;
-
+      .fancybox-link-img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+      }
       .preview-popup__item-icons {
        position: absolute;
        right: 10px;
