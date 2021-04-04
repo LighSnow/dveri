@@ -4,10 +4,7 @@
  color: #000;
  margin-bottom: 30px;
  max-width: 960px;
- @include centerCenterPopup;
- &.show-important {
-  transform: translate(-50%, -50%) scale(1) !important;
- }
+
  .preview-popup__title {
   display: flex;
   width: 100%;
@@ -138,6 +135,7 @@
         border-radius: 2px;
         margin-bottom: 10px;
         transition: all 0.3s;
+        background-color: #fff;
 
         i {
          &::before {

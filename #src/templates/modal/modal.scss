@@ -1,33 +1,30 @@
+//.modal {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100vh;
+//  //background-color: rgba($black, .5);
+//  z-index: 99999;
+//  //display: none;
+//  transform: scale(1);
+//  display: none;
+//  transition: all .3s;
+//}
+//.modal.active {
+//  //display: block;
+//  transform: scale(1);
+//  transition: all .3s;
+//}
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  //background-color: rgba($black, .5);
-  z-index: 99999;
-  //display: none;
-  transform: scale(0);
-  transition: all .3s;
-}
-.modal.active {
-  //display: block;
-  transform: scale(1);
-  transition: all .3s;
-}
-.modal__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  transition: transform .4s;
-  width: 100%;
-  max-width: 420px;
-  padding: 30px;
   border-radius: 8px;
   border: 2px solid #e7e7e7;
   background-color: $white;
-  box-sizing: border-box;
+}
+.modal__content {
+  position: relative;
+  width: 100%;
+  padding: 30px;
 }
 
 .modal__close {
@@ -149,7 +146,7 @@
 
 @media (max-width: 767.98px) {
   .modal__content {
-    width: calc(100% - 16px);
+    padding: 20px 8px 8px 8px;
   }
   .modal__reviews_top {
     justify-content: center;
@@ -180,5 +177,11 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-desc {
+    font-size: 12px;
   }
 }

@@ -1,5 +1,6 @@
 $(function () {
     const body = $('body');
+    const scrollWidth = $(window).outerWidth() - $(window).width();
     // обьект картинок для слайдера обратботка стекла--рисунок
     const imgObjGlass = {
         1: '../../../img/product/onyx/onyx-slider/onyx-slider-1-2.png',
@@ -53,8 +54,13 @@ $(function () {
                 });
             }
         }
-    })
-
+    });
+    $('.slick-slide.slick-active').next('*:not(.slick-active)').prev().addClass('next');
+    body.on('click', '.slick-arrow', function () {
+        if ($(this).hasClass('slick-next')) {
+            $(this).parents('.settings__slider').find('.slick-slide.next').removeClass('next').next().addClass('next')
+        }
+    });
     // нажатие на setting input
     body.on('click', '.js-setting-input', function (e) {
         if ($(this).hasClass('open')) {
@@ -134,7 +140,6 @@ $(function () {
     });
 
 
-    // слайдер обработка стекла
     body.on('click', '.product__settings-row .option', function () {
         const typeGlassProcessing = $(this).attr('data-value');
         const onyx = $(this).parents('.lattice-type').attr('data-onyx-main');
@@ -177,13 +182,13 @@ $(function () {
         }
     });
 
-    // кастомный fancybox для оникса
+    // // кастомный fancybox для оникса
     body.on('click', '.custom-fancybox', function () {
         const modal = body.find('div[data-block="custom-fancybox"]');
-        const door = $(this).find('.product__photo');
+        const door = $('.product__photo-onyx');
         modal.addClass('show');
         door.clone().appendTo(modal.find('.onyx-preview__inner'));
-        body.addClass('smoke').css({'padding-right': '17px'});
+        body.addClass('smoke').css({'padding-right': scrollWidth});
     });
     // закрытия элементов
     $(document).on('mouseup', function (e) {

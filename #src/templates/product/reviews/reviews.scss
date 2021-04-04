@@ -7,6 +7,8 @@
 
  .product__aside {
   margin-right: 30px;
+  max-width: 170px;
+  width: 100%;
 
   &-rating {
    display: flex;
@@ -62,6 +64,7 @@
 
      &-stars {
       i {
+       margin-right: 5px;
        &::before {
         font-size: 18px;
        }
@@ -99,10 +102,27 @@
   .comment-name {
    font-weight: 600;
    font-size: 16px;
+   float: left;
+   margin-right: 5px;
   }
 
   .comment-text {
    font-size: 16px;
+   .elimore_show,
+   .elimore_hide {
+    font-size: 16px;
+    color: #085892;
+    font-weight: 500;
+    &:hover {
+     opacity: .8;
+    }
+   }
+   .elimore_show {
+    span {
+     font-weight: 400;
+     color: #212121;
+    }
+   }
   }
 
   //comment
@@ -147,6 +167,7 @@
     .comment-img-item {
      margin-right: 10px;
      position: relative;
+     outline: none;
 
      .counter-commit-photo {
       position: absolute;
@@ -192,14 +213,9 @@
      background-color: transparent;
 
      &.current {
-      background-color: #085892;
-      border-color: #085892;
+      background-color: #64afcd;
+      border-color: #64afcd;
       color: #fff;
-      &:hover {
-       background-color: #085892;
-       border-color: #085892;
-       color: #fff;
-      }
      }
 
      &:not(:last-child) {
@@ -358,6 +374,7 @@
    margin-right: 0;
    margin-bottom: 10px;
    display: flex;
+   max-width: 100%;
    justify-content: space-around;
 
    &-wrapper {

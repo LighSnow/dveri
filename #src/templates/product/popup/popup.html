@@ -1,16 +1,16 @@
 <!-- Product added in basket -->
-<div class="added-popup modal-block product-popup" data-modal="added-basket">
+<div class="added-popup product-popup" id="added-popup">
  <div class="added-popup__inner">
   <div class="added-popup__inner-title">товар добавлен в корзину</div>
   <div class="added-popup__inner-btn">
-   <a href="javascript:void(0)" class="btn-product go-next close-btn">Продолжить покупки</a>
+   <a href="javascript:void(0)" class="btn-product go-next" data-fancybox-close>Продолжить покупки</a>
    <a href="javascript:void(0)" class="btn-product basket">Перейти в корзину</a>
   </div>
  </div>
 </div>
 
 <!-- Comment send -->
-<div class="comment-popup modal-block product-popup" data-modal="comment-modal">
+<div class="comment-popup modal-block product-popup" id="comment-popup">
  <a href="javascript:void(0)" class="close-btn close-x">
   <i class="icon-cancel"></i>
  </a>
@@ -47,11 +47,8 @@
 
 
 <!-- Buy 1 click -->
-<div class="buy-popup modal-block product-popup" data-modal="buy-click-modal">
+<div class="buy-popup product-popup" id="buy-popup">
  <div class="buy-popup__inner">
-  <a href="javascript:void(0)" class="close-btn close-x">
-   <i class="icon-cancel"></i>
-  </a>
   <div class="buy-popup__inner-title">купить в 1 клик</div>
   <form action="" class="buy-popup__form">
    <input placeholder="Имя" name="name" type="text" class="buy-popup__form-input">
@@ -72,13 +69,8 @@
 
 
 <!-- modal additional elements -->
-<div class="popup-additional__wrapper modal-block" data-modal="buy-modal">
- <div style="display: none;" id="scroll-row"></div>
- <div class="additional-popup scroll-popup">
+ <div class="additional-popup product-popup" id="additional-popup">
   <div class="additional-popup__inner">
-   <a href="javascript:void(0)" class="close-btn close-x">
-    <i class="icon-cancel"></i>
-   </a>
    <div class="additional-popup__inner-title current-title"></div>
    <div class="additional-popup__items">
     <ul class="pagination pagination-mob">
@@ -127,7 +119,7 @@
       </a>
       <div class="card__reviews">
        <div class="card__reviews_star">
-        <img src="./img/icons/stars.png" alt="">
+        <div class="rating-block static-rating" id="rateYo"></div>
        </div>
        <div class="card__reviews_count">55 отзывов</div>
       </div>
@@ -141,8 +133,8 @@
         </div>
         <div class="card__prices_new">11 607 ₽</div>
        </div>
-       <div class="card__prices_right modal-link js-toggle" data-modal="add-additional">
-        <a href="/" class="card__basket">
+       <div class="card__prices_right js-toggle">
+        <a href="#add-addittional-popup" class="card__basket link-for-fancybox-modal">
          <svg class="card__icon_basket" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 426.7 426.7"
           xml:space="preserve">
           <path
@@ -185,7 +177,6 @@
     <div class="show-more__label">ПОКАЗАТЬ ЕЩЕ</div>
    </a>
   </div>
-
   <ul class="pagination">
    <li class="page-item pagination-navigation disabled">Назад</li>
    <li class="page-item">1</li>
@@ -204,12 +195,11 @@
   </ul>
  </div>
 </div>
-</div>
 
 
 <!-- add in basket additional elements -->
 
-<div class="dop-popup add-addittional-popup modal-block product-popup" data-modal="add-additional">
+<div class="dop-popup add-addittional-popup product-popup" id="add-addittional-popup">
  <div class="dop-popup__inner">
   <div class="dop-popup__inner-title background-title-big">товар добавлен в корзину</div>
   <div class="dop-popup__content">
@@ -225,7 +215,7 @@
     </div>
     <div class="dop-popup__info-price"><span>Сумма:</span><span>11 607 ₽</span></div>
     <div class="dop-popup__info-btn">
-     <a class="btn-product go-next close-btn" href="javascript:void(0)">Продолжить покупки</a>
+     <a class="btn-product go-next close-btn" href="javascript:void(0)" data-fancybox-close>Продолжить покупки</a>
      <a class="btn-product basket" href="javascript:void(0)">Перейти в корзину</a>
     </div>
    </div>

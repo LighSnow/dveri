@@ -3,6 +3,8 @@
 @@include('components/scroll.js',{})
 @@include('components/number-picker.js',{})
 @@include('components/tabs.js',{})
+@@include('jquery.star-rating-svg.js', {})
+@@include('jquery.elimore.js', {})
 @@include('../templates/header/header.js',{})
 @@include('../templates/navigation/navigation.js',{})
 @@include('../templates/header/mobile/mobile.js',{})
