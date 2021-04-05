@@ -25,6 +25,7 @@ $(function () {
         'hideOnContentClick': true
     });
 
+
     // для слайдера
     //инициализируем галерею ДО запуска слайдера
     const gallery = $('.slider__for-item .fancybox-link-slider');

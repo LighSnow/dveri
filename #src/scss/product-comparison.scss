@@ -7,10 +7,11 @@
 	}
 
 	&__inner {
+		max-width: 1140px;
 		display: flex;
-    @media (max-width: 1200px) {
-      overflow-x: scroll;
-    }
+		@media (max-width: 1200px) {
+			overflow-x: scroll;
+		}
 	}
 
 	// .product-comparison__column
@@ -18,20 +19,20 @@
 	&__column {
 		display: flex;
 		flex-direction: column;
-    position: relative;
+		position: relative;
 
 		&--125 {
 			flex: 0 0 125px;
 			.product-comparison__row--h261 {
 				justify-content: center;
 			}
-      @media (max-width: 1200px) {
-        position: sticky;
-        left: 0;
-        top: 0;
-        background-color: $white;
-        z-index: 1;
-      }
+			@media (max-width: 1200px) {
+				position: sticky;
+				left: 0;
+				top: 0;
+				background-color: $white;
+				z-index: 1;
+			}
 		}
 
 		&--tac {
@@ -108,6 +109,32 @@
 			letter-spacing: 0;
 			margin: 0px 0px 8px 0px;
 		}
+	}
+
+	.mCSB_container {
+		max-width: 1140px;
+		display: flex;
+	}
+	.mCustomScrollbar,
+	.mCustomScrollbar.mCS_touch_action,
+	.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+		-ms-touch-action: auto;
+		touch-action: auto;
+	}
+
+	.mCustomScrollBox {
+		-ms-touch-action: pan-x;
+		touch-action: pan-x;
+	}
+
+	.mCustomScrollBox.mCSB_vertical_horizontal {
+		-ms-touch-action: auto;
+		touch-action: auto;
+	}
+
+	.mCustomScrollBox.mCSB_horizontal {
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
 	}
 }
 .h2 {
