@@ -91,15 +91,20 @@ $(function () {
     // Alert
     const alertLink = $('.js-alert-link');
     const alertClose = $('.alert__close');
+
     alertLink.on('click', function (e) {
+
         e.preventDefault();
-        let thisAlert = $(this).attr('href');
-        $(thisAlert).fadeIn();
-        function alertFade() {
-            $(thisAlert).fadeOut();
+        if ($(this).hasClass('active')) {
+            let thisAlert = $(this).attr('href');
+            $(thisAlert).fadeIn();
+            function alertFade() {
+                $(thisAlert).fadeOut();
+            }
+            setTimeout(alertFade, 5000);
         }
-        setTimeout(alertFade, 5000);
     });
+
     alertClose.on('click', function (e) {
         e.preventDefault();
         let thisAlert = $(this).attr('href');
