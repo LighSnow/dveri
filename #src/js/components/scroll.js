@@ -1,6 +1,24 @@
 (function ($) {
+  function customScroll() {
+    $('.product-comparison__inner').mCustomScrollbar({
+      theme: "dark-3",
+      axis: 'x',
+      mouseWheel: { axis: "x" },
+      scrollInertia: 1000,
+      documentTouchScroll: true,
+      callbacks: {
+        whileScrolling: function () {
+          let abs = Math.abs(this.mcs.left);
+          let position = $('.pos');
+          position.css('left', abs);
+          console.log($('.pos'));
+        }
+      }
+    });
+  }
+
   const width = $(window).width();
-  $(window).on("load", function () {
+  $(window).on("load resize scroll", function () {
     const parent = $('.body-product');
     if (parent.find('.scroll').length > 0) {
         $(".scroll").mCustomScrollbar({
@@ -11,19 +29,13 @@
         theme: "dark-3"
       });
     }
-    $('.product-comparison__inner').mCustomScrollbar({
-      theme: "dark-3",
-      axis: 'x',
-      autoHideScrollbar: false,
-      // contentTouchScroll: false,
-      documentTouchScroll: true,
-      // autoDraggerLength: false,
-      mouseWheel: {
-        enable: false,
-      },
 
-    });
+    customScroll()
+
+    // $(window).on('resize', function () {
+    // customScroll();
+    // });
+    console.log($(document).width());
   });
-
 
 })(jQuery);

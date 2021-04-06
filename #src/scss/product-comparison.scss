@@ -8,10 +8,8 @@
 
 	&__inner {
 		max-width: 1140px;
+		width: 100%;
 		display: flex;
-		@media (max-width: 1200px) {
-			overflow-x: scroll;
-		}
 	}
 
 	// .product-comparison__column
@@ -113,8 +111,18 @@
 
 	.mCSB_container {
 		max-width: 1140px;
+		width: 100%;
 		display: flex;
 	}
+
+	// .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+	// .mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	// 	width: 100%;
+	// }
+	// .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail,
+	// .mCS-light-3.mCSB_scrollTools .mCSB_draggerRail {
+	// 	width: 100%;
+	// }
 	.mCustomScrollbar,
 	.mCustomScrollbar.mCS_touch_action,
 	.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
