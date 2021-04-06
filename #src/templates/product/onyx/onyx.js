@@ -190,6 +190,13 @@ $(function () {
         door.clone().appendTo(modal.find('.onyx-preview__inner'));
         body.addClass('smoke').css({'padding-right': scrollWidth});
     });
+    // закрываем onyx preview
+    body.on('click', '#close-onyx-preview', function () {
+        const modal = $(this).parent();
+        modal.removeClass('show');
+        modal.find('.onyx-preview__inner').empty();
+        body.removeClass('smoke').css({'padding-right': '0px'});
+    });
     // закрытия элементов
     $(document).on('mouseup', function (e) {
         const settings = $('.color__wrapper');
@@ -202,7 +209,7 @@ $(function () {
             settings.fadeOut().removeClass('open');
             settingsBtn.removeClass('open');
         }
-
+        // акрытие кастомного модал
         if (onyxModal.hasClass('show') && !onyxModal.is(target) && onyxModal.has(target).length === 0) {
             onyxModal.removeClass('show');
             onyxModal.find('.onyx-preview__inner').empty();

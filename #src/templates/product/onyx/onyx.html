@@ -19,7 +19,8 @@
             <div class="product__card">
                 <div class="product__photo">
                     <div class="product__photo-onyx--wrapper">
-                        <a class="custom-fancybox onyx-link-fancybox" href="javascript:void(0)" data-block="custom-fancybox"></a>
+                        <a class="custom-fancybox onyx-link-fancybox" href="javascript:void(0)"
+                           data-block="custom-fancybox"></a>
                         <div class="onyx__photo-icons">
                             <a href="#alert-featured" class="item-heart item-icon js-toggle js-alert-link"><i
                                     class="icon-heart"></i></a>
@@ -66,7 +67,7 @@
                             <div data-onyx="5" class="onyx-item onyx-5"><img src="" alt=""></div>
                             <div data-onyx="6" class="onyx-item onyx-6"><img src="" alt=""></div>
                             <div data-onyx="7" class="onyx-item onyx-7"><img
-                                    src="../../../img/product/onyx/onyx-glass-1-1.png" alt="">
+                                    src="" alt="">
                             </div>
                             <div data-onyx="8" class="onyx-item onyx-8"><img src="" alt=""></div>
                             <div data-onyx="9" class="onyx-item onyx-9"><img src="" alt=""></div>
@@ -362,63 +363,68 @@
                                     Остекление может быть вместо любой филенки в любых комбинациях.</p>
                             </div>
                         </div>
-                        <div class="product__settings-row grid-row" data-glass-show="1">
-                            <div class="product__settings-row--inner lattice-type" data-onyx-main="9">
-                                <h2 class="setting-name setting-name-top">Внутренняя решетка:</h2>
-                                <select class="onyx-select nice-select" name="inner-lattice" id="">
-                                    <option selected value="0">Без решетки</option>
-                                    <option value="1">Резная</option>
-                                    <option value="2">Полукруглая</option>
-                                    <option value="3">Полутреугольная</option>
-                                    <option value="4">Царская</option>
-                                    <option value="5">Императорская</option>
-                                </select>
-                            </div>
-                            <div class="product__settings-row--outer lattice-type">
-                                <h2 class="setting-name setting-name-top">Обработка стекла:</h2>
-                                <select class="nice-select onyx-select glass-select" name="outer-lattice" id="">
-                                    <option selected value="0">Без обработки</option>
-                                    <option value="1">Витраж Бевелс</option>
-                                    <option value="2">Контурный витраж</option>
-                                    <option value="3">Заливной витраж</option>
-                                    <option value="4">Гравировка</option>
-                                    <option value="5">Самый лучший витраж</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="product__settings-row grid glass-row" data-glass-show="1">
-                            <div class="product__settings-row--glasstype">
-                                <h2 class="setting-name setting-name-top">Варианты стекла:</h2>
-                                <div class="glasstype__inner">
-                                    <div class="glasstype__inner-item settings__slider-item" data-onyx-main="8"
-                                         data-onyx-choose="1">
-                                        <div class="glasstype__inner-img">
-                                            <img src="../../../img/product/onyx/glass-type-1.png" alt="">
+                        <div class="product__settings-row-glass-grid">
+                            <div class="product__settings-row grid-row grid-glass-settings" data-glass-show="1">
+                                <div class="product__settings-row--inner lattice-type" data-onyx-main="9">
+                                    <h2 class="setting-name setting-name-top">Внутренняя решетка:</h2>
+                                    <select class="onyx-select nice-select" name="inner-lattice" id="">
+                                        <option selected value="0">Без решетки</option>
+                                        <option value="1">Резная</option>
+                                        <option value="2">Полукруглая</option>
+                                        <option value="3">Полутреугольная</option>
+                                        <option value="4">Царская</option>
+                                        <option value="5">Императорская</option>
+                                    </select>
+                                </div>
+                                <div class="product__settings-row--glasstype">
+                                    <h2 class="setting-name setting-name-top">Варианты стекла:</h2>
+                                    <div class="glasstype__inner">
+                                        <div class="glasstype__inner-item settings__slider-item" data-onyx-main="8"
+                                             data-onyx-choose="1">
+                                            <div class="glasstype__inner-img">
+                                                <img src="../../../img/product/onyx/glass-type-1.png" alt="">
+                                            </div>
+                                            <div class="glasstype__inner-text">Фрезерованный широкий резной</div>
                                         </div>
-                                        <div class="glasstype__inner-text">Фрезерованный широкий резной</div>
-                                    </div>
-                                    <div class="glasstype__inner-item settings__slider-item" data-onyx-main="8"
-                                         data-onyx-choose="2">
-                                        <div class="glasstype__inner-img">
-                                            <img src="../../../img/product/onyx/glass-type-2.png" alt="">
+                                        <div class="glasstype__inner-item settings__slider-item" data-onyx-main="8"
+                                             data-onyx-choose="2">
+                                            <div class="glasstype__inner-img">
+                                                <img src="../../../img/product/onyx/glass-type-2.png" alt="">
+                                            </div>
+                                            <div class="glasstype__inner-text">Фрезерованный широкий резной</div>
                                         </div>
-                                        <div class="glasstype__inner-text">Фрезерованный широкий резной</div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="product__settings-row--slider js-slider-wrapper" style="display: none;">
-                                <h2 class="setting-name setting-name-top">Рисунок:</h2>
-                                <div class="settings__slider js-slider-glass disabled">
-                                    @@for(let i = 1; i <= 6; i++) {
-                                    <div class="settings__slider-item" data-onyx-main="7" data-onyx-choose="`+i+`"
-                                         data-type-choose="">
-                                        <div class="settings__slider-img"><img
-                                                src="../../../img/product/onyx/onyx-slider/onyx-slider-7-1.png" alt="">
-                                        </div>
-                                        <div class="settings__slider-text">Фрезерованный широкий резной</div>
-                                    </div>
-                                    }
+                            <div class="product__settings-row grid glass-row" data-glass-show="1">
+                                <div class="product__settings-row--outer lattice-type">
+                                    <h2 class="setting-name setting-name-top">Обработка стекла:</h2>
+                                    <select class="nice-select onyx-select glass-select" name="outer-lattice" id="">
+                                        <option selected value="0">Без обработки</option>
+                                        <option value="1">Витраж Бевелс</option>
+                                        <option value="2">Контурный витраж</option>
+                                        <option value="3">Заливной витраж</option>
+                                        <option value="4">Гравировка</option>
+                                        <option value="5">Самый лучший витраж</option>
+                                    </select>
                                 </div>
+                                <div class="product__settings-row--slider js-slider-wrapper" style="display: none;">
+                                    <h2 class="setting-name setting-name-top">Рисунок:</h2>
+                                    <div class="settings__slider js-slider-glass disabled">
+                                        @@for(let i = 1; i <= 6; i++) {
+                                        <div class="settings__slider-item" data-onyx-main="7" data-onyx-choose="`+i+`"
+                                             data-type-choose="">
+                                            <div class="settings__slider-img"><img
+                                                    src="../../../img/product/onyx/onyx-slider/onyx-slider-7-1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="settings__slider-text">Фрезерованный широкий резной</div>
+                                        </div>
+                                        }
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
