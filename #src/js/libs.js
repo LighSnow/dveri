@@ -7,4 +7,5 @@
 @@include('jquery.fancybox.min.js', {})
 @@include('jquery.validate.js', {})
 @@include('jquery.mask.js', {})
+@@include('simplebar.js', {})
 
