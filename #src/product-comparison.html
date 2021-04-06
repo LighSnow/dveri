@@ -10,7 +10,7 @@
 				<h1 class="h2">Сравнение товаров</h1>
 				<div class="product-comparison__inner" id="myElement">
 					<div class="product-comparison__column product-comparison__column--125 pos">
-						<div class="product-comparison__row product-comparison__row--h261">
+						<div class="product-comparison__row product-comparison__row--h262">
 							<a class="product-comparison__hide" href="#">Скрыть одинаковые свойства</a>
 						</div>
 						<div class="product-comparison__row">
@@ -46,7 +46,7 @@
 						<div class="product-comparison__row"></div>
 					</div>
 					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h261">
+						<div class="product-comparison__row product-comparison__row--h262">
 							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
 							<img src="./img/comparison/comparison-img.png" alt="" />
 						</div>
@@ -54,7 +54,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-							<span>Рейтинг:</span>
+							<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -92,7 +92,7 @@
 						</div>
 					</div>
 					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h261">
+						<div class="product-comparison__row product-comparison__row--h262">
 							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
 							<img src="./img/comparison/comparison-img-2.png" alt="" />
 						</div>
@@ -100,7 +100,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-							<span>Рейтинг:</span>
+						<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -138,7 +138,7 @@
 						</div>
 					</div>
 					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h261">
+						<div class="product-comparison__row product-comparison__row--h262">
 							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
 							<img src="./img/comparison/comparison-img-3.png" alt="" />
 						</div>
@@ -146,7 +146,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-							<span>Рейтинг:</span>
+						<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -184,7 +184,7 @@
 						</div>
 					</div>
 					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h261">
+						<div class="product-comparison__row product-comparison__row--h262">
 							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
 							<img src="./img/comparison/comparison-img.png" alt="" />
 						</div>
@@ -192,7 +192,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-							<span>Рейтинг:</span>
+						<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -231,7 +231,12 @@
 					</div>
 				</div>
 			</div>
-			@@include('templates/viewed-products/viewed-products.html', { title: "Посмотренные товары", class: 'modal-link', dataAttr1: 'preview-product', dataAttr2: 'basket-fast-add' })
+			@@include('templates/viewed-products/viewed-products.html', {
+				title: "Посмотренные товары",
+				class: 'link-for-fancybox-modal',
+				dataAttr1: '#preview-product',
+				dataAttr2: '#basket-fast-add'
+				})
 		</div>
 		@@include('templates/footer/footer.html')
 

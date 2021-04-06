@@ -4,6 +4,9 @@
 	@media (max-width: 1200px) {
 		padding: 15px 0px 25px 0px;
 	}
+	@media (max-width: 767.97px) {
+		padding: 20px 0px 25px 0px;
+	}
 	// .product-comparison__inner
 	.h2 {
 		margin: 0px 0px 20px 0px;
@@ -30,7 +33,7 @@
 
 		&--125 {
 			flex: 0 0 125px;
-			.product-comparison__row--h261 {
+			.product-comparison__row--h262 {
 				justify-content: center;
 			}
 			@media (max-width: 1200px) {
@@ -43,8 +46,12 @@
 		}
 
 		&--tac {
-			flex: 0 0 255px;
+			flex: 1;
+			min-width: 243px;
 			text-align: center;
+			@media (max-width: 767.97px) {
+				min-width: 210px;
+			}
 			& + & {
 				.product-comparison__row {
 					padding: 0px 0px 0px 10px;
@@ -62,6 +69,9 @@
 		text-decoration-style: dashed;
 		text-underline-offset: 2px;
 		margin: 45px 0px 0px 0px;
+		@media (max-width: 767.97px) {
+			font-size: 14px;
+		}
 	}
 
 	// .product-comparison__row
@@ -73,6 +83,9 @@
 		height: 36px;
 		font-size: 14px;
 		font-weight: 500;
+		@media (max-width: 767.97px) {
+			font-size: 12px;
+		}
 		&--flr {
 			flex-direction: row;
 			align-items: center;
@@ -102,16 +115,22 @@
 		}
 	}
 
-	// .product-comparison__row--h261
+	// .product-comparison__row--h262
 
-	&__row--h261 {
-		height: 261px;
+	&__row--h262 {
+		height: 262px;
 		justify-content: flex-start;
 		align-items: center;
+		@media (max-width: 767.97px) {
+			height: 198px;
+		}
 		img {
 			width: 203px;
 			@media (max-width: 1200px) {
 				width: 200px;
+			}
+			@media (max-width: 767.97px) {
+				width: 146px;
 			}
 		}
 		span {
@@ -121,11 +140,31 @@
 			@media (max-width: 1200px) {
 				margin: 0px 0px 6px 0px;
 			}
+			@media (max-width: 1200px) {
+				margin: 0px 0px 4px 0px;
+			}
 		}
 	}
 
 	.simplebar-content {
 		display: flex;
+		// @media (max-width: 767.96px) {
+		// 	overflow-x: scroll;
+		// 	/* хром, сафари */
+		// 	&::-webkit-scrollbar {
+		// 		width: 0;
+		// 	}
+
+		// 	/* ie 10+ */
+		// 	& {
+		// 		-ms-overflow-style: none;
+		// 	}
+
+		// 	/* фф (свойство больше не работает, других способов тоже нет)*/
+		// 	& {
+		// 		overflow: -moz-scrollbars-none;
+		// 	}
+		// }
 	}
 	.simplebar-track.simplebar-horizontal {
 		display: none;
@@ -148,7 +187,6 @@
 	}
 	.simplebar-dragging {
 		.simplebar-track.simplebar-horizontal {
-
 		}
 		.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
 			&::before {
@@ -175,6 +213,10 @@
 			box-shadow: inset 0 2px 4px 1px #3389a6;
 			transition: background 0.3s ease;
 		}
+	}
+
+	.rating-block {
+		justify-content: center;
 	}
 }
 .h2 {
