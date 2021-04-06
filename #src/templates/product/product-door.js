@@ -93,9 +93,14 @@ $(function () {
 
     $(".rating-block.static-rating").starRating({
         readOnly: true,
+        starSize: body.find('.rating-block').attr('data-size'),
+
     });
 
-    $(".rating-block.no-static-rating").starRating({});
+    $(".rating-block.no-static-rating").starRating({
+
+    });
+
 
     $(".text-comment-hide").elimore({
         maxLength: 322
