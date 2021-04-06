@@ -1,15 +1,24 @@
 .product-comparison {
 	padding: 24px 0px 25px 0px;
 	letter-spacing: 0.3px;
+	@media (max-width: 1200px) {
+		padding: 15px 0px 25px 0px;
+	}
 	// .product-comparison__inner
 	.h2 {
 		margin: 0px 0px 20px 0px;
+		@media (max-width: 1200px) {
+			margin: 0px 0px 12px 0px;
+		}
 	}
 
 	&__inner {
 		max-width: 1140px;
 		width: 100%;
 		display: flex;
+		@media (max-width: 1200px) {
+			padding: 0px 0px 18px 0px;
+		}
 	}
 
 	// .product-comparison__column
@@ -101,48 +110,68 @@
 		align-items: center;
 		img {
 			width: 203px;
+			@media (max-width: 1200px) {
+				width: 200px;
+			}
 		}
 		span {
 			padding: 0 20px;
 			letter-spacing: 0;
 			margin: 0px 0px 8px 0px;
+			@media (max-width: 1200px) {
+				margin: 0px 0px 6px 0px;
+			}
 		}
 	}
 
-	.mCSB_container {
-		max-width: 1140px;
-		width: 100%;
+	.simplebar-content {
 		display: flex;
 	}
-
-	// .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
-	// .mCS-light-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-	// 	width: 100%;
-	// }
-	// .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail,
-	// .mCS-light-3.mCSB_scrollTools .mCSB_draggerRail {
-	// 	width: 100%;
-	// }
-	.mCustomScrollbar,
-	.mCustomScrollbar.mCS_touch_action,
-	.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
-		-ms-touch-action: auto;
-		touch-action: auto;
+	.simplebar-track.simplebar-horizontal {
+		display: none;
+		width: 632px;
+		height: 8px;
+		right: 0;
+		left: initial;
+		box-shadow: inset 0 2px 4px 1px #9ba1ac;
+		border-radius: 4px;
+		opacity: 0.75;
+		background-color: #cfd4de;
+		pointer-events: unset;
+		@media (max-width: 1200px) {
+			display: block;
+			pointer-events: none;
+		}
+		@media (max-width: 767.97px) {
+			width: 198px;
+		}
 	}
-
-	.mCustomScrollBox {
-		-ms-touch-action: pan-x;
-		touch-action: pan-x;
+	.simplebar-dragging {
+		.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+			&::before {
+				background: #275c71;
+			}
+		}
 	}
-
-	.mCustomScrollBox.mCSB_vertical_horizontal {
-		-ms-touch-action: auto;
-		touch-action: auto;
-	}
-
-	.mCustomScrollBox.mCSB_horizontal {
-		-ms-touch-action: pan-y;
-		touch-action: pan-y;
+	.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+		height: 8px;
+		top: 0;
+		border-radius: 4px;
+		background: #64b0ce;
+		cursor: pointer;
+		&:hover {
+			&::before {
+				background: #275c71;
+			}
+		}
+		&::before {
+			left: 0;
+			right: 0;
+			background: #64b0ce;
+			opacity: 1;
+			box-shadow: inset 0 2px 4px 1px #3389a6;
+			transition: background 0.3s ease;
+		}
 	}
 }
 .h2 {
