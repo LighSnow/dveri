@@ -50,4 +50,7 @@
 
 
 // new SimpleBar(document.getElementById('myElement'));
-const simpleBar = new SimpleBar(document.getElementById('myElement'), { autoHide: false });
+
+if(document.querySelector('#myElement')) {
+  const simpleBar = new SimpleBar(document.getElementById('myElement'), { autoHide: false });
+}
