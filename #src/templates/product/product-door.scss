@@ -21,6 +21,8 @@
     margin-right: 20px;
     border-right: 1px solid #e7e7e7;
     border-left: 1px solid #e7e7e7;
+    display: flex;
+    align-items: center;
    }
   }
 
@@ -103,7 +105,7 @@
     display: flex;
     align-content: center;
     margin-bottom: 14px;
-
+    height: 25px;
     .product__rating {
      display: flex;
      align-items: center;
@@ -1298,11 +1300,11 @@
      &.radio-3 {
       .product__styles-size {
        .mCSB_inside>.mCSB_container {
-        margin-right: 15px;
+        margin-right: 12px;
        }
 
        .product__styles-choice {
-        margin-right: 15px;
+        margin-right: 5px;
        }
 
       }
@@ -1885,17 +1887,22 @@
     }
 
     .product__styles-icons {
-     max-width: 270px;
+     max-width: 100%;
      flex-wrap: wrap;
      display: flex;
     }
 
     .product__styles-texture {
      flex-direction: column;
+     .product-icon {
+      width: 35px;
+      height: 35px;
+     }
     }
 
     .product__styles-size {
      margin-right: 5px;
+
     }
    }
   }

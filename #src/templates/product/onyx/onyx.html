@@ -1,4 +1,4 @@
-<div class="product product-onyx">
+<div class="product product-onyx product-sliders">
     <div class="product__inner">
         <div class="product__inner-left">
             <div class="product__title">
@@ -353,18 +353,18 @@
                         <div class="product__settings-row btn-row">
                             <h2 class="setting-name setting-name-top">Остекление:</h2>
                             <div class="product__settings-row--controls">
-                                <button class="controls-btn onyx-select" data-glass-show="0" type="button">Глухая
+                                <button class="active controls-btn onyx-select"  data-glass-show="0" type="button">Глухая
                                 </button>
-                                <button class="active controls-btn onyx-select" data-glass-show="2" type="button">Со
+                                <button class="controls-btn onyx-select" data-glass-show="2" type="button">Со
                                     стеклом
                                 </button>
-                                <p data-glass-show="1">Для остекления модели используется стекло толщиной 4 мм сатинат,
+                                <p data-glass-show="1" style="display: none">Для остекления модели используется стекло толщиной 4 мм сатинат,
                                     сатинат бронза с различными видами обработки.
                                     Остекление может быть вместо любой филенки в любых комбинациях.</p>
                             </div>
                         </div>
-                        <div class="product__settings-row-glass-grid">
-                            <div class="product__settings-row grid-row grid-glass-settings" data-glass-show="1">
+                        <div class="product__settings-row-glass-grid" data-glass-show="1" style="display: none">
+                            <div class="product__settings-row grid-row grid-glass-settings">
                                 <div class="product__settings-row--inner lattice-type" data-onyx-main="9">
                                     <h2 class="setting-name setting-name-top">Внутренняя решетка:</h2>
                                     <select class="onyx-select nice-select" name="inner-lattice" id="">
@@ -397,7 +397,7 @@
                                 </div>
 
                             </div>
-                            <div class="product__settings-row grid glass-row" data-glass-show="1">
+                            <div class="product__settings-row grid glass-row">
                                 <div class="product__settings-row--outer lattice-type">
                                     <h2 class="setting-name setting-name-top">Обработка стекла:</h2>
                                     <select class="nice-select onyx-select glass-select" name="outer-lattice" id="">

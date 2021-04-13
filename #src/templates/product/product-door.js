@@ -17,7 +17,47 @@ $(function () {
     // для попап
     $(".link-for-fancybox-modal").fancybox({
         'hideOnContentClick': true,
-        touch: false
+        touch: false,
+        afterShow: function (callback) {
+            const settings = {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 460,
+                        settings: {
+                            slidesToShow: 3,
+                            arrows: false
+                        }
+                    }
+                ]
+            };
+            if ($('.preview-basket-add-duo').hasClass('fancybox-content')) {
+                $('.duo__slider-basket--inner').slick(settings);
+            } else if ($('.preview-popup-duo').hasClass('fancybox-content')) {
+                $('.duo__slider-modal--inner').slick(settings);
+            }
+        },
+        afterClose: function () {
+            if ($('.duo__slider-basket--inner').hasClass('slick-initialized')) {
+                $('.duo__slider-basket--inner').slick('unslick');
+            } else if ($('.duo__slider-modal--inner').hasClass('slick-initialized')) {
+                $('.duo__slider-modal--inner').slick('unslick');
+            }
+        }
     });
 
     // для картинок
@@ -90,22 +130,18 @@ $(function () {
         }
     }
 
-
-    $(".rating-block.static-rating").starRating({
-        readOnly: true,
-        starSize: body.find('.rating-block').attr('data-size'),
-
-    });
-
-    $(".rating-block.no-static-rating").starRating({
-
-    });
+    if(mediaWidth < 1200) {
+        $(".rating-block.static-rating").starRating({readOnly: true, starSize: 16});
+        $(".rating-block.no-static-rating").starRating({initialRating: 3, starSize: 16});
+    } else {
+        $(".rating-block.static-rating").starRating({readOnly: true});
+        $(".rating-block.no-static-rating").starRating({initialRating: 3});
+    }
 
 
-    $(".text-comment-hide").elimore({
-        maxLength: 322
-    });
 
+
+    $(".text-comment-hide").elimore({maxLength: 322});
     // плагины конец
     //<a class="more-comment-text" href="#">Читать польностью</a>
 
@@ -138,15 +174,19 @@ $(function () {
         productIconChoise($(this));
     });
 
-    body.on('click', '.interview-btn', function () {
-        productIconChoise($(this));
-    })
+    body.on('click', '.select-me', function () {
+        let likeCounter = +$(this).find('.interview-btn-counter').text();
+
+        $(this).find('.interview-btn-counter').text(likeCounter + 1);
+        $(this).addClass('current').removeClass('select-me').siblings().removeClass('select-me').addClass('sibling-selected');
+    });
     // выбор комплекта (смена цены и названия)
     body.on('click', '.choice-set', function () {
         const currentSet = $(this).text();
-        const newTitle = $(this).parents('.product__choose').find('.change-text-set');
-        const startText = $(this).parents('.product__choose').find('.without-set-text').text();
-        let counterPrice = $(this).parents('.product__choose').find('.price-counter-sum');
+        const parent = $(this).parents('.product__choose');
+        const newTitle = parent.find('.change-text-set');
+        const startText = parent.find('.without-set-text').text();
+        const counterPrice = parent.find('.price-counter-sum');
         const setPrice = +$(this).attr('data-price');
         const totalPrice = +counterPrice.attr('data-start-price')
 
@@ -159,6 +199,10 @@ $(function () {
         }
     });
 
+    //test
+    body.on('click', '.link-for-fancybox-modal', function (e) {
+
+    })
 
     // показываем элементы скрытые функцией showSomeItems
     body.on('click', '.show-all-btn', function () {
@@ -166,7 +210,7 @@ $(function () {
         const text = $(this).text();
 
         elem.toggle();
-        $(this).text(text == 'Показать всё' ? 'Скрыть' : 'Показать всё');
+        $(this).text(text === 'Показать всё' ? 'Скрыть' : 'Показать всё');
     });
 
 
@@ -182,7 +226,7 @@ $(function () {
     showSomeItems(1, $('.product__table-item'));
     showSomeItems(7, $('.product__characteristics-row'));
 
-    // переключатель current класса дочерних элементов
+    // // переключатель current класса дочерних элементов
     const productIconChoise = (elem) => {
         elem.addClass('current').siblings().removeClass('current');
     }
