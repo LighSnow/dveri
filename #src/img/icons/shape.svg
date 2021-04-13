@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="35" viewBox="0 0 21 35">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-        filter: url(#filter);
-      }
-    </style>
-    <filter id="filter" x="463.5" y="239" width="21" height="35" filterUnits="userSpaceOnUse">
-      <feGaussianBlur result="blur" in="SourceAlpha"/>
-      <feFlood result="flood" flood-opacity="0.15"/>
-      <feComposite result="composite" operator="out" in2="blur"/>
-      <feOffset result="offset" dx="-1.997" dy="0.105"/>
-      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
-      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
-    </filter>
-  </defs>
-  <path id="shape" class="cls-1" d="M479.688,274H463.5a24.374,24.374,0,0,0,0-35h16.188A34.23,34.23,0,0,1,479.688,274Z" transform="translate(-463.5 -239)"/>
+<svg width="548" height="548" viewBox="0 0 548 548" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)" filter="url(#filter0_i)">
+<path d="M379.052 548H119.354C141.274 526.628 237.832 427.933 238.216 274.932C238.599 120.724 141.055 21.1528 119.354 0C205.938 0 292.522 0 379.052 0C406.068 44.8812 457.087 143.74 456.265 277.178C455.443 407 406.013 503.228 379.052 548Z" fill="white" stroke="white" stroke-width="1.0491" stroke-miterlimit="10"/>
+</g>
+<defs>
+<filter id="filter0_i" x="-9" y="0" width="557" height="548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-9"/>
+<feGaussianBlur stdDeviation="4.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<clipPath id="clip0">
+<rect width="548" height="548" fill="white"/>
+</clipPath>
+</defs>
 </svg>

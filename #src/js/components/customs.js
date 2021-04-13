@@ -239,4 +239,11 @@ $(function () {
     //     }
     // });
 
+    $('.category__aside-list').on('click', '.category__aside-list__title', function (e) {
+        e.preventDefault();
+        $(this)
+            .toggleClass('active')
+            .next('.category__aside-dropdown')
+            .slideToggle();
+    });
 });
