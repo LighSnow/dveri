@@ -166,3 +166,95 @@
         </div>
     </div>
 </div>
+<div class="product-popup preview-basket-add preview-basket-add-duo" id="basket-fast-add-duo">
+    <div class="modal__wrapper _wrapper-duo">
+        <div class="modal__wrapper-photo">
+            <div class="duo-door-item">
+                <a class="fancybox-link-img first-door-fancy" href="../../img/product/product-duo-slider-for-1-1.jpg"></a>
+                <img src="../../img/product/product-duo-slider-for-1-1.jpg" alt="">
+            </div>
+            <div class="duo-door-item">
+                <a class="fancybox-link-img second-door-fancy" href="../../img/product/product-duo-slider-for-1.jpg"></a>
+                <img src="../../img/product/product-duo-slider-for-1.jpg" alt="" class="second-door-look">
+                <div class="duo-door-item-info">
+                    <div>Здесь название внутренней панели</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal__wrapper-content">
+            <div class="modal-f__content">
+                <div class="modal-f__content-title">товар добавлен в корзину</div>
+                <div class="modal-f__content-name">Межкомнатная одностворчатая дверь СМАЛЬТА 11 остеклённая, cлоновая
+                    кость,
+                    платина, золото
+                </div>
+                <div class="modal-f__content-price">
+                    <div class="modal-f__content-counter">
+                        <div class="modal-f__content-articl">Артикул: ТК2503</div>
+                        <div class="modal-f__content-title-counter">Колличество:</div>
+                        <div class="quantity-counter">
+                            <div class="number-picker"></div>
+                        </div>
+                    </div>
+                    <div class="modal-f__content-total"><span>Сумма: </span>11 607 ₽</div>
+                </div>
+                <div class="modal-f__content-btn">
+                    <a class="btn-product go-next close-btn" href="javascript:void(0)" data-fancybox-close>Продолжить покупки</a>
+                    <a class="btn-product basket" href="javascript:void(0)">Перейти в корзину</a>
+                </div>
+                <div class="modal-f__content-radios product__styles">
+                    <div class="modal-f__content-wrapper">
+                        <div class="product__styles-size">
+                            <div class="modal-f__content-radioname">Размер:</div>
+                            <div class="modal-f__content-radio">
+                                <div class="product__choice-line radio-global">
+                                    <input checked id="choice-basket-size-1" type="radio" name="choice-size-basket">
+                                    <label for="choice-basket-size-1">400x2000</label>
+                                </div>
+                                <div class="product__choice-line radio-global">
+                                    <input id="choice-basket-size-2" type="radio" name="choice-size-basket">
+                                    <label for="choice-basket-size-2">550x1900</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__styles-size">
+                            <div class="modal-f__content-radioname">Сторона:</div>
+                            <div class="product__styles-choice">
+                                <div class="product__choice-line radio-global">
+                                    <input checked id="choice-basket-part-1" type="radio" name="choice-part-basket">
+                                    <label for="choice-basket-part-1">правая</label>
+                                </div>
+                                <div class="product__choice-line radio-global">
+                                    <input id="choice-basket-part-2" type="radio" name="choice-part-basket">
+                                    <label for="choice-basket-part-2">левая</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__styles-slider duo__slider">
+                        <div class="modal-f__content-radioname">Внутренние панели:</div>
+                        <div class="duo__slider-basket--inner">
+                            @@for(let i = 1; i < 6; i++) {
+                            <div class="duo__slider-item">
+                                <div class="duo__slider-item--img" data-door="`+i+`">
+                                    <img src="../../img/product/duo/duo-slider-`+i+`.png" alt="">
+                                </div>
+                            </div>
+                            }
+                            @@for(let i = 1; i < 6; i++) {
+                            <div class="duo__slider-item">
+                                <div class="duo__slider-item--img" data-door="`+i+`">
+                                    <img src="../../img/product/duo/duo-slider-`+i+`.png" alt="">
+                                </div>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-f__content-cancel">
+                    <a href="javascript:void(0)" data-fancybox-close>Отменить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -14,3 +14,4 @@
 @@include('../templates/reviews/reviews.js', {})
 @@include('../templates/product/product-door.js', {})
 @@include('../templates/product/onyx/onyx.js', {})
+@@include('../templates/product/duo/duo.js', {})

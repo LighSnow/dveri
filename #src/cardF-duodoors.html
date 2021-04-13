@@ -2,23 +2,24 @@
 <html lang="ru">
 @@include('_head.html')
 
-<body class="body-product body-product-twodoor">
+<body class="body-product">
 @@include('templates/header/header.html')
 @@include('templates/header/mobile/mobile.html')
 <div class="container">
     @@include('templates/navigation/navigation.html')
     @@include('templates/breadcrumbs/breadcrumbs.html')
-    @@include('templates/product/product-door.html', {
-    sliderFor: '../../img/product/product-twodoor-slider-for.png',
-    forPage: 'twoDoor',
+    @@include('templates/product/duo/duo.html', {
+    sliderForF: '../../img/product/product-duo-slider-for-1-1.jpg',
+    sliderForD: '../../img/product/product-duo-slider-for-1.jpg',
+    forPage: 'door',
     dopTools: {
-    '0': '../../img/product/tool-0.png',
-    '1': '../../img/product/tool-1.png',
-    '2': '../../img/product/tool-2.png',
-    '3': '../../img/product/tool-3.png',
-    '4': '../../img/product/tool-4.png',
-    '5': '../../img/product/tool-5.png',
-    '6': '../../img/product/tool-6.png',
+    '0': '../../img/product/tool-7.png',
+    '1': '../../img/product/tool-8.png',
+    '2': '../../img/product/tool-9.png',
+    '3': '../../img/product/glass-tool-1.png',
+    '4': '../../img/product/tool-5.png',
+    '5': '../../img/product/tool-10.png',
+    '6': '../../img/product/tool-11.png',
     }
     })
     <div class="product__information">
@@ -116,7 +117,7 @@
                         </div>
                         <!-- /.product__characteristics-info -->
                         <div class="product__characteristics-photo">
-                            <img src="img/product/characteristics-phono-1.png" alt="">
+                            <img src="img/product/characteristics-phono-2.png" alt="">
                         </div>
                         <!-- /.product__characteristics-photo -->
                     </div>
@@ -247,7 +248,7 @@
                             </tr>
                             <tr>
                                 <td>8</td>
-                                <td>Установка двустворчатой двери <span>(эмаль, шпон)</span> </td>
+                                <td>Установка двустворчатой двери <span>(эмаль, шпон)</span></td>
                                 <td>4 800 ₽</td>
                             </tr>
                             <tr>
@@ -267,7 +268,7 @@
                             </tr>
                             <tr>
                                 <td>12</td>
-                                <td>Установка раздвижной одностворчатой <span>(без обрамления)</span> </td>
+                                <td>Установка раздвижной одностворчатой <span>(без обрамления)</span></td>
                                 <td>2 500 ₽</td>
                             </tr>
                             <tr>
@@ -335,7 +336,7 @@
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Установка  доборов свыше 200 мм
+                                <td>Установка доборов свыше 200 мм
                                 </td>
                                 <td>1 200 ₽</td>
                             </tr>
@@ -361,7 +362,7 @@
                             </tr>
                             <tr>
                                 <td>10</td>
-                                <td>Коррекция дверной коробки <span>(паз под добор)</span>  1 комплект
+                                <td>Коррекция дверной коробки <span>(паз под добор)</span> 1 комплект
                                 </td>
                                 <td>500 ₽</td>
                             </tr>
@@ -463,12 +464,12 @@
                             </tr>
                             <tr>
                                 <td>30</td>
-                                <td>Ложный выезд мастера </td>
+                                <td>Ложный выезд мастера</td>
                                 <td>1 00 ₽</td>
                             </tr>
                             <tr>
                                 <td>31</td>
-                                <td>Выезд мастеров за МКАД </td>
+                                <td>Выезд мастеров за МКАД</td>
                                 <td>35 ₽ / км</td>
                             </tr>
                             </tbody>
@@ -560,34 +561,36 @@
     @@include('templates/viewed-products/viewed-products.html', {
     title: "Похожие товары",
     class: 'link-for-fancybox-modal',
-    dataAttr1: '#preview-product-twodoor',
-    dataAttr2: '#basket-fast-add-twodoor'
+    dataAttr1: '#preview-product-duo',
+    dataAttr2: '#basket-fast-add-duo'
     })
     @@include('templates/viewed-products/viewed-products.html', {
     title: "С этим товаром покупают",
     class: 'link-for-fancybox-modal',
-    dataAttr1: '#preview-product-twodoor',
-    dataAttr2: '#basket-fast-add-twodoor'
+    dataAttr1: '#preview-product-duo',
+    dataAttr2: '#basket-fast-add-duo'
     })
     @@include('templates/product/reviews/reviews.html')
     @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'link-for-fancybox-modal',
-    dataAttr1: '#preview-product-twodoor',
-    dataAttr2: '#basket-fast-add-twodoor'
+    dataAttr1: '#preview-product-duo',
+    dataAttr2: '#basket-fast-add-duo'
     })
 </div>
 @@include('templates/footer/footer.html')
 
 <div class="scroll-top"></div>
 <div class="overflow-navigation"></div>
+
 @@include('templates/modal/measurer.html')
 @@include('templates/modal/call.html')
 @@include('templates/modal/alert.html')
-@@include('templates/product/popup/popup.html')
+@@include('templates/product/popup/popup.html', {
+forPage: 'door'
+})
 @@include('templates/basket-adding/fast-basket-adding.html')
 @@include('templates/basket-adding/basket-adding.html')
-@@include('templates/basket-adding/basket-adding-twodoor.html')
 @@include('templates/product-preview/product-preview.html')
 <!-- /.fast-preview-popup -->
 

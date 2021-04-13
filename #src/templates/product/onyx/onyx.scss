@@ -34,6 +34,7 @@
   }
 
   .js-setting-input {
+
     &.open {
       &::after {
         content: '';
@@ -68,7 +69,7 @@
   .setting-input {
     position: relative;
     cursor: pointer;
-
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:hover {
       .onyx-select {
@@ -153,7 +154,7 @@
 
       .onyx__photo-promo {
         position: absolute;
-        left: 0;
+        left: -1px;
         top: 10px;
         display: flex;
         flex-direction: column;
@@ -275,7 +276,7 @@
         }
 
         &.onyx-4 {
-          transform: translate(-50%, 9%);
+          transform: translate(-50%,7.2%);
           max-width: 210px;
         }
 
@@ -670,45 +671,7 @@
               }
             }
 
-            // slick arrow
-            .slick-arrow {
-              position: absolute;
-              top: 50%;
-              transform: translateY(-100%);
-              width: 24px;
-              height: 34px;
-              box-shadow: 0 0 4px 1px rgba(175, 174, 175, 0.43);
-              border-radius: 4px;
-              border: none;
-              background-color: #64b0ce;
-              font-size: 0;
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: 18px;
-              cursor: pointer;
-              z-index: 990;
-              transition: .3s;
 
-              &:hover {
-                background-color: #085892;
-              }
-
-              &::before {
-                content: '\e91e';
-                font-family: 'icomoon';
-                font-size: 15px;
-                color: #ffff;
-              }
-
-              &.slick-next {
-                right: -13px;
-              }
-
-              &.slick-prev {
-                left: -13px;
-                transform: translateY(-100%) rotate(180deg);
-              }
-            }
           }
         }
 
@@ -757,6 +720,30 @@
               align-items: center;
               margin-right: 10px;
               cursor: pointer;
+              .glasstype__inner-img {
+                border-radius: 10px;
+                width: 80px;
+                height: 80px;
+                overflow: hidden;
+                border: 2px solid transparent;
+                img {
+                  width: 83px;
+                  height: 83px;
+                  max-width: max-content;
+                  max-height: max-content;
+                }
+                &:hover {
+                  border-color: #64b0ce;
+                }
+              }
+              &.current {
+                .glasstype__inner-img {
+                 border-color: #085892;
+                  &:hover {
+                    border-color: #085892;
+                  }
+                }
+              }
             }
 
             &-text {
@@ -793,7 +780,47 @@
     }
   }
 }
+.product-sliders {
+  // slick arrow
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    width: 24px;
+    height: 34px;
+    box-shadow: 0 0 4px 1px rgba(175, 174, 175, 0.43);
+    border-radius: 4px;
+    border: none;
+    background-color: #64b0ce;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    cursor: pointer;
+    z-index: 990;
+    transition: .3s;
 
+    &:hover {
+      background-color: #085892;
+    }
+
+    &::before {
+      content: '\e91e';
+      font-family: 'icomoon';
+      font-size: 15px;
+      color: #ffff;
+    }
+
+    &.slick-next {
+      right: -13px;
+    }
+
+    &.slick-prev {
+      left: -13px;
+      transform: translateY(-100%) rotate(180deg);
+    }
+  }
+}
 
 
 @media (max-width: 1200px) {
@@ -804,7 +831,11 @@
         justify-content: center;
       }
     }
-
+    .product__inner {
+      .product__photo-info {
+        justify-content: flex-start;
+      }
+    }
     //global
     .setting-row {
 
@@ -1004,7 +1035,7 @@
         &-act {
           justify-content: center;
           .product__act-btn {
-            justify-content: space-between;
+            justify-content: flex-start;
           }
         }
       }
@@ -1018,6 +1049,7 @@
           margin-bottom: 0;
           &.grid {
             grid-template-columns: 280px 280px;
+            display: grid;
           }
           &.column {
           }
@@ -1435,13 +1467,13 @@
           }
           &.onyx-1 {
             max-width: 119px;
-            height: 270px;
+            height: 240px;
             transform: translate(-50%,-47%);
           }
 
           &.onyx-2 {
             transform: translate(-50%,6%);
-            height: 280px;
+            height: 252px;
             max-width: 140px;
             img {
             }
@@ -1453,7 +1485,7 @@
           }
 
           &.onyx-4 {
-            transform: translate(-50%,7%);
+            transform: translate(-50%,5.5%);
             max-width: 140px;
           }
 
@@ -1805,7 +1837,11 @@
     }
 
     //-----------------------
-
+    .product__inner {
+      .product__photo-info {
+        justify-content:center;
+      }
+    }
 
     .product__photo {
       max-width: 100%;
@@ -1904,33 +1940,50 @@
           }
 
           &.onyx-1 {
+            max-width: 120px;
+            height: 250px;
           }
 
           &.onyx-2 {
-
+            transform: translate(-50%,9%);
+            height: 264px;
+            max-width: 138px;
             img {
             }
           }
 
           &.onyx-3 {
+            transform: translate(-50%,4%);
           }
 
           &.onyx-4 {
+            transform: translate(-50%,9%);
+            width: 138px;
           }
 
           &.onyx-5 {
+            transform: translate(-50%,14%);
+            width: 138px;
           }
 
           &.onyx-6 {
+            transform: translate(-50%,-26%);
+            width: 138px;
           }
 
           &.onyx-7 {
           }
 
           &.onyx-8 {
+            max-width: 110px;
+            height: 259px;
+            transform: translate(-50%,13%);
           }
 
           &.onyx-9 {
+            max-width: 118px;
+            height: 258px;
+            transform: translate(-50%,14%);
           }
         }
       }
@@ -2009,13 +2062,13 @@
           &.grid-glass-settings {
           }
           &.grid {
-            grid-template-columns: 50%;
+            grid-template-columns: 100%;
             grid-template-rows: 1fr 1fr;
             justify-content: center;
           }
           &.glass-row {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
           }
 
           &.column {

@@ -16,7 +16,7 @@
   var noop = function(){};
   var defaults = {
     totalStars: 5,
-    useFullStars: false,
+    useFullStars: true,
     starShape: 'rounded',
     emptyColor: '#dbdbdb',
     hoverColor: '#fe8a61',
@@ -33,7 +33,7 @@
     strokeWidth: 4,
     strokeColor: '№dbdbdb',
     initialRating: 3.5,
-    starSize: 15,
+    starSize: 20,
     callback: noop,
     onHover: noop,
     onLeave: noop
