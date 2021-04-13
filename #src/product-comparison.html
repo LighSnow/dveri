@@ -100,7 +100,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-						<div class="rating-block static-rating"></div>
+							<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -146,7 +146,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-						<div class="rating-block static-rating"></div>
+							<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -192,7 +192,7 @@
 							<span>4 444 ₽</span>
 						</div>
 						<div class="product-comparison__row">
-						<div class="rating-block static-rating"></div>
+							<div class="rating-block static-rating"></div>
 						</div>
 						<div class="product-comparison__row">
 							<span>SPE1440</span>
@@ -231,12 +231,7 @@
 					</div>
 				</div>
 			</div>
-			@@include('templates/viewed-products/viewed-products.html', {
-				title: "Посмотренные товары",
-				class: 'link-for-fancybox-modal',
-				dataAttr1: '#preview-product',
-				dataAttr2: '#basket-fast-add'
-				})
+			@@include('templates/viewed-products/viewed-products.html', { title: "Посмотренные товары", class: 'link-for-fancybox-modal', dataAttr1: '#preview-product', dataAttr2: '#basket-fast-add' })
 		</div>
 		@@include('templates/footer/footer.html')
 
@@ -244,6 +239,6 @@
 		<div class="overflow-navigation"></div>
 
 		<!-- Modals -->
-		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('_script.html')
+		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('_script.html') @@include('templates/basket-adding/fast-basket-adding.html') @@include('templates/basket-adding/basket-adding.html')
 	</body>
 </html>
