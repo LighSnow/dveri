@@ -1361,7 +1361,10 @@
 		color: #fd5e1c;
 	}
 	.delivery-address.input-w100 {
-		margin: 0px 0px 0px 0px;
+		@media (max-width: 767.98px) {
+			margin: 0px 0px 0px 0px;
+		}
+
 	}
 	.delivery-address-text {
 		font-size: 12px;
