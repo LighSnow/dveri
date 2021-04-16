@@ -239,7 +239,7 @@ $(function () {
     //     }
     // });
 
-    $('.category__aside-list').on('click', '.category__aside-list__title', function (e) {
+    $('.category__aside').on('click', '.category__aside-list__title', function (e) {
         e.preventDefault();
         $(this)
             .toggleClass('active')

@@ -96,7 +96,49 @@ a {
   height: 100%;
   z-index: 9999;
 }
+.radio-checkbox-global {
+  input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
 
+  input:checked ~ label {
+    &::after {
+      content: '\e918';
+    }
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    display: flex;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #e7e7e7;
+      position: absolute;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      font-family: icomoon;
+      left: 4px;
+      color: #004e8d;
+      font-size: 12px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}
 .body-product,
 .product-popup {
   .buy-click {
@@ -187,49 +229,7 @@ a {
     }
   }
 
-  .radio-checkbox-global {
-    input {
-      position: absolute;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-    }
 
-    input:checked ~ label {
-      &::after {
-        content: '\e918';
-      }
-    }
-
-    label {
-      position: relative;
-      cursor: pointer;
-      padding-left: 30px;
-      display: flex;
-
-      &::before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        border-radius: 4px;
-        border: 1px solid #e7e7e7;
-        position: absolute;
-        left: 0;
-      }
-
-      &::after {
-        content: '';
-        font-family: icomoon;
-        left: 4px;
-        color: #004e8d;
-        font-size: 12px;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-      }
-    }
-  }
 
   .close-btn.close-x {
     position: absolute;

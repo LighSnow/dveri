@@ -8,4 +8,5 @@
 @@include('jquery.validate.js', {})
 @@include('jquery.mask.js', {})
 @@include('simplebar.js', {})
+@@include('ion.rangeSlider.js', {})
 
