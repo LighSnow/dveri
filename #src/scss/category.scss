@@ -1,5 +1,6 @@
 .category {
   padding: 13px 0 0 0;
+  display: flex;
   // .category__aside
 
   &__aside {
@@ -39,7 +40,7 @@
         content: '\e91e';
         position: absolute;
         font-family: 'icomoon' !important;
-        right: 0px;
+        right: 2px;
         top: 8px;
         font-weight: 600;
         font-size: 13px;
