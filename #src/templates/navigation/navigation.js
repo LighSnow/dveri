@@ -1,16 +1,16 @@
 // Пошук в навігації
-$('.navigation__search_close').on('click', function (e){
+$('.navigation__search_close').on('click', function (e) {
     e.preventDefault();
     $('.navigation__search').fadeOut();
 });
-$('.navigation__search_link').on('click', function (e){
+$('.navigation__search_link').on('click', function (e) {
     e.preventDefault();
     $('.navigation__search').fadeIn();
 });
 
 
 // Фіксація навігації при скролі
-$(document).on('scroll', function(){
+$(document).on('scroll', function () {
     let documentScroll = $(this).scrollTop();
     if (documentScroll >= 124) {
         $('.navigation').addClass('fixed');
@@ -28,7 +28,7 @@ $(document).ready(function () {
     //     navigationTree();
     // });
     navigationTree();
-    function navigationTree(){
+    function navigationTree() {
         let newWindowWidth = $(window).width();
         if (newWindowWidth < 1200) {
             const catalogLink = $('.navigation__catalog');
@@ -44,19 +44,19 @@ $(document).ready(function () {
                 $('.catalog-menu').toggleClass('active');
                 body.toggleClass('lock');
             });
-            navTabletLink.on('click', function (e){
+            navTabletLink.on('click', function (e) {
                 e.preventDefault();
                 let thisContent = $(this).attr('href');
                 navTabletContent.removeClass('active');
                 $(thisContent).addClass('active');
             });
-            navTabletTitle.on('click', function (e){
+            navTabletTitle.on('click', function (e) {
                 e.preventDefault();
                 let thisContent = $(this).attr('href');
                 navTabletContent.removeClass('active');
                 $(thisContent).addClass('active');
             });
-            navTabletOverflow.on('click', function (e){
+            navTabletOverflow.on('click', function (e) {
                 e.preventDefault();
                 catalogLink.removeClass('active');
                 navTabletOverflow.fadeOut();
@@ -64,5 +64,32 @@ $(document).ready(function () {
                 body.removeClass('lock');
             });
         }
+    }
+    fillterToggle();
+    function fillterToggle() {
+        const navTabletOverflow = $('.overflow-navigation');
+        const fillterBtn = $('.category__main-filters__btn');
+        const fillterWrapper = $('.category__aside');
+        const body = $('body');
+        const closeBtn = $('.category__filter-close');
+        fillterBtn.on('click', function (e) {
+            fillterWrapper.toggleClass('active');
+            navTabletOverflow.fadeToggle();
+            body.toggleClass('lock');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              });
+        });
+        navTabletOverflow.on('click', function (e) {
+            fillterWrapper.removeClass('active');
+            navTabletOverflow.fadeOut();
+            body.removeClass('lock');
+        });
+        closeBtn.on('click', function (e) {
+            fillterWrapper.removeClass('active');
+            navTabletOverflow.fadeOut();
+            body.removeClass('lock');
+        });
     }
 });
