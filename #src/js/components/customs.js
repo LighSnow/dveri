@@ -246,19 +246,4 @@ $(function () {
             .next('.category__aside-dropdown')
             .slideToggle();
     });
-
-    $('.toggle__list').on('click', '.toggle__item--hide', function (e) {
-
-        $(this).hasClass('active') ?
-            $(this).html(`<span>Показать</span>
-            <span class="show"></span>`) :
-            $(this).html(`<span>Скрыть</span>
-            <span class="hide"></span>`);
-    });
-
-
-    $('.category__main-filters').on('click', '.category__main-filters__item--delete', function (e) {
-        $(this).parent().toggleClass('active');
-    });
-
 });
