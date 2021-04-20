@@ -109,6 +109,12 @@
     .product__rating {
      display: flex;
      align-items: center;
+     .js-scroll-reviews {
+      cursor: pointer;
+      &:hover {
+       text-decoration: underline;
+      }
+     }
     }
    }
 
@@ -743,8 +749,8 @@
     }
 
     &.table-controls {
-     flex: 0 0 23%;
-     max-width: 23%;
+     flex: 0 0 25%;
+     max-width: 25%;
 
      .buy-basket-btn {
       padding: 8px 15px 8px 40px;
@@ -998,7 +1004,7 @@
      display: block;
      margin: 0;
      border: none;
-     padding: 10px 0;
+     padding: 5px 0;
     }
 
 
@@ -1156,6 +1162,7 @@
     &.table-controls {
 
      .buy-basket-btn {
+      font-size: 13px;
       padding: 8px 2px 8px 22px;
       max-width: 180px;
 

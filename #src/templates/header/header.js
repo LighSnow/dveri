@@ -7,6 +7,7 @@ $(function () {
         e.preventDefault();
         $('.navigation__search').fadeOut().removeClass('active');
     });
+
     $('.navigation__search_link').on('click', function (e){
         e.preventDefault();
         $('.navigation__search').fadeIn().addClass('active');

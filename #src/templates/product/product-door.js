@@ -213,7 +213,13 @@ $(function () {
         $(this).text(text === 'Показать всё' ? 'Скрыть' : 'Показать всё');
     });
 
-
+    // скролл на отзывы
+    body.on('click', '.js-scroll-reviews', function () {
+        window.scrollTo({
+            top: body.find('.product__review').position().top + 50,
+            behavior: 'smooth'
+        });
+    });
     // функции вызова
     const showSomeItems = (num, el) => {
         el.each((i, elem) => {

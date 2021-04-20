@@ -24,10 +24,8 @@ $(document).on('scroll', function () {
 
 // Навігаційне дерево для планшетної версії
 $(document).ready(function () {
-    // $(window).on("resize", function (e) {
-    //     navigationTree();
-    // });
     navigationTree();
+
     function navigationTree() {
         let newWindowWidth = $(window).width();
         if (newWindowWidth < 1200) {
@@ -37,6 +35,7 @@ $(document).ready(function () {
             const navTabletContent = $('.navigation-tablet__list');
             const navTabletOverflow = $('.overflow-navigation');
             const body = $('body');
+
             catalogLink.on('click', function (e) {
                 e.preventDefault();
                 navTabletOverflow.fadeToggle();
@@ -65,29 +64,36 @@ $(document).ready(function () {
             });
         }
     }
-    fillterToggle();
-    function fillterToggle() {
+
+    filterToggle();
+
+    function filterToggle() {
         const navTabletOverflow = $('.overflow-navigation');
-        const fillterBtn = $('.category__main-filters__btn');
-        const fillterWrapper = $('.category__aside');
+        const filterBtn = $('.category__main-filters__btn');
+        const filterWrapper = $('.category__aside');
         const body = $('body');
         const closeBtn = $('.category__filter-close');
-        fillterBtn.on('click', function (e) {
-            fillterWrapper.toggleClass('active');
+        let scrollTo;
+        filterBtn.on('click', function (e) {
+            filterWrapper.toggleClass('active');
             navTabletOverflow.fadeToggle();
             body.toggleClass('lock');
+            $(this).parents('.category__main-select').length > 0 ?
+                scrollTo = 0 : scrollTo = $('.category__main-filters').position().top - 30;
             window.scrollTo({
-                top: 0,
-                behavior: 'smooth',
-              });
+                top: scrollTo,
+                behavior: 'smooth'
+            });
         });
+
         navTabletOverflow.on('click', function (e) {
-            fillterWrapper.removeClass('active');
+            filterWrapper.removeClass('active');
             navTabletOverflow.fadeOut();
             body.removeClass('lock');
         });
+
         closeBtn.on('click', function (e) {
-            fillterWrapper.removeClass('active');
+            filterWrapper.removeClass('active');
             navTabletOverflow.fadeOut();
             body.removeClass('lock');
         });
