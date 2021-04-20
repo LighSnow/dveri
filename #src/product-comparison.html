@@ -1,244 +1,275 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html')
+@@include('_head.html')
 
-	<body>
-		@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
-		<div class="container">
-			@@include('templates/navigation/navigation.html')
-			<div class="product-comparison">
-				<h1 class="h2">Сравнение товаров</h1>
-				<div class="product-comparison__inner" id="myElement">
-					<div class="product-comparison__column product-comparison__column--125 pos">
-						<div class="product-comparison__row product-comparison__row--h262">
-							<a class="product-comparison__hide" href="#">Скрыть одинаковые свойства</a>
-						</div>
-						<div class="product-comparison__row">
-							<span>Цена:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Рейтинг:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Артикул:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Стиль:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Цвет:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Полотно:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Материал:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Тип:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Толщина:</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Производитель:</span>
-						</div>
-						<div class="product-comparison__row"></div>
-					</div>
-					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h262">
-							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
-							<img src="./img/comparison/comparison-img.png" alt="" />
-						</div>
-						<div class="product-comparison__row">
-							<span>4 444 ₽</span>
-						</div>
-						<div class="product-comparison__row">
-							<div class="rating-block static-rating"></div>
-						</div>
-						<div class="product-comparison__row">
-							<span>SPE1440</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Классика</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Дуб французский капучино</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Массив хвойных пород / МДФ</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Натуральный шпон </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Со стеклом </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>40 мм </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Владимирские двери </span>
-						</div>
-						<div class="product-comparison__row product-comparison__row--flr">
-							<a href="#" class="product-comparison__delete">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
-									<g>
-										<g><path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z" /></g>
-									</g>
-								</svg>
-								<span>Удалить</span>
-							</a>
-						</div>
-					</div>
-					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h262">
-							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
-							<img src="./img/comparison/comparison-img-2.png" alt="" />
-						</div>
-						<div class="product-comparison__row">
-							<span>4 444 ₽</span>
-						</div>
-						<div class="product-comparison__row">
-							<div class="rating-block static-rating"></div>
-						</div>
-						<div class="product-comparison__row">
-							<span>SPE1440</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Классика</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Дуб французский капучино</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Массив хвойных пород / МДФ</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Натуральный шпон </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Со стеклом </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>40 мм </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Владимирские двери </span>
-						</div>
-						<div class="product-comparison__row product-comparison__row--flr">
-							<a href="#" class="product-comparison__delete">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
-									<g>
-										<g><path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z" /></g>
-									</g>
-								</svg>
-								<span>Удалить</span>
-							</a>
-						</div>
-					</div>
-					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h262">
-							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
-							<img src="./img/comparison/comparison-img-3.png" alt="" />
-						</div>
-						<div class="product-comparison__row">
-							<span>4 444 ₽</span>
-						</div>
-						<div class="product-comparison__row">
-							<div class="rating-block static-rating"></div>
-						</div>
-						<div class="product-comparison__row">
-							<span>SPE1440</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Классика</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Дуб французский капучино</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Массив хвойных пород / МДФ</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Натуральный шпон </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Со стеклом </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>40 мм </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Владимирские двери </span>
-						</div>
-						<div class="product-comparison__row product-comparison__row--flr">
-							<a href="#" class="product-comparison__delete">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
-									<g>
-										<g><path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z" /></g>
-									</g>
-								</svg>
-								<span>Удалить</span>
-							</a>
-						</div>
-					</div>
-					<div class="product-comparison__column product-comparison__column--tac">
-						<div class="product-comparison__row product-comparison__row--h262">
-							<span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
-							<img src="./img/comparison/comparison-img.png" alt="" />
-						</div>
-						<div class="product-comparison__row">
-							<span>4 444 ₽</span>
-						</div>
-						<div class="product-comparison__row">
-							<div class="rating-block static-rating"></div>
-						</div>
-						<div class="product-comparison__row">
-							<span>SPE1440</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Классика</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Дуб французский капучино</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Массив хвойных пород / МДФ</span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Натуральный шпон </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Со стеклом </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>40 мм </span>
-						</div>
-						<div class="product-comparison__row">
-							<span>Владимирские двери </span>
-						</div>
-						<div class="product-comparison__row product-comparison__row--flr">
-							<a href="#" class="product-comparison__delete">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
-									<g>
-										<g><path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z" /></g>
-									</g>
-								</svg>
-								<span>Удалить</span>
-							</a>
-						</div>
-					</div>
+<body>
+@@include('templates/header/header.html') @@include('templates/header/mobile/mobile.html')
+<div class="container">
+    @@include('templates/navigation/navigation.html')
+    <div class="product-comparison">
+        <h1 class="h2">Сравнение товаров</h1>
+        <div class="product-comparison__inner" id="myElement">
+            <div class="product-comparison__column product-comparison__column--125 pos">
+                <div class="product-comparison__row product-comparison__row--h262">
+                    <a class="product-comparison__hide" href="#">Скрыть одинаковые свойства</a>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Цена:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Рейтинг:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Артикул:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Стиль:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Цвет:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Полотно:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Материал:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Тип:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Толщина:</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Производитель:</span>
+                </div>
+                <div class="product-comparison__row"></div>
+            </div>
+            <div class="product-comparison__column product-comparison__column--tac">
+                <div class="product-comparison__row product-comparison__row--h262">
+                    <span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
+                    <img src="./img/comparison/comparison-img.png" alt=""/>
+                </div>
+                <div class="product-comparison__row">
+                    <span>4 444 ₽</span>
+                </div>
+                <div class="product-comparison__row">
+                    <div class="rating-block static-rating"></div>
+                </div>
+                <div class="product-comparison__row">
+                    <span>SPE1440</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Классика</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Дуб французский капучино</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Массив хвойных пород / МДФ</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Натуральный шпон </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Со стеклом </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>40 мм </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Владимирские двери </span>
+                </div>
+                <div class="product-comparison__row product-comparison__row--flr">
+                    <a href="#" class="product-comparison__delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
+                            <g>
+                                <g>
+                                    <path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Удалить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="product-comparison__column product-comparison__column--tac">
+                <div class="product-comparison__row product-comparison__row--h262">
+                    <span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
+                    <img src="./img/comparison/comparison-img-2.png" alt=""/>
+                </div>
+                <div class="product-comparison__row">
+                    <span>4 444 ₽</span>
+                </div>
+                <div class="product-comparison__row">
+                    <div class="rating-block static-rating"></div>
+                </div>
+                <div class="product-comparison__row">
+                    <span>SPE1440</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Классика</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Дуб французский капучино</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Массив хвойных пород / МДФ</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Натуральный шпон </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Со стеклом </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>40 мм </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Владимирские двери </span>
+                </div>
+                <div class="product-comparison__row product-comparison__row--flr">
+                    <a href="#" class="product-comparison__delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
+                            <g>
+                                <g>
+                                    <path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Удалить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="product-comparison__column product-comparison__column--tac">
+                <div class="product-comparison__row product-comparison__row--h262">
+                    <span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
+                    <img src="./img/comparison/comparison-img-3.png" alt=""/>
+                </div>
+                <div class="product-comparison__row">
+                    <span>4 444 ₽</span>
+                </div>
+                <div class="product-comparison__row">
+                    <div class="rating-block static-rating"></div>
+                </div>
+                <div class="product-comparison__row">
+                    <span>SPE1440</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Классика</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Дуб французский капучино</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Массив хвойных пород / МДФ</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Натуральный шпон </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Со стеклом </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>40 мм </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Владимирские двери </span>
+                </div>
+                <div class="product-comparison__row product-comparison__row--flr">
+                    <a href="#" class="product-comparison__delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
+                            <g>
+                                <g>
+                                    <path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Удалить</span>
+                    </a>
+                </div>
+            </div>
+            <div class="product-comparison__column product-comparison__column--tac">
+                <div class="product-comparison__row product-comparison__row--h262">
+                    <span>СМАЛЬТА 11 остеклённая, cлоновая кость патина золото</span>
+                    <img src="./img/comparison/comparison-img.png" alt=""/>
+                </div>
+                <div class="product-comparison__row">
+                    <span>4 444 ₽</span>
+                </div>
+                <div class="product-comparison__row">
+                    <div class="rating-block static-rating"></div>
+                </div>
+                <div class="product-comparison__row">
+                    <span>SPE1440</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Классика</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Дуб французский капучино</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Массив хвойных пород / МДФ</span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Натуральный шпон </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Со стеклом </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>40 мм </span>
+                </div>
+                <div class="product-comparison__row">
+                    <span>Владимирские двери </span>
+                </div>
+                <div class="product-comparison__row product-comparison__row--flr">
+                    <a href="#" class="product-comparison__delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 26 26">
+                            <g>
+                                <g>
+                                    <path d="M14.367 13.002L25.077 2.29A.966.966 0 0 0 23.713.924L13.001 11.636 2.29.924A.966.966 0 0 0 .924 2.29L11.635 13 .925 23.713a.966.966 0 1 0 1.365 1.365l10.711-10.711 10.711 10.711a.962.962 0 0 0 1.366 0 .966.966 0 0 0 0-1.365z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Удалить</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="alert alert-comparison-failed">
+            <li class="alert__item" id="alert-comparison-failed" style="display: block">
+                <div class="alert__card">
+                    <a href="#alert-comparison-failed" class="alert__close close"></a>
+                    <div class="alert__img">
+                        <img src="./img/card-4.png" alt="">
+                    </div>
+                    <div class="alert__content">
+                        <div class="alert__title">Ошибка!</div>
+                        <div class="alert__name">К сравнению можно добавить максимум 4 товара!</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    @@include('templates/viewed-products/viewed-products.html', {
+    title: "Посмотренные товары",
+    class: 'link-for-fancybox-modal',
+    dataAttr1: '#preview-product',
+    dataAttr2: '#basket-fast-add'
+    })
 </div>
-			</div>
-			@@include('templates/viewed-products/viewed-products.html', { title: "Посмотренные товары", class: 'link-for-fancybox-modal', dataAttr1: '#preview-product', dataAttr2: '#basket-fast-add' })
-		</div>
-		@@include('templates/footer/footer.html')
+@@include('templates/footer/footer.html')
 
-		<div class="scroll-top"></div>
-		<div class="overflow-navigation"></div>
+<div class="scroll-top"></div>
+<div class="overflow-navigation"></div>
 
-		<!-- Modals -->
-		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('_script.html') @@include('templates/basket-adding/fast-basket-adding.html') @@include('templates/basket-adding/basket-adding.html')
-	</body>
+<!-- Modals -->
+@@include('templates/modal/measurer.html') @@include('templates/modal/call.html')
+@@include('templates/modal/alert.html') @@include('_script.html')
+@@include('templates/basket-adding/fast-basket-adding.html')
+@@include('templates/basket-adding/basket-adding.html')
+@@include('templates/product-preview/product-preview.html')
+</body>
 </html>

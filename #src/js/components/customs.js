@@ -1,6 +1,4 @@
 $(function () {
-
-
     'use strict';
 
     $('.js-toggle').on('click', function (e) {
@@ -98,9 +96,11 @@ $(function () {
         if ($(this).hasClass('active')) {
             let thisAlert = $(this).attr('href');
             $(thisAlert).fadeIn();
+
             function alertFade() {
                 $(thisAlert).fadeOut();
             }
+
             setTimeout(alertFade, 5000);
         }
     });
@@ -194,9 +194,6 @@ $(function () {
             }
         },
     });
-
-
-
     // const personalAreaClose = $('.personal-area__close');
     // const personaAreaClose = document.querySelector('.personal-area__close');
     // personaAreaClose.addEventListener('click', (e) => {
@@ -210,7 +207,6 @@ $(function () {
 
     //     // });
     // });
-
     let step = document.querySelectorAll('.personal-area__step');
     // console.log(step);
 
@@ -228,7 +224,6 @@ $(function () {
             }
         });
     });
-
     // personalAreaClose.on('click', function (e) {
     //     e.preventDefault();
     //     console.log('this');
@@ -238,12 +233,14 @@ $(function () {
     //         step1.addClass('hide');
     //     }
     // });
-
-    $('.category__aside').on('click', '.category__aside-list__title', function (e) {
-        e.preventDefault();
-        $(this)
-            .toggleClass('active')
-            .next('.category__aside-dropdown')
-            .slideToggle();
+    $(document).on('mousedown', function (e) {
+        const t = e.target;
+        const spollerBtn = $('.category__aside-list__title');
+        const btnInSpoller = spollerBtn.find('a');
+        if (!btnInSpoller.is(t) && spollerBtn.is(t)) {
+            $(t).toggleClass('active')
+                .next('.category__aside-dropdown')
+                .slideToggle();
+        }
     });
 });

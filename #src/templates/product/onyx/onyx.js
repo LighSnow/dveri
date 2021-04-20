@@ -3,42 +3,42 @@ $(function () {
     const scrollWidth = $(window).outerWidth() - $(window).width();
     // обьект картинок для слайдера обратботка стекла--рисунок
     const imgObjGlass = {
-        1: '../../../img/product/onyx/onyx-slider/onyx-slider-1-duo-slider-duo-slider-duo-slider-4.png',
-        2: '../../../img/product/onyx/onyx-slider/onyx-slider-2-duo-slider-duo-slider-duo-slider-4.png',
-        3: '../../../img/product/onyx/onyx-slider/onyx-slider-3-duo-slider-1.png',
-        4: '../../../img/product/onyx/onyx-slider/onyx-slider-4-duo-slider-1.png',
-        5: '../../../img/product/onyx/onyx-slider/onyx-slider-5-duo-slider-1.png'
+        1: '../../../img/product/onyx/onyx-slider/onyx-slider-1-1.png',
+        2: '../../../img/product/onyx/onyx-slider/onyx-slider-2-1.png',
+        3: '../../../img/product/onyx/onyx-slider/onyx-slider-3-1.png',
+        4: '../../../img/product/onyx/onyx-slider/onyx-slider-4-1.png',
+        5: '../../../img/product/onyx/onyx-slider/onyx-slider-5-1.png'
     }
 
     const imgObjGrid = {
-        1: '../../../img/product/onyx/onyx-grid-duo-slider-1.png',
-        2: '../../../img/product/onyx/onyx-grid-duo-slider-duo-slider-duo-slider-4.png',
-        3: '../../../img/product/onyx/onyx-grid-duo-slider-duo-slider-4.png',
-        4: '../../../img/product/onyx/onyx-grid-duo-slider-2-4.png',
-        5: '../../../img/product/onyx/onyx-grid-duo-slider-4.png'
+        1: '../../../img/product/onyx/onyx-grid-1.png',
+        2: '../../../img/product/onyx/onyx-grid-2.png',
+        3: '../../../img/product/onyx/onyx-grid-3.png',
+        4: '../../../img/product/onyx/onyx-grid-4.png',
+        5: '../../../img/product/onyx/onyx-grid-5.png'
     }
 
     // смена картинок для двери оник(обработка стекла--рисунок)
     const imgForOnyxDoor = {
-        1: ['../../../img/product/onyx/onyx-glass-1-duo-slider-1.png',
-            '../../../img/product/onyx/onyx-glass-1-duo-slider-duo-slider-duo-slider-4.png'],
-        2: ['../../../img/product/onyx/onyx-glass-2-duo-slider-1.png',
-            '../../../img/product/onyx/onyx-glass-2-duo-slider-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-2-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-2-duo-slider-2-4.png',
-            '../../../img/product/onyx/onyx-glass-2-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-2-duo-slider-6.png',],
-        3: ['../../../img/product/onyx/onyx-glass-3-duo-slider-1.png',
-            '../../../img/product/onyx/onyx-glass-3-duo-slider-duo-slider-duo-slider-4.png'],
-        4: ['../../../img/product/onyx/onyx-glass-4-duo-slider-1.png',
-            '../../../img/product/onyx/onyx-glass-4-duo-slider-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-4-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-4-duo-slider-2-4.png'],
-        5: ['../../../img/product/onyx/onyx-glass-5-duo-slider-1.png',
-            '../../../img/product/onyx/onyx-glass-5-duo-slider-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-5-duo-slider-duo-slider-4.png',
-            '../../../img/product/onyx/onyx-glass-5-duo-slider-2-4.png',
-            '../../../img/product/onyx/onyx-glass-5-duo-slider-4.png',]
+        1: ['../../../img/product/onyx/onyx-glass-1-1.png',
+            '../../../img/product/onyx/onyx-glass-1-2.png'],
+        2: ['../../../img/product/onyx/onyx-glass-2-1.png',
+            '../../../img/product/onyx/onyx-glass-2-2.png',
+            '../../../img/product/onyx/onyx-glass-2-3.png',
+            '../../../img/product/onyx/onyx-glass-2-4.png',
+            '../../../img/product/onyx/onyx-glass-2-5.png',
+            '../../../img/product/onyx/onyx-glass-2-6.png',],
+        3: ['../../../img/product/onyx/onyx-glass-3-1.png',
+            '../../../img/product/onyx/onyx-glass-3-2.png'],
+        4: ['../../../img/product/onyx/onyx-glass-4-1.png',
+            '../../../img/product/onyx/onyx-glass-4-2.png',
+            '../../../img/product/onyx/onyx-glass-4-3.png',
+            '../../../img/product/onyx/onyx-glass-4-4.png'],
+        5: ['../../../img/product/onyx/onyx-glass-5-1.png',
+            '../../../img/product/onyx/onyx-glass-5-2.png',
+            '../../../img/product/onyx/onyx-glass-5-3.png',
+            '../../../img/product/onyx/onyx-glass-5-4.png',
+            '../../../img/product/onyx/onyx-glass-5-5.png',]
     }
     //plugins
     //slider for onyx
@@ -90,6 +90,7 @@ $(function () {
         currentElementForChoose.attr('src', `${src}${onyxChoose}.png`);
         $(this).addClass('current').siblings().removeClass('current');
         $(this).parents('.setting-row').find('#color-choose-input').val(currentColor);
+        $(this).parents('.color__wrapper').fadeOut();
     });
 
     // onyx смена двери
