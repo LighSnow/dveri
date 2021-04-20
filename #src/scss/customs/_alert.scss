@@ -5,7 +5,23 @@
   width: 360px;
   z-index: 99994;
 }
-
+.alert-comparison-failed {
+  position: absolute;
+  right: 0;
+  top: 140px;
+  .alert__card {
+    align-items: center;
+  }
+  .alert__title {
+    font-weight: 800;
+    color: #fd5612;
+    text-transform: uppercase;
+  }
+  .alert__name {
+    font-weight: 500;
+    line-height: 14px;
+  }
+}
 .alert__item {
   display: none;
   z-index: 999999;
@@ -53,12 +69,19 @@
   text-decoration: underline;
 }
 
-
+@media (max-width: 1200px) {
+  .alert-comparison-failed {
+    top: 110px;
+  }
+}
 
 @media (max-width: 767.98px) {
   .alert {
     width: 304px;
     right: 8px;
+  }
+  .alert-comparison-failed {
+    top: 65px;
   }
   .alert__card {
     grid-template-columns: 65px 1fr;

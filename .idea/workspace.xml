@@ -27,18 +27,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be5fdec-adde-4482-996e-f95040f45003" name="Default Changelist" comment="added cardF-duodoors.html">
-      <change beforePath="$PROJECT_DIR$/#src/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/js/components/customs.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/components/customs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/js/components/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/components/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/category.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/category.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/category/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/category/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/navigation/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/navigation/navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/#src/img/card-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/product-comparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/product-comparison.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/customs/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/customs/_alert.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/templates/favourites/favourites.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/favourites/favourites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/templates/modal/comparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/modal/comparison.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -93,18 +90,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project-ona-dveri\dveri\#src\img\category" />
-      <recent name="D:\project-ona-dveri\dveri\#src\js" />
-      <recent name="D:\project-ona-dveri\dveri\#src\scss\plugins-styles" />
-      <recent name="D:\project-ona-dveri\dveri\#src\img\product\duo" />
-      <recent name="D:\project-ona-dveri\dveri\#src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project-ona-dveri\dveri\#src\img\product" />
       <recent name="D:\project-ona-dveri\dveri\#src\img\product\duo" />
       <recent name="D:\project-ona-dveri\dveri\#src\img\product\onyx\onyx-slider" />
       <recent name="D:\project-ona-dveri\dveri\#src\img\product\onyx" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project-ona-dveri\dveri\#src\img" />
+      <recent name="D:\project-ona-dveri\dveri\#src\img\category" />
+      <recent name="D:\project-ona-dveri\dveri\#src\js" />
+      <recent name="D:\project-ona-dveri\dveri\#src\scss\plugins-styles" />
+      <recent name="D:\project-ona-dveri\dveri\#src\img\product\duo" />
     </key>
   </component>
   <component name="RunManager">
@@ -133,7 +130,7 @@
       <workItem from="1618248882152" duration="19569000" />
       <workItem from="1618595242838" duration="8087000" />
       <workItem from="1618744780500" duration="21933000" />
-      <workItem from="1618853890498" duration="9556000" />
+      <workItem from="1618853890498" duration="14779000" />
     </task>
     <task id="LOCAL-00001" summary="added cardF-duodoors.html">
       <created>1618342621115</created>

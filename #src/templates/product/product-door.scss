@@ -1228,7 +1228,12 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+ .body-product-twodoor {
+  .product__styles-size {
+   margin-right: 30px !important;
+  }
+ }
  .product {
   &__inner {
 
@@ -1863,6 +1868,11 @@
 }
 
 @media (max-width: 460px) {
+ .body-product-twodoor {
+  .product__styles-size {
+   margin-right: 10px !important;
+  }
+ }
  .product {
   max-width: 320px;
 
