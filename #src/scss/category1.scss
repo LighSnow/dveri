@@ -390,8 +390,8 @@
 		}
 	}
 	.select {
-		&--w164 {
-			width: 164px;
+		&--w254 {
+			// width: 254px;
 		}
 
 		&--w56 {
@@ -411,9 +411,6 @@
 }
 
 @media (max-width: 1200px) {
-	.category .category__filter-list li {
-		margin: 0px 0px 42px 0px;
-	}
 
 	.category__aside-filter .category__aside-list .category__aside-dropdown {
 		padding: 29px 0px 0px 0px;

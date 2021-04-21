@@ -243,4 +243,20 @@ $(function () {
                 .slideToggle();
         }
     });
+
+    const infoBtn = $('.info-btn');
+
+    infoBtn.on('click', function () {
+        if ($(this).hasClass('is-active')) {
+            $(this).removeClass('is-active');
+        } else {
+            $(this).addClass('is-active');
+        }
+    });
+
+    $(document).click(function (e) {
+        if (!infoBtn.is(e.target)) {
+            infoBtn.removeClass('is-active');
+        };
+    });
 });
