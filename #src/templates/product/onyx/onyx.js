@@ -1,4 +1,4 @@
-$(function () {
+$(function (e) {
     const body = $('body');
     const scrollWidth = $(window).outerWidth() - $(window).width();
     // обьект картинок для слайдера обратботка стекла--рисунок
@@ -62,15 +62,14 @@ $(function () {
         }
     });
     // нажатие на setting input
-    body.on('click', '.js-setting-input', function (e) {
-        if ($(this).hasClass('open')) {
-            $(this).removeClass('open');
+    document.querySelector('.js-setting-input').addEventListener('click', function (e) {
+        if(this.classList.contains('open')) {
+            this.classList.remove('open');
         } else {
-            $(this).addClass('open');
+            this.classList.add('open');
         }
     });
-
-
+    
     // открытие блока выбора цвета двери
     body.on('click', '.js-setting-input', function () {
         const settings = $(this).parents('.setting-row').find('.color__wrapper');
@@ -82,7 +81,7 @@ $(function () {
     // выбор двери
     body.on('click', '.color__wrapper-block', function () {
         const currentColor = $(this).find('.color__wrapper-text').text().trim();
-        const src = '"../../../img/product/onyx/onyx-color-';
+        const src = '../../../img/product/onyx/onyx-color-';
         const onyx = $(this).attr('data-onyx-main');
         const onyxChoose = $(this).attr('data-onyx-choose');
         const currentElementForChoose = body.find('.onyx-item[data-onyx="' + onyx + '"]').find('img');
@@ -93,6 +92,7 @@ $(function () {
         $(this).parents('.color__wrapper').fadeOut();
     });
 
+
     // onyx смена двери
     body.on('click', '.settings__slider-item', function () {
         const onyx = $(this).attr('data-onyx-main');
@@ -102,7 +102,7 @@ $(function () {
         const src = `../../../img/product/onyx/onyx-`;
 
         const currentElementForChoose = body.find('.onyx-item[data-onyx="' + onyx + '"]').find('img');
-        if($(this).hasClass('glasstype__inner-item')) {
+        if ($(this).hasClass('glasstype__inner-item')) {
             $(this).siblings().removeClass('current')
         }
         // если нет обязательно 1 выбранного элемента двери
@@ -145,21 +145,21 @@ $(function () {
     });
 
 
-    body.on('click', '.product__settings-row .option', function () {
+    body.on('click', '.product__settings-row .option', function (e) {
         const typeGlassProcessing = $(this).attr('data-value');
         const onyx = $(this).parents('.lattice-type').attr('data-onyx-main');
         const sliderItem = body.find('.js-slider-glass .settings__slider-item');
         const currentElementForChoose = body.find('.onyx-item[data-onyx="' + onyx + '"]').find('img');
 
+        sliderItem.removeClass('current');
         if ($(this).parents('.product__settings-row--outer').length > 0) {
             sliderItem.attr('data-type-choose', typeGlassProcessing);
             sliderItem.find('img').attr('src', imgObjGlass[`${typeGlassProcessing}`]);
             if (typeGlassProcessing == 0) {
                 $('.js-slider-wrapper').hide();
-                destroyCarousel();
             } else {
                 $('.js-slider-wrapper').show();
-                destroyCarousel(slickCarousel);
+                destroyCarousel(slickCarousel, humus)
             }
         } else if ($(this).parents('.product__settings-row--inner').length > 0) {
             if (typeGlassProcessing == 0) {
@@ -168,7 +168,6 @@ $(function () {
                 currentElementForChoose.attr('src', imgObjGrid[`${typeGlassProcessing}`]);
             }
         }
-
     });
     // глухая / со стеклом
     body.on('click', '.product__settings-row--controls .controls-btn', function () {
@@ -204,7 +203,6 @@ $(function () {
     });
 
 
-
     // закрытия элементов
     $(document).on('mouseup', function (e) {
         const settings = $('.color__wrapper');
@@ -222,6 +220,7 @@ $(function () {
             onyxModal.removeClass('show');
             onyxModal.find('.onyx-preview__inner').empty();
             body.removeClass('smoke').css({'padding-right': '0px'});
+
         }
     });
 
@@ -233,12 +232,27 @@ $(function () {
             slidesToScroll: 1
         });
     }
+    // body.on('click', function (e) {
+    //     console.log(e.target)
+    // })
+    function humus() {
+        body.find('.js-slider-glass').find('.settings__slider-item').each((i, el) => {
+            if (i === 0) {
+                const onyx = $(el).attr('data-onyx-main');
+                const onyxChoose = $(el).attr('data-onyx-choose');
+                const onyxTypeGlass = $(el).attr('data-type-choose');
+                const currentElementForChoose = body.find('.onyx-item[data-onyx="' + onyx + '"]').find('img');
+                currentElementForChoose.attr('src', imgForOnyxDoor[`${onyxTypeGlass}`][onyxChoose - 1]);
+                $(el).addClass('current');
+            }
+        })
+    }
 
     // slickCarousel();
-    function destroyCarousel(callback) {
+    function destroyCarousel(callback, callback2) {
         if ($('.js-slider-glass').hasClass('slick-initialized')) {
             $('.js-slider-glass').slick('unslick');
         }
-        callback();
+        callback(callback2());
     }
 })
