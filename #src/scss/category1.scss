@@ -47,12 +47,16 @@
 			left: -4px;
 			padding: 13px 4px 50px 4px;
 			transform: translateX(-110%);
-			transition: transform 0.3s linear;
+			transition: all 0.3s linear;
 			height: calc(100vh - 141px);
+			opacity: 0;
+			visibility: hidden;
 			overflow: scroll auto;
 
 			&.active {
 				transform: translateX(0);
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 		@media (max-width: 767px) {
@@ -242,7 +246,7 @@
 	.popular-category__item {
 		width: calc(100% / 5);
 		margin: 0px 0px 19px 0px;
-		@media (max-width: 768px) {
+		@media (max-width: 767.98px) {
 			width: calc(100% / 4);
 			padding: 0 4px;
 		}
@@ -429,5 +433,14 @@
 	}
 	.category .breadcrumbs {
 		padding: 0px 0px 16px 0px;
+	}
+}
+
+@media (max-width: 767.97px) {
+	.category__aside-filter .category__aside-list .category__aside-dropdown {
+		padding: 5px 0px 0px 0px;
+	}
+	.category__aside-dropdown {
+		margin: 0px 0px 15px 0px;
 	}
 }

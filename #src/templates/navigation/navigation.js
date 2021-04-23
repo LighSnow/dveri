@@ -38,7 +38,7 @@ $(document).ready(function () {
 
             catalogLink.on('click', function (e) {
                 e.preventDefault();
-                navTabletOverflow.fadeToggle();
+                // navTabletOverflow.fadeToggle();
                 $(this).toggleClass('active');
                 $('.catalog-menu').toggleClass('active');
                 body.toggleClass('lock');

@@ -305,13 +305,19 @@
 				color: $white;
 			}
 		}
+		@media (min-width: 1200px) {
+			&.active:hover {
+				background-color: $blue;
+				border-color: $blue;
+			}
 
-		&:hover {
-			background-color: $main;
-			border-color: $main;
+			&:hover {
+				background-color: $main;
+				border-color: $main;
 
-			&::before {
-				color: $white;
+				&::before {
+					color: $white;
+				}
 			}
 		}
 
@@ -605,7 +611,7 @@
 			font-weight: 500;
 			color: #999999;
 			text-decoration: line-through;
-			margin: 0px 0px 7px 0px;
+			margin: 0px 0px 4px 0px;
 
 			@media (max-width: 1200px) {
 				margin: 0px 0px 0px 0px;

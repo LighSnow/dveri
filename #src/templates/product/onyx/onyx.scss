@@ -579,12 +579,18 @@
               img {
                 margin-bottom: 10px;
               }
+              @media (min-width: 1200px) {
+                &:hover {
+                  background-color: $main;
+                  color: #fff;
+                }
+              }
 
-              &:hover,
               &.current {
-                background-color: #64b0ce;
+                background-color: $blue;
                 color: #fff;
               }
+
             }
           }
         }
