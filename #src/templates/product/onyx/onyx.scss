@@ -45,7 +45,7 @@
         transform: rotate(45deg);
         position: absolute;
         top: 45px;
-        right: 14px;
+        right: 10px;
       }
 
       &::before {
@@ -60,9 +60,10 @@
       position: absolute;
       transform: rotate(90deg) translateX(-50%);
       top: 50%;
-      right: 1rem;
+      right: 10px;
       font-size: 11px;
       z-index: 2;
+      transition: all .4s;
     }
   }
 
@@ -96,8 +97,8 @@
     height: max-content;
 
     .product__photo-onyx--wrapper {
-      width: 250px;
-      height: 450px;
+      width: 350px;
+      height: 550px;
       position: relative;
       padding: 0;
       border: 2px solid #e7e7e7;
@@ -248,9 +249,8 @@
       .onyx-item {
         position: absolute;
         width: 100%;
-        max-width: 170px;
-
-        height: 380px;
+        max-width: 200px;
+        height: 480px;
         left: 50%;
 
         img {
@@ -258,15 +258,14 @@
         }
 
         &.onyx-1 {
-
           top: 50%;
           transform: translate(-50%, -46%);
         }
 
         &.onyx-2 {
-          transform: translate(-50%, 8%);
-          height: 396px;
-          max-width: 210px;
+          transform: translate(-50%, 7%);
+          height: 500px;
+          max-width: 250px;
 
           img {
             height: 100%;
@@ -274,39 +273,38 @@
         }
 
         &.onyx-3 {
-          transform: translate(-50%, 3%);
-          max-width: 230px;
+          transform: translate(-50%, 2.2%);
+          max-width: 274px;
         }
 
         &.onyx-4 {
-          transform: translate(-50%,7.2%);
-          max-width: 210px;
+          transform: translate(-50%,6.2%);
+          max-width: 251px;
         }
 
         &.onyx-5 {
-          transform: translate(-50%, 13%);
-          max-width: 210px;
+          transform: translate(-50%, 11%);
+          max-width: 251px;
         }
 
         &.onyx-6 {
           transform: translate(-50%, -35%);
           height: 35px;
           bottom: 0;
-          max-width: 210px;
+          max-width: 251px;
         }
 
         &.onyx-7 {
-          transform: translate(-50%, 13%);
+          transform: translate(-50%, 11.5%);
           z-index: 2;
         }
 
         &.onyx-8 {
-          transform: translate(-50%, 13%);
-
+          transform: translate(-50%,11.5%);
         }
 
         &.onyx-9 {
-          transform: translate(-50%, 13%);
+          transform: translate(-50%, 11.5%);
           z-index: 3;
         }
       }
@@ -321,7 +319,7 @@
 
   .product__card {
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 360px auto;
     grid-template-areas:
             "header first"
             "header third"
@@ -341,12 +339,10 @@
     }
     .product__buy {
       &-price {
-        flex-direction: row;
         max-width: max-content;
 
         .price-counter {
-          margin-bottom: 0;
-          margin-right: 30px;
+          margin: 0 0 20px 0;
         }
       }
 
@@ -417,7 +413,7 @@
             position: absolute;
             transform: rotate(90deg) translateX(-50%);
             top: 2px;
-            right: 14px;
+            right: 10px;
             font-size: 11px;
             z-index: 2;
             transition: all .4s;
@@ -449,7 +445,7 @@
               transform: rotate(45deg);
               position: absolute;
               top: 48px;
-              right: 14px;
+              right: 10px;
               display: block;
             }
           }
@@ -507,7 +503,7 @@
           justify-content: flex-end;
 
           .setting-input {
-            max-width: 450px;
+            max-width: 370px;
             width: 100%;
 
             &.open {
@@ -531,7 +527,7 @@
           .color__wrapper {
             position: absolute;
             display: none;
-            max-width: 450px;
+            max-width: 370px;
             padding: 8px 0 8px 8px;
             max-height: 200px;
             overflow: scroll;
@@ -608,12 +604,12 @@
           }
 
           .settings__slider {
-            max-width: 330px;
+            max-width: 280px;
 
             &-img {
               position: relative;
-              width: 80px;
-              height: 80px;
+              width: 65px;
+              height: 65px;
               overflow: hidden;
               border: 2px solid #e7e7e7;
               border-radius: 10px;
@@ -621,9 +617,9 @@
 
               img {
                 position: absolute;
-                width: 84px;
+                width: 69px;
                 max-width: initial;
-                height: 84px;
+                height: 69px;
                 max-height: initial;
                 top: 50%;
                 left: 50%;
@@ -664,7 +660,8 @@
               }
 
               .settings__slider-text {
-                max-width: 100px;
+                max-width: 88px;
+                font-size: 10px;
                 text-align: center;
               }
             }
@@ -711,7 +708,7 @@
           }
 
           p {
-            max-width: 470px;
+            max-width: 410px;
             margin-left: 15px;
             font-size: 14px;
             font-weight: 500;

@@ -55,6 +55,7 @@ $(function (e) {
             }
         }
     });
+
     $('.slick-slide.slick-active').next('*:not(.slick-active)').prev().addClass('next');
     body.on('click', '.slick-arrow', function () {
         if ($(this).hasClass('slick-next')) {
@@ -69,7 +70,8 @@ $(function (e) {
             this.classList.add('open');
         }
     });
-    
+
+
     // открытие блока выбора цвета двери
     body.on('click', '.js-setting-input', function () {
         const settings = $(this).parents('.setting-row').find('.color__wrapper');
@@ -132,8 +134,6 @@ $(function (e) {
                 currentElementForChoose.attr('src', `${src}${onyx}-${onyxChoose}.png`);
             }
         }
-        // onyx
-
     });
 
 
@@ -232,9 +232,7 @@ $(function (e) {
             slidesToScroll: 1
         });
     }
-    // body.on('click', function (e) {
-    //     console.log(e.target)
-    // })
+
     function humus() {
         body.find('.js-slider-glass').find('.settings__slider-item').each((i, el) => {
             if (i === 0) {
