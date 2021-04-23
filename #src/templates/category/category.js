@@ -103,7 +103,6 @@ $(function () {
         !scrollPrevEl.hasClass('show-all-block') ?
             scrollPrevEl.mCustomScrollbar("destroy") : scrollPrevEl.mCustomScrollbar({theme: "dark-3"});
         scrollPrevEl.toggleClass('show-all-block');
-
     });
 
     // добавляем выбранный фильт на страницу

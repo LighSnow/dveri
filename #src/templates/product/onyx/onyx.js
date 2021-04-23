@@ -63,13 +63,15 @@ $(function (e) {
         }
     });
     // нажатие на setting input
-    document.querySelector('.js-setting-input').addEventListener('click', function (e) {
-        if(this.classList.contains('open')) {
-            this.classList.remove('open');
+    body.on('click', '.js-setting-input', function () {
+        if($(this).hasClass('open')) {
+            $(this).removeClass('open')
         } else {
-            this.classList.add('open');
+            $(this).addClass('open')
         }
     });
+
+
 
 
     // открытие блока выбора цвета двери
