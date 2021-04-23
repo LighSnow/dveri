@@ -41,9 +41,9 @@
 				font-size: 16px;
 				font-weight: 500;
 				color: #000;
-        &:hover {
-          color: $main;
-        }
+				&:hover {
+					color: $main;
+				}
 			}
 
 			&::after {
@@ -197,17 +197,13 @@
 		}
 
 		&-dropdown {
-			// max-height: 350px;
-			overflow: auto;
-			scroll-width: none;
-      &.show-all-block {
-        &.category__filter-dropdown-wrapper {
-          max-height: 100%;
-        }
-      }
+			&.show-all-block {
+				&.category__filter-dropdown-wrapper {
+					max-height: 100%;
+				}
+			}
 			&.category__filter-dropdown-wrapper {
 				max-height: 240px;
-
 			}
 			&::-webkit-scrollbar {
 				display: none;
@@ -229,7 +225,7 @@
 		&-dropdown-wrapper {
 			margin-bottom: 15px;
 			max-height: 235px;
-			overflow: hidden;
+			overflow-x: hidden;
 
 			&.show-all-block {
 				max-height: 100%;
@@ -242,10 +238,8 @@
 			padding: 4px 0 0 0;
 			font-size: 13px;
 
-			&:first-child {
-				span {
-					border: 1px solid #e7e7e7;
-				}
+			span {
+				border: 1px solid #e7e7e7;
 			}
 
 			input:checked ~ label {
@@ -300,4 +294,46 @@
 			}
 		}
 	}
+}
+
+.simplebar-vertical {
+	width: 8px;
+	box-shadow: inset 0 2px 4px 1px #9ba1ac;
+	border-radius: 4px;
+	opacity: 0.75;
+	background-color: #cfd4de;
+}
+.simplebar-track.simplebar-vertical {
+	width: 8px;
+}
+.simplebar-scrollbar {
+
+}
+
+// .simplebar-scrollbar:before {
+//   background-color: #47bce3;
+// 	-webkit-box-shadow: inset 0 2px 3.84px 0.16px #3389a6;
+// 	box-shadow: inset 0 2px 3.84px 0.16px #3389a6;
+// }
+
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+  background: #64b0ce;
+  cursor: pointer;
+  &:hover {
+    &::before {
+      background: #275c71;
+    }
+  }
+  &::before {
+    left: 0;
+    right: 0;
+    background: #64b0ce;
+    opacity: 1;
+    box-shadow: inset 0 2px 4px 1px #3389a6;
+    transition: background 0.3s ease;
+  }
 }
