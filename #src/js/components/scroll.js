@@ -51,6 +51,29 @@
 
 // new SimpleBar(document.getElementById('myElement'));
 
-if(document.querySelector('#myElement')) {
-  const simpleBar = new SimpleBar(document.getElementById('myElement'), { autoHide: false });
-}
+// if(document.querySelector('#myElement')) {
+//   const simpleBar = new SimpleBar(document.getElementById('myElement'), { autoHide: false });
+// }
+
+
+// Array.prototype.forEach.call(
+//   document.querySelectorAll('.category__filter-dropdown-wrapper'),
+//   el => new SimpleBar()
+// );
+
+// for (let scroll of document.querySelectorAll('.category__filter-dropdown-wrapper')) {
+//   new SimpleBar(scroll, {
+//     autoHide: false,
+//   });
+// }
+
+document.querySelectorAll('.category__filter-dropdown-wrapper').forEach(function (el, i) {
+  new SimpleBar(el, {
+    autoHide: false,
+  });
+});
+// const simplebar = document.querySelectorAll('.category__filter-dropdown-wrapper');
+
+// simplebar.forEach(el => {
+//   el = new SimpleBar();
+// });
