@@ -64,14 +64,12 @@ $(function (e) {
     });
     // нажатие на setting input
     body.on('click', '.js-setting-input', function () {
-        if($(this).hasClass('open')) {
+        if ($(this).hasClass('open')) {
             $(this).removeClass('open')
         } else {
             $(this).addClass('open')
         }
     });
-
-
 
 
     // открытие блока выбора цвета двери
@@ -113,8 +111,10 @@ $(function (e) {
         if (!$(this).parents('.settings__slider').hasClass('required')) {
             // toggle
             if ($(this).hasClass('current')) {
-                $(this).removeClass('current').parents('.slick-slide');
-                currentElementForChoose.attr('src', '');
+                if(!$(this).hasClass('required')) {
+                    $(this).removeClass('current').parents('.slick-slide');
+                    currentElementForChoose.attr('src', '');
+                }
             } else {
                 $(this).addClass('current').parents('.slick-slide').siblings().find('.settings__slider-item').removeClass('current');
                 // glass
@@ -142,8 +142,7 @@ $(function (e) {
     // выбор стеклянной или глухой оболочки двери
     body.on('click', '.controls-btn', function () {
         $(this).addClass('active').siblings().removeClass('active');
-        body.find('.product__settings-row--glasstype' +
-            ' .settings__slider-item[data-onyx-choose="1"]').trigger('click');
+
     });
 
 
@@ -158,10 +157,11 @@ $(function (e) {
             sliderItem.attr('data-type-choose', typeGlassProcessing);
             sliderItem.find('img').attr('src', imgObjGlass[`${typeGlassProcessing}`]);
             if (typeGlassProcessing == 0) {
+                body.find('.onyx-item.onyx-7').find('img').attr('src', '');
                 $('.js-slider-wrapper').hide();
             } else {
                 $('.js-slider-wrapper').show();
-                destroyCarousel(slickCarousel, humus)
+                destroyCarousel(slickCarousel, clickFirstItemSlider)
             }
         } else if ($(this).parents('.product__settings-row--inner').length > 0) {
             if (typeGlassProcessing == 0) {
@@ -177,8 +177,13 @@ $(function (e) {
 
         if (glassShow == 2) {
             body.find('[data-glass-show="1"]').show();
+            body.find('.product__settings-row--glasstype' +
+                ' .settings__slider-item[data-onyx-choose="1"]').trigger('click');
+            body.find('.onyx-select.glass-select').find('.option[data-value="0"]').trigger('click');
         } else {
             body.find('[data-glass-show="1"]').hide();
+            body.find('.product__settings-row--glasstype .settings__slider-item.current').trigger('click');
+            body.find('.product__settings-row--glasstype .settings__slider-item.current').removeClass('current');
             body.find('.onyx-item').each(function (i, el) {
                 if (i > 5 && i < 9) {
                     $(el).find('img').attr('src', '')
@@ -235,7 +240,7 @@ $(function (e) {
         });
     }
 
-    function humus() {
+    function clickFirstItemSlider() {
         body.find('.js-slider-glass').find('.settings__slider-item').each((i, el) => {
             if (i === 0) {
                 const onyx = $(el).attr('data-onyx-main');
@@ -247,7 +252,16 @@ $(function (e) {
             }
         })
     }
-
+    function unclickItemSlider() {
+        body.find('.js-slider-glass').find('.settings__slider-item').each((i, el) => {
+            if ($(el).hasClass('current')) {
+                console.log($(el))
+                const onyx = $(el).attr('data-onyx-main');
+                const currentElementForChoose = body.find('.onyx-item[data-onyx="' + onyx + '"]').find('img');
+                currentElementForChoose.attr('src', '');
+            }
+        })
+    }
     // slickCarousel();
     function destroyCarousel(callback, callback2) {
         if ($('.js-slider-glass').hasClass('slick-initialized')) {

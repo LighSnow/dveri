@@ -570,7 +570,9 @@
     dataAttr1: '#preview-product-duo',
     dataAttr2: '#basket-fast-add-duo'
     })
-    @@include('templates/product/reviews/reviews.html')
+    @@include('templates/product/reviews/reviews.html', {
+    commentBlock: 'no'
+    })
     @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'link-for-fancybox-modal',

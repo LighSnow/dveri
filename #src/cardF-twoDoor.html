@@ -569,7 +569,9 @@
     dataAttr1: '#preview-product-twodoor',
     dataAttr2: '#basket-fast-add-twodoor'
     })
-    @@include('templates/product/reviews/reviews.html')
+    @@include('templates/product/reviews/reviews.html', {
+    commentBlock: 'yes'
+    })
     @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'link-for-fancybox-modal',

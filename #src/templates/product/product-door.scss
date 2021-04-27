@@ -630,14 +630,20 @@
 
     .product__tools {
       border-left: 1px solid #f4f4f4;
-
+      .product__title-img {
+        justify-content: flex-end;
+        margin-bottom: 35px;
+        img {
+          width: 80px;
+        }
+      }
       &-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-weight: 500;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
 
         a {
           color: #212121;
