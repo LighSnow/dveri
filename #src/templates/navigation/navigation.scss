@@ -63,7 +63,7 @@
 
 .navigation__catalog_icon_arrow {
   display: none;
-  margin-right: 34px;
+  margin-right: 24px;
   width: 24px;
 }
 
@@ -159,6 +159,9 @@
   max-height: 375px;
   padding: 30px 0 30px 30px;
   box-sizing: border-box;
+  .simplebar-track {
+    bottom: 2px;
+  }
 }
 
 .navigation__search_result_list {
@@ -426,7 +429,6 @@
     width: 159px;
     font-size: 16px;
     padding-left: 11px;
-    padding-top: 2px;
     justify-content: flex-start;
     img {
       margin-right: 25.3px;

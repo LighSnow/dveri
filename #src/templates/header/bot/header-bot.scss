@@ -269,6 +269,9 @@
   padding: 20px 0 108px 20px;
   box-sizing: border-box;
   overflow: auto;
+  .simplebar-track {
+    bottom: 105px;
+  }
 }
 
 .basket__popup_title {
@@ -422,6 +425,7 @@
 @media (max-height: 800px) {
   .basket__popup_scroll {
     max-height: 500px;
+    padding-right: 20px;
   }
 }
 
