@@ -26,15 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be5fdec-adde-4482-996e-f95040f45003" name="Default Changelist" comment="added cardF-duodoors.html">
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/duo/duo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/duo/duo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +123,7 @@
       <workItem from="1618853890498" duration="25294000" />
       <workItem from="1619197483033" duration="14189000" />
       <workItem from="1619544707432" duration="8518000" />
-      <workItem from="1619628113165" duration="10016000" />
+      <workItem from="1619628113165" duration="10629000" />
     </task>
     <task id="LOCAL-00001" summary="added cardF-duodoors.html">
       <created>1618342621115</created>

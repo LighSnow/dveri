@@ -75,7 +75,7 @@ $(function () {
     //инициализируем галерею ДО запуска слайдера
     const gallery = $('.slider__for-item .fancybox-link-slider');
     //при клике на ссылку в слайде запускаем галерею
-    body.on('click', gallery, function (e) {
+    gallery.on('click', function (e) {
         e.preventDefault();
         //узнаём индекс слайда без учёта клонов
         let trueIndex;
@@ -93,13 +93,15 @@ $(function () {
                 default:
                     trueIndex = dataIndex;
             }
+            $.fancybox.open(gallery, {
+                loop: true
+            }, trueIndex);
         } else {
-            trueIndex = $(this).parents('.product__slider-for').find('.slider__for-item').length;
+            $.fancybox.open(gallery, {
+                loop: true
+            });
         }
         //вызывается элемент галереи, соответствующий индексу слайда
-        $.fancybox.open(gallery, {
-            loop: true
-        }, trueIndex);
         return false;
     });
 
