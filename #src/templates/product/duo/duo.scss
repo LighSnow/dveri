@@ -216,6 +216,7 @@
         }
 
         .product__slider {
+          grid-template-rows: 285px !important;
           &-for {
             max-width: 255px;
 
@@ -359,6 +360,9 @@
         .article.article-tablet {
           bottom: -35px;
         }
+        .product__slider {
+          grid-template-rows: 450px !important;
+        }
         .product__slider-for {
           .duo-door-item {
             width: 50%;
@@ -448,7 +452,7 @@
     .product__inner {
       .product__photo {
         .product__slider {
-          grid-template-rows: 300px;
+          grid-template-rows: 300px !important;
         }
       }
       .product__choose {
