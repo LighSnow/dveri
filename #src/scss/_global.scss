@@ -412,6 +412,14 @@ a {
 		background: linear-gradient(90deg, rgba(100, 176, 206, 1) 0%, rgba(100, 176, 206, 1) 100%);
 		position: relative;
 
+		br {
+			display: none;
+
+			@media (max-width:767.97px) {
+				display: block;
+			}
+		}
+
 		&::before {
 			background-position: center;
 			background-size: cover;

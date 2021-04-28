@@ -17,26 +17,26 @@
   //   });
   // }
 
-  const width = $(window).width();
-  $(window).on("load resize scroll", function () {
-    const parent = $('.body-product');
-    if (parent.find('.scroll').length > 0) {
-      $(".scroll").mCustomScrollbar({
-        theme: "dark-3"
-      });
-    } else {
-      $(".scroll").mCustomScrollbar({
-        theme: "dark-3"
-      });
-    }
+  // const width = $(window).width();
+  // $(window).on("load resize scroll", function () {
+  //   const parent = $('.body-product');
+  //   if (parent.find('.scroll').length > 0) {
+  //     $(".scroll").mCustomScrollbar({
+  //       theme: "dark-3"
+  //     });
+  //   } else {
+  //     $(".scroll").mCustomScrollbar({
+  //       theme: "dark-3"
+  //     });
+  //   }
 
-    // customScroll()
+  //   // customScroll()
 
-    // $(window).on('resize', function () {
-    // customScroll();
-    // });
+  //   // $(window).on('resize', function () {
+  //   // customScroll();
+  //   // });
 
-  });
+  // });
 
   // let simpleScroll = document.querySelectorAll('.select');
 
@@ -67,7 +67,7 @@
 //   });
 // }
 
-document.querySelectorAll('.category__filter-dropdown-wrapper').forEach(function (el, i) {
+document.querySelectorAll('.scroll').forEach(function (el, i) {
   new SimpleBar(el, {
     autoHide: false,
   });

@@ -52,13 +52,13 @@
   }
   .icon-menu {
     display: inline-block;
-    margin-right: 34px;
     font-size: 1.18em;
   }
 }
 
 .navigation__catalog_icon_burger {
   display: flex;
+  margin-right: 24px;
 }
 
 .navigation__catalog_icon_arrow {
@@ -425,8 +425,12 @@
   .navigation__catalog {
     width: 159px;
     font-size: 16px;
+    padding-left: 11px;
+    padding-top: 2px;
+    justify-content: flex-start;
     img {
-      margin-right: 20px;
+      margin-right: 25.3px;
+      width: 18px;
     }
   }
   .navigation__list_item {

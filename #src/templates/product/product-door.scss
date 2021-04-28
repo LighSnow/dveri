@@ -77,8 +77,6 @@
     }
 
     &-right {
-      position: sticky;
-      top: 80px;
       height: max-content;
       max-width: 100px;
       padding-bottom: 110px;
@@ -629,7 +627,7 @@
     }
 
     .product__tools {
-      border-left: 1px solid #f4f4f4;
+
       .product__title-img {
         justify-content: flex-end;
         margin-bottom: 35px;
@@ -637,13 +635,16 @@
           width: 80px;
         }
       }
+      &-items {
+        border-left: 1px solid #f4f4f4;
+      }
       &-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
 
         a {
           color: #212121;
