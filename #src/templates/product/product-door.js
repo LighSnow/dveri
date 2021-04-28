@@ -19,6 +19,11 @@ $(function () {
         'hideOnContentClick': true,
         touch: false,
         afterShow: function (callback) {
+            document.querySelectorAll('.scrollY').forEach(function (el, i) {
+                new SimpleBar(el, {
+                    autoHide: false,
+                });
+            });
             const settings = {
                 slidesToShow: 5,
                 slidesToScroll: 1,
@@ -70,21 +75,26 @@ $(function () {
     //инициализируем галерею ДО запуска слайдера
     const gallery = $('.slider__for-item .fancybox-link-slider');
     //при клике на ссылку в слайде запускаем галерею
-    gallery.on('click', function (e) {
+    body.on('click', gallery, function (e) {
         e.preventDefault();
         //узнаём индекс слайда без учёта клонов
-        let totalSlides = +$(this).parents('.product__slider-for').slick("getSlick").slideCount,
-            dataIndex = +$(this).parents('.slider__for-item').data('slick-index'),
-            trueIndex;
-        switch (true) {
-            case (dataIndex < 0):
-                trueIndex = totalSlides + dataIndex;
-                break;
-            case (dataIndex >= totalSlides):
-                trueIndex = dataIndex % totalSlides;
-                break;
-            default:
-                trueIndex = dataIndex;
+        let trueIndex;
+        if (mediaWidth > 1199) {
+            let totalSlides = +$(this).parents('.product__slider-for').slick("getSlick").slideCount,
+                dataIndex = +$(this).parents('.slider__for-item').data('slick-index');
+
+            switch (true) {
+                case (dataIndex < 0):
+                    trueIndex = totalSlides + dataIndex;
+                    break;
+                case (dataIndex >= totalSlides):
+                    trueIndex = dataIndex % totalSlides;
+                    break;
+                default:
+                    trueIndex = dataIndex;
+            }
+        } else {
+            trueIndex = $(this).parents('.product__slider-for').find('.slider__for-item').length;
         }
         //вызывается элемент галереи, соответствующий индексу слайда
         $.fancybox.open(gallery, {
@@ -95,14 +105,7 @@ $(function () {
 
 
     // слайдеры карточка товара
-    if (mediaWidth < 1200) {
-        $('.product__slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-        });
-    } else {
+    if (mediaWidth > 1199) {
         if ($('.product').hasClass('product-onyx')) {
             $('.product__slider-for').slick({
                 slidesToShow: 1,
@@ -130,15 +133,13 @@ $(function () {
         }
     }
 
-    if(mediaWidth < 1200) {
+    if (mediaWidth < 1200) {
         $(".rating-block.static-rating").starRating({readOnly: true, starSize: 16});
         $(".rating-block.no-static-rating").starRating({initialRating: 3, starSize: 16});
     } else {
         $(".rating-block.static-rating").starRating({readOnly: true});
         $(".rating-block.no-static-rating").starRating({initialRating: 3});
     }
-
-
 
 
     $(".text-comment-hide").elimore({maxLength: 322});

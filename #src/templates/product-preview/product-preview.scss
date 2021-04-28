@@ -381,9 +381,13 @@
 
 				// size block
 				&-size {
+					max-width: 120px;
+					width: 100%;
+					margin-right: 20px;
 					.product__styles-choice {
 						max-height: 160px;
-						overflow: auto;
+						width: 100%;
+						overflow-y: auto;
 						margin-right: 30px;
 					}
 

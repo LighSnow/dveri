@@ -260,6 +260,8 @@
 
         &:not(:last-child) {
           margin-right: 50px;
+          max-width: 120px;
+          width: 100%;
         }
       }
 
@@ -282,10 +284,13 @@
 
         .product__styles-choice {
           max-height: 155px;
+          max-width: 120px;
+          width: 100%;
           display: flex;
           flex-direction: column;
           height: 100%;
           justify-content: space-between;
+          overflow-y: auto;
         }
 
         .mCSB_inside > .mCSB_container {

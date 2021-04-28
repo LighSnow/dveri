@@ -1956,7 +1956,7 @@
     //-----------------------
     .product__inner {
       .product__photo-info {
-        justify-content: center;
+        justify-content: space-between;
       }
     }
 
@@ -2154,7 +2154,7 @@
             a {
               max-width: 210px !important;
               text-align: center;
-              padding: 15px 20px 15px 40px;
+              padding: 6px 20px 6px 40px;
 
               &:not(:last-child) {
                 margin-right: 1rem;
@@ -2446,7 +2446,16 @@
   .product-onyx {
     .slick-slide {
     }
-
+    .product__inner {
+      .product__photo-info {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+        .product__rating {
+          border: none;
+        }
+      }
+    }
     //global
     .setting-row {
     }
