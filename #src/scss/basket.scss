@@ -963,6 +963,14 @@
 					height: initial;
 					padding: 7px 13px;
 
+					@media (max-width: 1200px) {
+						width: 324px;
+						bottom: initial;
+						top: 180%;
+						right: calc(100% - 100px);
+						padding: 7px 8px;
+					}
+
 					@media (max-width: 767.97px) {
 						width: 224px;
 						bottom: initial;
@@ -983,7 +991,16 @@
 						height: 12px;
 						width: 19px;
 						transform: rotate(180deg);
+
+						@media (max-width: 1200px) {
+							bottom: initial;
+							top: -12px;
+							left: 67%;
+							background-image: url('../img/icons/popup-triangle.png');
+							transform: rotate(0);
+						}
 						@media (max-width: 767.97px) {
+							background-image: url(../img/basket/triangle.png);
 							transform: unset;
 							bottom: initial;
 							top: -12px;
