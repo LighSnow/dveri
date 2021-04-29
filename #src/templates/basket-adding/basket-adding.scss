@@ -55,7 +55,7 @@
           margin-bottom: 25px;
 
           .product__styles-size {
-            margin-right: 80px;
+            margin-right: 80px !important;
 
             .product__styles-choice {
               flex-direction: row;
@@ -338,7 +338,7 @@
         .modal-f__content {
           &-wrapper {
             .product__styles-size {
-              margin-right: 50px;
+              margin: 0 25px !important;
               .product__styles-choice {
               }
             }
@@ -725,7 +725,6 @@
   }
 }
 
-
 @media (max-width: 600px) {
   .preview-basket-add {
     &.preview-basket-add-twodoor {
@@ -828,7 +827,6 @@
   }
 }
 
-
 @media (max-width: 500px) {
   .preview-basket-add {
     max-width: 90%;
@@ -888,6 +886,9 @@
                 flex-direction: column;
               }
             }
+          }
+          &-radios {
+            align-items: center;
           }
           &-radio {
             flex-direction: column;
