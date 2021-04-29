@@ -11,7 +11,7 @@
         &-wrapper {
 
           &:not(:last-child) {
-            margin-right: 30px;
+            margin-right: 20px;
           }
         }
 
@@ -67,7 +67,8 @@
         .duo__slider {
           &-basket--inner {
             max-width: 420px;
-            margin-left: 40px;
+            width: 100%;
+            margin-left: 30px;
             display: flex;
             justify-content: space-between;
 
@@ -118,7 +119,7 @@
             }
 
             &.slick-next {
-              right: -30px;
+              right: -27px;
               transform: translate(0, -50%);
             }
 
@@ -349,6 +350,11 @@
               margin-left: 30px;
               max-width: 380px;
             }
+            .slick-arrow {
+              &.slick-next {
+                right: -17px;
+              }
+            }
           }
         }
       }
@@ -452,12 +458,15 @@
 
         &-radios {
           max-width: 440px;
+          width: 100%;
+          justify-content: space-between;
+          align-items: flex-start !important;
         }
 
         &-wrapper {
-
           &:not(:last-child) {
             margin-right: 20px;
+            width: 200px;
           }
         }
 
@@ -511,6 +520,9 @@
 
           &-wrapper {
             margin-top: 10px;
+            &:not(:last-child) {
+              margin-right: 50px;
+            }
           }
 
           &-select {
@@ -534,6 +546,7 @@
 
           &-radios {
             flex-wrap: wrap;
+            justify-content: center;
           }
         }
       }
@@ -739,6 +752,9 @@
               margin: 0 5px 10px 5px;
             }
           }
+          &-counter {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -768,6 +784,7 @@
 
         &-radios {
           flex-direction: column;
+          align-items: center !important;
         }
 
         &-select {
@@ -824,6 +841,38 @@
         }
       }
     }
+    &.preview-basket-add-duo {
+      .modal__wrapper {
+        .modal-f__content {
+          .radio-global {
+
+          }
+          &-wrapper {
+            width: 100%;
+            max-width: 100%;
+            .product__styles-size {
+              .product__styles-choice {
+              }
+            }
+          }
+          &-radios {
+          }
+          &-radio {
+          }
+          .duo__slider {
+
+            &-basket--inner {
+            }
+
+            .slick-arrow {
+
+              &.slick-next {
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -859,6 +908,7 @@
           &-radios {
             flex-direction: row;
             justify-content: space-between;
+            max-width: 400px;
 
             .modal-f__content-wrapper:first-child,
             .modal-f__content-wrapper:nth-child(2) {

@@ -112,8 +112,8 @@
     height: max-content;
 
     .product__photo-onyx--wrapper {
-      width: 350px;
-      height: 550px;
+      width: 380px;
+      height: 500px;
       position: relative;
       padding: 0;
       border: 1px solid #f2f2f2;
@@ -266,7 +266,7 @@
         position: absolute;
         width: 100%;
         max-width: 200px;
-        height: 480px;
+        height: 430px;
         left: 50%;
 
         img {
@@ -275,12 +275,12 @@
 
         &.onyx-1 {
           top: 50%;
-          transform: translate(-50%, -46%);
+          transform: translate(-50%, -45%);
         }
 
         &.onyx-2 {
-          transform: translate(-50%, 7%);
-          height: 500px;
+          transform: translate(-50%,7.5%);
+          height: 452px;
           max-width: 250px;
 
           img {
@@ -299,7 +299,7 @@
         }
 
         &.onyx-5 {
-          transform: translate(-50%, 11%);
+          transform: translate(-50%, 12%);
           max-width: 251px;
         }
 
@@ -311,16 +311,16 @@
         }
 
         &.onyx-7 {
-          transform: translate(-50%, 11.5%);
+          transform: translate(-50%, 13%);
           z-index: 2;
         }
 
         &.onyx-8 {
-          transform: translate(-50%, 11.5%);
+          transform: translate(-50%, 13%);
         }
 
         &.onyx-9 {
-          transform: translate(-50%, 11.5%);
+          transform: translate(-50%, 13%);
           z-index: 3;
         }
       }
@@ -358,6 +358,7 @@
     .product__buy {
       &-price {
         max-width: max-content;
+        padding-left: 30px;
 
         .price-counter {
           margin: 0 0 20px 0;
@@ -395,7 +396,7 @@
       .product__settings-row {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 20px;
         flex: 0 0 100%;
         max-width: 800px;
@@ -949,7 +950,7 @@
 
       .product__photo-onyx--wrapper {
         width: 250px;
-        height: 400px;
+        height: 300px;
 
         .onyx__photo-icons {
           top: 7px;
@@ -1029,8 +1030,8 @@
       &-onyx {
 
         .onyx-item {
-          max-width: 150px;
-          height: 340px;
+          max-width: 120px;
+          height: 260px;
 
           img {
           }
@@ -1040,9 +1041,9 @@
           }
 
           &.onyx-2 {
-            height: 360px;
-            max-width: 180px;
-            transform: translate(-50%, 7%);
+            height: 272px;
+            max-width: 150px;
+            transform: translate(-50%,7%);
 
             img {
             }
@@ -1050,34 +1051,34 @@
 
           &.onyx-3 {
             transform: translate(-50%, 2%);
-            max-width: 198px;
+            max-width: 163px;
           }
 
           &.onyx-4 {
-            transform: translate(-50%, 6.2%);
-            max-width: 180px;
+            transform: translate(-50%, 5.2%);
+            max-width: 150px;
           }
 
           &.onyx-5 {
             transform: translate(-50%, 11%);
-            max-width: 180px;
+            max-width: 150px;
           }
 
           &.onyx-6 {
-            transform: translate(-50%, -26%);
-            width: 180px;
+            transform: translate(-50%, 1%);
+            width: 150px;
           }
 
           &.onyx-7 {
-            transform: translate(-50%, 13%);
+            transform: translate(-50%, 11.6%);
           }
 
           &.onyx-8 {
-            transform: translate(-50%, 13%);
+            transform: translate(-50%, 11.6%);
           }
 
           &.onyx-9 {
-            transform: translate(-50%, 13%);
+            transform: translate(-50%, 11.6%);
           }
         }
       }
@@ -1094,6 +1095,7 @@
         &-price {
           flex-direction: column;
           margin-right: 20px;
+          padding: 0;
 
           .price-counter {
             margin: 0 0 10px 0;

@@ -225,7 +225,7 @@
         }
 
         .product__slider {
-          grid-template-rows: 285px !important;
+          grid-template-rows: 300px !important;
 
           &-for {
             width: 255px;
@@ -516,14 +516,23 @@
     .product__inner {
       .product__photo {
         .product__slider {
-          grid-template-rows: 320px !important;
+
           &-for {
             .duo-door-item-info {
-              max-width: 150px;
+              max-width: 100%;
             }
             .duo-door-item {
-              width: 150px;
-              height: 300px;
+              //width: 150px;
+              //height: 300px;
+              flex: 0 0 45%;
+              max-width: 170px;
+              max-height: 92%;
+              width: 100%;
+            }
+            .slider__for-item {
+              img {
+                width: 100% !important;
+              }
             }
           }
         }
