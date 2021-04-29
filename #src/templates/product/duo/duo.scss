@@ -202,7 +202,6 @@
 
         .article.article-tablet {
           padding: 8px 0;
-          font-weight: 500;
         }
 
         &-info {
@@ -267,7 +266,6 @@
                 padding: 15px 10px 15px 40px;
 
                 &::before {
-                  left: -2px;
                 }
               }
             }
@@ -404,7 +402,7 @@
         margin: 0;
 
         .article.article-tablet {
-          bottom: -35px;
+          bottom: -40px;
         }
 
         .product__slider {
@@ -413,8 +411,8 @@
 
         .product__slider-for {
           .duo-door-item {
-            width: 50%;
-            height: auto;
+            width: 170px;
+            height: 380px;
             display: flex;
             justify-content: center;
 
@@ -521,10 +519,11 @@
           grid-template-rows: 320px !important;
           &-for {
             .duo-door-item-info {
-              max-width: 135px;
+              max-width: 150px;
             }
             .duo-door-item {
-              width: 45%;
+              width: 150px;
+              height: 300px;
             }
           }
         }
@@ -535,7 +534,7 @@
           &-act {
             .product__act-btn {
               a {
-                padding: 6px 10px 6px 35px;
+                padding: 6px 20px 6px 40px;
 
                 &::before {
                 }

@@ -1352,7 +1352,7 @@
 
         .product__styles-title {
           margin-bottom: 5px;
-          font-style: 12px;
+          font-size: 12px;
         }
 
         .product__styles-texture {
@@ -1364,9 +1364,8 @@
         }
 
         .product__styles-size {
-          .mCSB_inside > .mCSB_container {
-            margin-right: 20px;
-          }
+          margin-right: 20px;
+
 
           .product__styles-choice {
             margin-right: 10px;
@@ -1450,6 +1449,8 @@
 }
 
 @media (max-width: 720px) {
+
+
   .product__additional {
     .product__table {
       &-line {
