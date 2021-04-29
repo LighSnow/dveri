@@ -5,6 +5,14 @@ if (mediaWidth > 610) {
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+        ]
     });
 } else {
     $('.duo__slider-pc').hide();
