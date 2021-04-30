@@ -369,7 +369,7 @@
 							<li>
 								<h3 class="category__aside-list__title">размер</h3>
 								<div class="category__aside-dropdown category__filter-dropdown">
-									<div class="category__filter-dropdown-wrapper">
+									<div class="category__filter-dropdown-wrapper scroll">
 										<div class="category__filter-checkbox radio-checkbox-global">
 											<input data-choose="all" class="choice__line-radio" id="category-size-0" type="checkbox" />
 											<label class="category__filter-label" for="category-size-0">Все</label>
@@ -429,7 +429,7 @@
 							<li>
 								<h3 class="category__aside-list__title">стиль</h3>
 								<div class="category__aside-dropdown category__filter-dropdown">
-									<div class="category__filter-dropdown-wrapper">
+									<div class="category__filter-dropdown-wrapper scroll">
 										<div class="category__filter-checkbox radio-checkbox-global">
 											<input data-choose="all" class="choice__line-radio" id="category-style-0" type="checkbox" />
 											<label class="category__filter-label" for="category-style-0">Все</label>
@@ -489,7 +489,7 @@
 							<li>
 								<h3 class="category__aside-list__title">производитель</h3>
 								<div class="category__aside-dropdown category__filter-dropdown">
-									<div class="category__filter-dropdown-wrapper">
+									<div class="category__filter-dropdown-wrapper scroll">
 										<div class="category__filter-checkbox radio-checkbox-global">
 											<input data-choose="all" class="choice__line-radio" id="category-manufacturer-0" type="checkbox" />
 											<label class="category__filter-label" for="category-manufacturer-0">Все</label>
@@ -549,7 +549,7 @@
 							<li>
 								<h3 class="category__aside-list__title">тип</h3>
 								<div class="category__aside-dropdown category__filter-dropdown">
-									<div class="category__filter-dropdown-wrapper">
+									<div class="category__filter-dropdown-wrapper scroll">
 										<div class="category__filter-checkbox radio-checkbox-global">
 											<input data-choose="all" class="choice__line-radio" id="category-type-0" type="checkbox" />
 											<label class="category__filter-label" for="category-type-0">Все</label>
@@ -707,10 +707,15 @@
 						<!--                    <span>Сбросить фильтры</span>-->
 						<!--                    <span id="reset-all-filters" class="category__main-filters__item&#45;&#45;delete"></span></div>-->
 					</div>
+
+					<div class="category__main-select__title">
+						<span>Сортировать по:</span>
+						<span>Выводить по:</span>
+					</div>
 					<div class="category__main-select">
 						<div class="category__main-select__item">
-							<span>Сортировать по:</span>
-							<select class="select select--w254" name="select">
+
+							<select class="select select--w244" name="select">
 								<option value="name">По умолчанию</option>
 								<option value="name">По имени (А - Я)</option>
 								<option value="price-up">По цене (возрастанию)</option>
@@ -728,7 +733,7 @@
 							</div>
 						</div>
 						<div class="category__main-select__item category__main-select__item--fe">
-							<span>Выводить по:</span>
+
 							<select class="select select--w56" name="select">
 								<option value="16">16</option>
 								<option value="20">20</option>

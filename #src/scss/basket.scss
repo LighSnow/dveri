@@ -71,9 +71,10 @@
 		}
 		&-shape {
 			width: 36px;
-			// @media (max-width: 767.97px) {
-			// 	width: 32px;
-			// }
+			@media (max-width: 767.98px) {
+				width: 30px;
+				margin: 0px 0px 0px -2px !important;
+			}
 		}
 		&-money {
 			width: 32px;
@@ -1317,6 +1318,33 @@
 
 		@media (max-width: 767.98px) {
 			margin: 0px 0px 10px 0px;
+
+			.basket__stage-icons-2 {
+				margin: 0px 7px 0px 0px;
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
+		.basket__stage-icons-1 {
+			.basket__stage-shape {
+				margin: 0px 0px 0px 5px !important;
+			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.basket__stage-icons-3 {
+			&.basket__stage-icons {
+				img + img {
+					margin: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.basket__stage-icons-2 {
+			margin: 0px 55px 0px 0px;
 		}
 	}
 
@@ -1939,6 +1967,9 @@ input[type='number'] {
 
 	.basket__stage-icons-2 {
 		margin: 0px 33px 0px 0px;
+		@media (max-width: 767.97px) {
+			margin: 0px 4px 0px 0px;
+		}
 	}
 
 	.btn-complete {
@@ -2055,11 +2086,12 @@ input[type='number'] {
 			margin: 0px 0px 10px 0px;
 		}
 		@media (max-width: 767.98px) {
-			margin: 0px 30px 10px 0px;
+			margin: 0px 3px 10px 0px;
 		}
-		@media (max-width: 374px) {
+		@media (max-width: 410px) {
 			margin: 0px 24px 10px 0px;
 		}
+
 		img {
 			margin: -4px 10px 0px 0px;
 		}

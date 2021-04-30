@@ -99,6 +99,10 @@ a {
 	height: 100%;
 	z-index: 9999;
 }
+
+.nice-select .option.selected {
+	display: none !important;
+}
 .radio-checkbox-global {
 	input {
 		position: absolute;
@@ -153,7 +157,6 @@ a {
 			content: '';
 			background-image: url('../img/product/btn-click.svg');
 			transform: translate(55%, -55%);
-
 		}
 	}
 
@@ -415,7 +418,7 @@ a {
 		br {
 			display: none;
 
-			@media (max-width:767.97px) {
+			@media (max-width: 767.97px) {
 				display: block;
 			}
 		}

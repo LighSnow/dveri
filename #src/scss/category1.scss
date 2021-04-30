@@ -8,7 +8,7 @@
 			margin: 0px 0px 13px 0px;
 		}
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 767.97px) {
 		flex-direction: column;
 		.popular-category__label {
 			font-size: 12px;
@@ -146,9 +146,9 @@
 
 			@media (max-width: 1200px) {
 				display: flex;
-				margin-right: 58px;
+				align-self: flex-end;
 			}
-			@media (max-width: 768px) {
+			@media (max-width: 767.97px) {
 				width: 100%;
 				order: 3;
 				margin-right: 0;
@@ -184,16 +184,23 @@
 		align-items: center;
 		margin: 0px 0px 20px 0px;
 
-		@media (max-width: 768px) {
+		@media (max-width: 767.97px) {
 			flex-wrap: wrap;
 		}
-		&__item {
+
+		&__title {
 			display: flex;
-			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
 			span {
 				margin: 0px 0px 5px 0px;
 				letter-spacing: 0.35px;
 			}
+		}
+		&__item {
+			display: flex;
+			flex-direction: column;
+
 		}
 		&__item--fe {
 			align-items: flex-end;
@@ -206,7 +213,7 @@
 
 	.h2 {
 		margin: 0px 0px 20px 0px;
-		@media (max-width: 768px) {
+		@media (max-width: 767.97px) {
 			margin: 0px 0px 19px 0px;
 		}
 	}
@@ -216,14 +223,14 @@
 		@media (max-width: 1200px) {
 			margin: 0px 0px 28px 0px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 767.97px) {
 			margin: 0px 0px 9px 0px;
 		}
 		p {
 			font-size: 14px;
 			line-height: 22px;
 			letter-spacing: 0.25px;
-			@media (max-width: 768px) {
+			@media (max-width: 767.97px) {
 				font-size: 12px;
 			}
 		}
@@ -236,7 +243,7 @@
 			padding: 0px 0px 0px 0px;
 			margin: 0px -6px 20px -6px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 767.97px) {
 			margin: 0px -4px 20px -4px;
 		}
 		@media (max-width: 460px) {
@@ -272,7 +279,7 @@
 			width: calc(100% / 4 - 4px);
 			margin: 0 2px 10px 2px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 767.97px) {
 			width: calc(100% / 2 - 4px);
 		}
 	}
@@ -353,6 +360,7 @@
 			transform: rotate(-90deg);
 		}
 		.list {
+
 			margin: 14px 0px 0px 0px;
 			overflow: visible;
 			&::after {
@@ -394,12 +402,18 @@
 		}
 	}
 	.select {
-		&--w254 {
-			// width: 254px;
+		&--w244 {
+			width: 244px;
+			.list {
+				width: 244px;
+			}
 		}
 
 		&--w56 {
 			width: 56px;
+			@media (max-width: 767.97px) {
+				width: 53px;
+			}
 			.list {
 				left: initial;
 				right: 0;

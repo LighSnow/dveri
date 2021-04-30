@@ -570,9 +570,92 @@
     dataAttr1: '#preview-product-duo',
     dataAttr2: '#basket-fast-add-duo'
     })
-    @@include('templates/product/reviews/reviews.html', {
-    commentBlock: 'no'
-    })
+    <div class="product__review" id="product__review">
+        <h2 class="h2 product__review-title">ОТЗЫВЫ</h2>
+        <!-- /.product__review-title -->
+        <div class="product__review-inner">
+            <div class="product__review-aside product__aside">
+                <div class="product__aside-wrapper">
+                    <div class="product__aside-rating">
+                        <div class="product__aside-counter">0,0</div>
+                        <!-- /.product__aside-counter -->
+                        <div id="review-rating" class="product__aside-ratebar rating-block empty-rating"></div>
+                    </div>
+                    <div class="product__aside-title">Оценок пока нет</div>
+                    <!-- /.product__aside-rating -->
+                    <a href="#comment-popup" class="product__aside-btn btn-product link-for-fancybox-modal">Оставить
+                        отзыв</a>
+                </div>
+                <!-- /..product__aside-btn -->
+                <div class="product__aside-grade product__grade">
+                    <div class="product__grade-title">Отзыв с оценкой</div>
+                    <!-- /.product__grade-title -->
+                    <div class="product__grade-choice">
+                        <div class="choice__line radio-checkbox-global">
+                            <input checked class="choice__line-radio" id="review-5" type="checkbox" name="review-choice">
+                            <label class="choice__line-stars" for="review-5">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </label>
+                            <span class="choice__line-counter">0</span>
+                        </div>
+                        <!-- /.choice choice-line -->
+                        <div class="choice__line radio-checkbox-global">
+                            <input class="choice__line-radio" id="review-4" type="checkbox" name="review-choice">
+                            <label class="choice__line-stars" for="review-4">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </label>
+                            <span class="choice__line-counter">0</span>
+                        </div>
+                        <!-- /.choice choice-line -->
+                        <div class="choice__line radio-checkbox-global">
+                            <input class="choice__line-radio" id="review-3" type="checkbox" name="review-choice">
+                            <label class="choice__line-stars" for="review-3">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </label>
+                            <span class="choice__line-counter">0</span>
+                        </div>
+                        <!-- /.choice choice-line -->
+                        <div class="choice__line radio-checkbox-global">
+                            <input class="choice__line-radio" id="review-2" type="checkbox" name="review-choice">
+                            <label class="choice__line-stars" for="review-2">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                            </label>
+                            <span class="choice__line-counter">0</span>
+                        </div>
+                        <!-- /.choice choice-line -->
+                        <div class="choice__line radio-checkbox-global">
+                            <input class="choice__line-radio" id="review-1" type="checkbox" name="review-choice">
+                            <label class="choice__line-stars" for="review-1">
+                                <i class="icon-star"></i>
+                            </label>
+                            <span class="choice__line-counter">0</span>
+                        </div>
+                        <!-- /.choice choice-line -->
+                    </div>
+                    <!-- /.product__grade-choice -->
+                </div>
+                <!-- /..product__aside-grade -->
+                <!-- /.product__aside -->
+            </div>
+            <!-- /.product__review-aside -->
+            <div class="product__review-main no-comments">
+                <img src="../../../img/icons/no-comment.png" alt="no comments" />
+                <p> Будьте первым кто оставит свой отзыв об этом товаре!</p>
+            </div>
+            <!-- /.product__review-inner -->
+        </div>
+
+    </div>
     @@include('templates/viewed-products/viewed-products.html', {
     title: "Посмотренные товары",
     class: 'link-for-fancybox-modal',

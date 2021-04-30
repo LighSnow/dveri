@@ -35,7 +35,7 @@
 		content: '';
 		position: absolute;
 		top: -6px;
-		left: 55px;
+		left: 61px;
 		transform: rotate(-45deg);
 		width: 11px;
 		height: 11px;
@@ -123,7 +123,7 @@
 }
 
 .navigation-desktop__content {
-	position: absolute;
+	position: absolute !important;
 	top: -1px;
 	left: 100%;
 	width: 678px;
@@ -212,6 +212,7 @@
 	display: none;
 	&.active {
 		display: block;
+		overflow: hidden;
 	}
 }
 

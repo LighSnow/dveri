@@ -94,11 +94,11 @@
 				</div>
 			</div>
 			@@include('templates/viewed-products/viewed-products.html', {
-			title: "Посмотренные товары",
-			class: 'link-for-fancybox-modal',
-			dataAttr1: '#preview-product',
-			dataAttr2: '#basket-fast-add'
-			})
+				title: "Просмотренные товары",
+				class: 'link-for-fancybox-modal',
+				dataAttr1: '#preview-product',
+				dataAttr2: '#basket-fast-add'
+				})
 		</div>
 		@@include('templates/footer/footer.html')
 
@@ -106,6 +106,9 @@
 		<div class="overflow-navigation"></div>
 
 		<!-- Modals -->
+		@@include('templates/basket-adding/basket-adding.html')
+		@@include('templates/product-preview/product-preview.html')
+		@@include('templates/basket-adding/fast-basket-adding.html')
 		@@include('templates/modal/measurer.html') @@include('templates/modal/call.html') @@include('templates/modal/alert.html') @@include('templates/modal/reviews.html') @@include('_script.html')
 	</body>
 </html>
