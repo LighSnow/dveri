@@ -389,7 +389,9 @@
     .product__inner {
       .product__photo {
         margin: 0;
-
+    .duo-door-item-info {
+      display: none;
+    }
         .article.article-tablet {
           bottom: -40px;
         }
@@ -406,7 +408,7 @@
             justify-content: center;
 
             &-info {
-              max-width: 185px;
+              //max-width: 185px;
             }
           }
         }
@@ -607,6 +609,22 @@
 
           &-title {
             justify-content: center;
+          }
+        }
+      }
+      .product__photo {
+        .product__slider {
+          .product__slider-for {
+            &.slider-big-photo {
+              .slider__for-item {
+                padding: 0 !important;
+                justify-content: space-between;
+                .duo-door-item {
+                  max-height: 85%;
+                  flex: 0 0 49%;
+                }
+              }
+            }
           }
         }
       }

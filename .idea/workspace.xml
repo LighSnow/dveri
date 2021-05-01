@@ -26,30 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6be5fdec-adde-4482-996e-f95040f45003" name="Default Changelist" comment="added cardF-duodoors.html">
-      <change afterPath="$PROJECT_DIR$/#src/img/product/product-glass-slider-for.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/img/product/product-slider-for.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/#src/img/product/product-twodoor-slider-for.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/cardF-glass.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/cardF-glass.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/cardF-twoDoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/cardF-twoDoor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/cardF.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/cardF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/img/product/product-duo-slider-for-1-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/#src/img/product/product-duo-slider-for-1-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/img/product/product-duo-slider-for-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/#src/img/product/product-duo-slider-for-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/img/product/product-slider-for.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/img/product/product-twodoor-slider-for.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding-twodoor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/basket-adding/basket-adding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product-preview/product-preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/duo/duo.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/duo/duo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/duo/duo.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/duo/duo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/duo/duo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/duo/duo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/onyx/onyx.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/templates/product/product-door.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/templates/product/product-door.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +129,7 @@
       <workItem from="1618853890498" duration="25294000" />
       <workItem from="1619197483033" duration="14189000" />
       <workItem from="1619544707432" duration="8518000" />
-      <workItem from="1619628113165" duration="53663000" />
+      <workItem from="1619628113165" duration="58664000" />
     </task>
     <task id="LOCAL-00001" summary="added cardF-duodoors.html">
       <created>1618342621115</created>
@@ -255,10 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="428" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1618860138766" />
-    <state x="452" y="91" width="739" height="582" key="find.popup" timestamp="1619628841244">
+    <state x="452" y="91" width="739" height="582" key="find.popup" timestamp="1619829133469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="452" y="91" width="739" height="582" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1619628841244" />
+    <state x="452" y="91" width="739" height="582" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1619829133469" />
     <state x="565" y="115" width="923" height="651" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617543881886" />
     <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1619818018313">
       <screen x="0" y="0" width="1536" height="824" />
