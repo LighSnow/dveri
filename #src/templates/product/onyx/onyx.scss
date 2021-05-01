@@ -16,7 +16,7 @@
       }
 
       .product__tools-item {
-        margin-bottom: 20px !important;
+        margin-bottom: 17.5px !important;
       }
     }
   }
@@ -473,8 +473,7 @@
             border-radius: 4px;
             border: 1px solid #e7e7e7;
             box-shadow: 0px 5px 5px 0px rgba(224, 224, 224, 0.75);
-            max-height: 200px;
-            overflow: scroll;
+            overflow: visible;
             scrollbar-width: none;
             top: 50px;
             margin: 0;
@@ -484,7 +483,16 @@
             &::-webkit-scrollbar {
               display: none;
             }
-
+            &::after {
+              content: '\e91e';
+              font-family: icomoon !important;
+              position: absolute;
+              top: -25px;
+              right: 7px;
+              font-size: 13px;
+              transform: rotate(-90deg);
+              color: #f0f0f0;
+            }
           }
 
           .option {
@@ -562,9 +570,9 @@
               content: '\e91e';
               font-family: icomoon !important;
               position: absolute;
-              top: -16px;
-              right: 4px;
-              font-size: 16px;
+              top: -13px;
+              right: 8px;
+              font-size: 13px;
               transform: rotate(-90deg);
               color: #f0f0f0;
             }

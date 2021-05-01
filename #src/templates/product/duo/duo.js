@@ -47,14 +47,17 @@ if (mediaWidth > 610) {
 
 
 // выбор второй двери
-$('body').on('click', '.duo__slider-item--img', function () {
-    const elem = $(this);
-    const door = $(this).attr('data-door');
-    const parent = $(this).parents('._wrapper-duo');
+if($('._wrapper-duo').length > 0) {
+    $('body').on('click', '.duo__slider-item--img', function () {
+        const elem = $(this);
+        const door = $(this).attr('data-door');
+        const parent = $(this).parents('._wrapper-duo');
 
-    elem.addClass('current').parents('.slick-slide').siblings().find('.duo__slider-item--img').removeClass('current');
-    elem.siblings().removeClass('current');
-    parent.find('.second-door-look').attr('src', `../../img/product/product-duo-slider-for-${door}.jpg`);
-    parent.find('.second-door-fancy').attr('href', `../../img/product/product-duo-slider-for-${door}.jpg`);
-});
+        elem.addClass('current').parents('.slick-slide').siblings().find('.duo__slider-item--img').removeClass('current');
+        elem.siblings().removeClass('current');
+        parent.find('.second-door-look').attr('src', `../../img/product/product-duo-slider-for-${door}.jpg`);
+        parent.find('.second-door-fancy').attr('href', `../../img/product/product-duo-slider-for-${door}.jpg`);
+    });
+}
+
 

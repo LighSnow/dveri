@@ -14,6 +14,8 @@ mobileMenu.click( function(e){
     body.removeClass('overflow-hidden');
     mobileMenu.fadeOut();
     mobileBurger.removeClass('active');
+    $('.navigation-tablet__list').removeClass('active');
+    $('.navigation-tablet__list').addClass('active');
 });
 
 
