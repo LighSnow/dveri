@@ -135,12 +135,14 @@ $(function () {
         }
     }
 
-    if (mediaWidth < 1200) {
+    if (mediaWidth <= 1200) {
         $(".rating-block.static-rating").starRating({readOnly: true, starSize: 16});
         $(".rating-block.no-static-rating").starRating({initialRating: 3, starSize: 16});
+        $(".rating-block.empty-rating").starRating({initialRating: 0, starSize: 16});
     } else {
         $(".rating-block.static-rating").starRating({readOnly: true});
         $(".rating-block.no-static-rating").starRating({initialRating: 3});
+        $(".rating-block.empty-rating").starRating({initialRating: 0});
     }
 
 
@@ -232,7 +234,6 @@ $(function () {
         })
     }
     // скрываем ненужные элементы и открываем их по кнопке '.show-all-btn'
-    showSomeItems(1, $('.product__table-item'));
     showSomeItems(7, $('.product__characteristics-row'));
 
     // // переключатель current класса дочерних элементов

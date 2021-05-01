@@ -168,6 +168,12 @@
                             </div>
                         </div>
                         <div class="product__buy-act">
+                            <div class="product__act-info">
+                                <p>Цена указана за полотно! Цена за комплект <span data-start-price="14599" class="price-counter-sum">14599</span> ₽ </p>
+                                <p class="current-set">В комплекте: <span class="change-text-set">
+                                    <span>Штапики, </span><span>Наличник + коробка</span></span>
+                                    <span style="display: none;" class="without-set-text">какойто текст html</span></p>
+                            </div>
                             <div class="product__act-btn">
                                 <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#added-popup">
                                     Добавить <br> в кoрзину</a>
@@ -238,7 +244,14 @@
                             <div class="product__settings-row--slider">
                                 <h2 class="setting-name">Штапики:</h2>
                                 <div class="settings__slider disabled required">
-                                    <div class="settings__slider-item current" data-onyx-main="1" data-onyx-choose="1">
+                                    <div class="settings__slider-item current" data-onyx-main="1" data-onyx-choose="0">
+                                        <div class="settings__slider-img"><img
+                                                src="../../../img/product/onyx/onyx-slider/onyx-slider-1-1.png"
+                                                alt="">
+                                        </div>
+                                        <div class="settings__slider-text">Фрезерованный широкий резной</div>
+                                    </div>
+                                    <div class="settings__slider-item" data-onyx-main="1" data-onyx-choose="1">
                                         <div class="settings__slider-img"><img
                                                 src="../../../img/product/onyx/onyx-slider/onyx-slider-1-1.png"
                                                 alt="">
@@ -266,14 +279,14 @@
                                         </div>
                                         <div class="settings__slider-text">Фрезерованный широкий резной</div>
                                     </div>
-                                    <div class="settings__slider-item" data-onyx-main="2" data-onyx-choose="2">
+                                    <div class="settings__slider-item" data-onyx-main="2" data-onyx-choose="9">
                                         <div class="settings__slider-img"><img
                                                 src="../../../img/product/onyx/onyx-slider/onyx-slider-2-2.png"
                                                 alt="">
                                         </div>
                                         <div class="settings__slider-text">Фрезерованный широкий резной</div>
                                     </div>
-                                    <div class="settings__slider-item" data-onyx-main="2" data-onyx-choose="3">
+                                    <div class="settings__slider-item" data-onyx-main="2" data-onyx-choose="8">
                                         <div class="settings__slider-img"><img
                                                 src="../../../img/product/onyx/onyx-slider/onyx-slider-2-3.png"
                                                 alt="">
@@ -295,9 +308,17 @@
                         </div>
 
                         <div class="product__settings-row grid">
-                            <div class="product__settings-row--slider">
+                            <div class="product__settings-row--slider _js-name-add" data-name="Капитель">
                                 <h2 class="setting-name">Капитель:</h2>
                                 <div class="settings__slider disabled">
+                                    <div class="settings__slider-item" data-onyx-main="3"
+                                         data-onyx-choose="0">
+                                        <div class="settings__slider-img"><img
+                                                src="../../../img/product/onyx/onyx-slider/onyx-slider-3-1.png"
+                                                alt="">
+                                        </div>
+                                        <div class="settings__slider-text">Фрезерованный широкий резной</div>
+                                    </div>
                                     @@for(let i = 1; i <= 4; i++) {
                                     <div class="settings__slider-item" data-onyx-main="3"
                                          data-onyx-choose="`+i+`">
@@ -310,9 +331,15 @@
                                     }
                                 </div>
                             </div>
-                            <div class="product__settings-row--slider">
+                            <div class="product__settings-row--slider _js-name-add" data-name="Подкапительная планка">
                                 <h2 class="setting-name">Подкапительная планка:</h2>
                                 <div class="settings__slider disabled">
+                                    <div class="settings__slider-item" data-onyx-main="4" data-onyx-choose="0">
+                                        <div class="settings__slider-img"><img
+                                                src="../../../img/product/onyx/onyx-slider/onyx-slider-4-1.png" alt="">
+                                        </div>
+                                        <div class="settings__slider-text">Фрезерованный широкий резной</div>
+                                    </div>
                                     @@for(let i = 1; i <= 4; i++) {
                                     <div class="settings__slider-item" data-onyx-main="4" data-onyx-choose="`+i+`">
                                         <div class="settings__slider-img"><img
@@ -326,7 +353,7 @@
                         </div>
 
                         <div class="product__settings-row grid">
-                            <div class="product__settings-row--slider">
+                            <div class="product__settings-row--slider _js-name-add" data-name="Малая розетка">
                                 <h2 class="setting-name">Малая розетка:</h2>
                                 <div class="settings__slider disabled">
                                     @@for(let i = 1; i <= 6; i++) {
@@ -339,7 +366,7 @@
                                     }
                                 </div>
                             </div>
-                            <div class="product__settings-row--slider">
+                            <div class="product__settings-row--slider _js-name-add" data-name="Большая розетка">
                                 <h2 class="setting-name">Большая розетка:</h2>
                                 <div class="settings__slider disabled">
                                     @@for(let i = 1; i <= 6; i++) {
@@ -353,7 +380,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product__settings-row btn-row">
+                        <div class="product__settings-row btn-row _js-name-add" data-name="Стекло">
                             <h2 class="setting-name setting-name-top">Остекление:</h2>
                             <div class="product__settings-row--controls">
                                 <button class="active controls-btn onyx-select"  data-glass-show="0" type="button">Глухая
@@ -370,7 +397,7 @@
                             <div class="product__settings-row grid-row grid-glass-settings">
                                 <div class="product__settings-row--inner lattice-type" data-onyx-main="9">
                                     <h2 class="setting-name setting-name-top">Внутренняя решетка:</h2>
-                                    <select class="onyx-select nice-select" name="inner-lattice" id="">
+                                    <select class="onyx-select nice-select" name="inner-lattice">
                                         <option selected value="0">Без решетки</option>
                                         <option value="1">Резная</option>
                                         <option value="2">Полукруглая</option>
@@ -490,7 +517,7 @@
                     </div>
                     <div class="product__table-line table-cost">121 607 ₽</div>
                     <div class="product__table-line table-controls">
-                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#add-addittional-popup">
+                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#added-popup">
                             Добавить в кoрзину</a>
                     </div>
                 </div>
@@ -513,11 +540,11 @@
                     </div>
                     <div class="product__table-line table-cost">21 607 ₽</div>
                     <div class="product__table-line table-controls">
-                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#add-addittional-popup">
+                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#added-popup">
                             Добавить в кoрзину</a>
                     </div>
                 </div>
-                <div class="product__table-item">
+                <div class="product__table-item" data-show="hidden" style="display: none">
                     <!-- /.product__table -->
                     <div class="product__table-line table-photo">
                         <a class="fancybox-link-img" href="../../img/product/add-element-2.png">
@@ -536,11 +563,11 @@
                     </div>
                     <div class="product__table-line table-cost">21 607 ₽</div>
                     <div class="product__table-line table-controls">
-                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#add-addittional-popup">
+                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#added-popup">
                             Добавить в кoрзину</a>
                     </div>
                 </div>
-                <div class="product__table-item">
+                <div class="product__table-item" data-show="hidden" style="display: none">
                     <!-- /.product__table -->
                     <div class="product__table-line table-photo">
                         <a class="fancybox-link-img" href="../../img/product/add-element-2.png">
@@ -559,7 +586,7 @@
                     </div>
                     <div class="product__table-line table-cost">21 607 ₽</div>
                     <div class="product__table-line table-controls">
-                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#add-addittional-popup">
+                        <a class="buy-basket-btn btn-product link-for-fancybox-modal" href="#added-popup">
                             Добавить в кoрзину</a>
                     </div>
                 </div>

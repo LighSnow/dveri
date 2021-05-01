@@ -28,7 +28,7 @@
 
     .product__inner {
       .product__choose {
-        padding: 0 25px 0 25px;
+        padding: 0 0 0 25px;
 
         .product__buy-act {
 
@@ -73,22 +73,25 @@
 
     .product__card {
       display: flex;
-      margin-bottom: 55px;
     }
 
     &-right {
       height: max-content;
       max-width: 100px;
+      margin-left: 15px;
+
       .product__title-img {
         display: flex;
         margin-bottom: 35px;
         justify-content: center;
+
         img {
           width: 80px !important;
         }
       }
+
       img {
-        width: 85%;
+        width: 70%;
       }
     }
 
@@ -98,6 +101,10 @@
       max-width: 460px;
       width: 100%;
       padding-top: 6px;
+
+      .product__photo-description {
+        margin-bottom: 15px;
+      }
 
       .article {
         display: flex;
@@ -146,7 +153,9 @@
         display: grid;
         grid-template-columns: 70px 380px;
         grid-column-gap: 10px;
-        grid-template-rows: 500px;
+        grid-template-rows: 450px;
+        margin-bottom: 10px;
+
 
         &.slider-onyx {
           grid-template-columns: 1fr;
@@ -166,7 +175,7 @@
           .slider__nav-item {
             position: relative;
             cursor: pointer;
-            height: 88px;
+            height: 93px;
 
             .slider-play-btn {
               position: absolute;
@@ -209,7 +218,7 @@
               height: 78px;
 
               &:not(:last-child) {
-                margin-bottom: 10px;
+                margin-bottom: 15px;
               }
             }
           }
@@ -224,7 +233,7 @@
 
           &.slider-big-photo {
             .slider__for-item {
-              padding: 40px 0;
+              padding: 15px 0;
             }
           }
 
@@ -414,11 +423,10 @@
       padding: 30px 15px 0 25px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       width: 100%;
 
       .product__buy {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         display: flex;
 
         &-price {
@@ -532,7 +540,7 @@
         //wrapper
         &-radio {
           display: flex;
-          margin-bottom: 35px;
+          margin-bottom: 15px;
 
           &.radio-3 {
             .product__styles-size {
@@ -634,12 +642,13 @@
           }
         }
 
+        .product__styles-title {
+          margin-bottom: 7px;
+        }
+
         &-color {
           margin-bottom: 10px;
 
-          .product__styles-title {
-            margin-bottom: 5px;
-          }
 
           .product-icon:last-child {
             margin-right: 0;
@@ -838,7 +847,15 @@
     margin: 0 !important;
   }
 }
-
+.body-product-twodoor {
+  .product__inner {
+    .product__choose {
+      .product__styles-size {
+        margin-right: 35px;
+      }
+    }
+  }
+}
 // door info
 .product__information {
   margin-bottom: 40px;
@@ -886,7 +903,7 @@
         }
 
         .product__characteristics-title {
-          margin-right: 15px;
+          margin-right: 10px;
           width: 100%;
 
           .product__characteristics-row {
@@ -1035,6 +1052,7 @@
 
     &__title {
       padding: 0;
+
       .product__title-img {
         display: flex;
       }
@@ -1049,9 +1067,9 @@
         margin-bottom: 10px;
 
         .social__block {
-          position: absolute;
-          bottom: 0;
-          left: 0;
+          position: relative;
+          //bottom: 0;
+          //left: 0;
         }
       }
 
@@ -1062,11 +1080,15 @@
       .product__photo {
         max-width: 250px;
 
+        .product__photo-description {
+          display: none;
+        }
+
         .article.article-tablet {
           display: block;
           margin: 0;
           border: none;
-          padding: 5px 0;
+          margin-bottom: 10px;
         }
 
         &-info {
@@ -1105,10 +1127,6 @@
 
             .slider__for-item {
               max-width: 250px;
-
-              img {
-                width: 65%;
-              }
             }
           }
 
@@ -1123,14 +1141,16 @@
       }
 
       .product__choose {
-        padding: 10px 0 0 8px;
+        padding: 20px 0 0 8px;
+        justify-content: space-between;
 
         .product__buy {
           &-act {
-            padding-top: 5px;
+            padding-top: 8px;
 
             .product__act-info {
               margin-bottom: 15px;
+              padding-left: 0;
             }
 
             .product__act-btn {
@@ -1150,13 +1170,29 @@
         }
 
         .product__styles-size {
+          margin-right: 25px;
+
           .product__styles-choice {
             margin-right: 20px;
           }
         }
 
+        .product__styles-texture {
+          flex-direction: row;
+
+          .product__styles-color {
+            margin-bottom: 0;
+            margin-right: 20px;
+          }
+
+          .product-icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
         .product__styles-radio {
-          margin-bottom: 10px;
+          margin-bottom: 25px;
         }
       }
 
@@ -1164,9 +1200,12 @@
         flex: 0 0 100%;
         max-width: 100%;
         padding-bottom: 0;
+        margin-left: 0;
+
         .product__title-img {
           display: none;
         }
+
         .product__tools {
           border: 1px solid #f4f4f4;
           border-radius: 4px;
@@ -1182,6 +1221,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
+
             img {
               width: 100%;
             }
@@ -1228,6 +1268,7 @@
         &.table-controls {
           flex: 0 0 25%;
           max-width: 25%;
+
           .buy-basket-btn {
             font-size: 13px;
             padding: 8px 2px 8px 22px;
@@ -1295,8 +1336,12 @@
 
 @media (max-width: 767.97px) {
   .body-product-twodoor {
-    .product__styles-size {
-      margin-right: 30px !important;
+    .product__inner {
+      .product__choose {
+        .product__styles-size {
+          margin-right: 10px;
+        }
+      }
     }
   }
   .product {
@@ -1364,11 +1409,12 @@
         }
 
         .product__styles-size {
-          margin-right: 20px;
+          margin-right: 10px;
 
 
           .product__styles-choice {
             margin-right: 10px;
+            max-width: 110px;
           }
         }
 
@@ -1421,6 +1467,9 @@
           }
         }
       }
+    }
+    .footer__social-network_list {
+      justify-content: flex-start;
     }
   }
 
@@ -1575,7 +1624,7 @@
 
     &__inner {
       .product__photo-info {
-        margin-bottom: 5px;
+        margin-bottom: 0;
       }
 
       .product__title {
@@ -1608,7 +1657,7 @@
       .product__photo {
         position: relative;
         max-width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0;
 
         &-info {
           .product__rating {
@@ -1993,6 +2042,7 @@
           .quantity-counter {
             width: 100px;
           }
+
           .table-elements {
             font-size: 12px;
           }

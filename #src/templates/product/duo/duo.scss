@@ -1,13 +1,5 @@
 .duo-product {
   .product__inner {
-    .product__card {
-      margin-bottom: 30px;
-    }
-    .product__tools-item {
-      img {
-        width: 80%;
-      }
-    }
     .product__photo {
       .information {
         margin-top: 20px;
@@ -23,7 +15,7 @@
 
         .product__slider-for.slider-big-photo {
           .slider__for-item {
-            padding: 32px 0;
+            padding: 25px 0;
 
             .fancybox-link-img {
               width: 100%;
@@ -38,11 +30,12 @@
 
     .product__choose {
       justify-content: flex-start;
-      padding: 40px 35px 0 25px;
 
       .product__buy {
+        margin-bottom: 35px;
         &-act {
           .product__act-info {
+            margin-bottom: 10px;
             p:last-child {
               height: 30px;
             }
@@ -62,15 +55,15 @@
   .product__styles {
     &-wrapper {
       display: flex;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
   }
 }
 
 .duo-door-item {
   position: relative;
-  width: 180px;
-  height: 420px;
+  max-width: 180px;
+  height: 100%;
 
   img {
     width: 100%;
@@ -200,10 +193,6 @@
           bottom: 0;
         }
 
-        .article.article-tablet {
-          padding: 8px 0;
-        }
-
         &-info {
           height: 25px;
 
@@ -258,7 +247,7 @@
         padding: 10px 0 20px 8px;
 
         .product__buy {
-
+          margin-bottom: 15px;
 
           &-act {
             .product__act-btn {
@@ -526,13 +515,11 @@
               //height: 300px;
               flex: 0 0 45%;
               max-width: 170px;
-              max-height: 92%;
+              max-height: 85%;
               width: 100%;
             }
             .slider__for-item {
-              img {
-                width: 100% !important;
-              }
+
             }
           }
         }

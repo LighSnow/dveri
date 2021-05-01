@@ -45,11 +45,6 @@ if (mediaWidth > 610) {
     });
 }
 
-jQuery('.duo__slider-inner').on('setPosition', function (event, slick, currentSlide) {
-    if (jQuery(".duo__slider-inner").hasClass("slick-initialized")) {
-        console.log(event, slick, currentSlide)
-    }
-});
 
 // выбор второй двери
 $('body').on('click', '.duo__slider-item--img', function () {

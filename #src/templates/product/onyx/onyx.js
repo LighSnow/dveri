@@ -51,6 +51,22 @@ $(function (e) {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 500,
+                            settings: {
+                                slidesToShow: 4,
+                                arrows: true,
+                            }
+                        },
+                        {
+                            breakpoint: 400,
+                            settings: {
+                                slidesToShow: 3,
+                                arrows: true
+                            }
+                        }
+                    ]
                 });
             }
         }
@@ -59,7 +75,8 @@ $(function (e) {
     $('.slick-slide.slick-active').next('*:not(.slick-active)').prev().addClass('next');
     body.on('click', '.slick-arrow', function () {
         if ($(this).hasClass('slick-next')) {
-            $(this).parents('.settings__slider').find('.slick-slide.next').removeClass('next').next().addClass('next')
+            $(this).parents('.settings__slider').find('.slick-slide.next').removeClass('next')
+                .next().addClass('next')
         }
     });
     // нажатие на setting input
@@ -98,8 +115,12 @@ $(function (e) {
     // onyx смена двери
     body.on('click', '.settings__slider-item', function () {
         const onyx = $(this).attr('data-onyx-main');
+        const wrapperOfElementAddComplect = $(this).parents('._js-name-add');
+        const nameOfElementAddComplect = wrapperOfElementAddComplect.attr('data-name')
+        const wrapperForComplect = $(this).parents('.product__card').find('.change-text-set');
         const onyxChoose = $(this).attr('data-onyx-choose');
         const onyxTypeGlass = $(this).attr('data-type-choose');
+        let htmlNameElement;
         // скорее всего сразу будут загружены и можно брать так
         const src = `../../../img/product/onyx/onyx-`;
 
@@ -111,12 +132,13 @@ $(function (e) {
         if (!$(this).parents('.settings__slider').hasClass('required')) {
             // toggle
             if ($(this).hasClass('current')) {
-                if(!$(this).hasClass('required')) {
+                if (!$(this).hasClass('required')) {
                     $(this).removeClass('current').parents('.slick-slide');
                     currentElementForChoose.attr('src', '');
                 }
             } else {
-                $(this).addClass('current').parents('.slick-slide').siblings().find('.settings__slider-item').removeClass('current');
+                $(this).addClass('current').parents('.slick-slide').siblings().find('.settings__slider-item')
+                    .removeClass('current');
                 // glass
                 if ($(this).parents('.settings__slider').hasClass('js-slider-glass')) {
                     // береться из обьекта imgForOnyxDoor
@@ -129,20 +151,34 @@ $(function (e) {
         } else {
             // если слайдер менее 3 айтемов он перестает быть слайдером
             if (!$(this).parents('.settings__slider').hasClass('disabled')) {
-                $(this).addClass('current').parents('.slick-slide').siblings().find('.settings__slider-item').removeClass('current');
+                $(this).addClass('current').parents('.slick-slide').siblings().find('.settings__slider-item')
+                    .removeClass('current');
                 currentElementForChoose.attr('src', `${src}${onyx}-${onyxChoose}.png`);
             } else {
                 $(this).addClass('current').siblings().removeClass('current');
                 currentElementForChoose.attr('src', `${src}${onyx}-${onyxChoose}.png`);
             }
         }
+
+        // добавляем текст с выбранными элементами
+        if (wrapperForComplect.find('span[data-name="' + nameOfElementAddComplect + '"]').length === 0) {
+            if (nameOfElementAddComplect !== undefined) {
+                htmlNameElement = `<span class="new-option" data-name="${nameOfElementAddComplect}">` +
+                                `, ${nameOfElementAddComplect}</span>`;
+                wrapperForComplect.append(htmlNameElement);
+            }
+        } else {
+            if (!$(this).hasClass('current')) {
+                wrapperForComplect.find('span[data-name="' + nameOfElementAddComplect + '"]').remove();
+            }
+        }
+
     });
 
 
     // выбор стеклянной или глухой оболочки двери
     body.on('click', '.controls-btn', function () {
         $(this).addClass('active').siblings().removeClass('active');
-
     });
 
 
@@ -175,7 +211,7 @@ $(function (e) {
     body.on('click', '.product__settings-row--controls .controls-btn', function () {
         const glassShow = $(this).attr('data-glass-show');
 
-        if (glassShow == 2) {
+        if (glassShow === '2') {
             body.find('[data-glass-show="1"]').show();
             body.find('.product__settings-row--glasstype' +
                 ' .settings__slider-item[data-onyx-choose="1"]').trigger('click');
@@ -236,7 +272,23 @@ $(function (e) {
         $('.js-slider-glass').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 4,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: true
+                    }
+                }
+            ]
         });
     }
 
@@ -252,6 +304,7 @@ $(function (e) {
             }
         })
     }
+
     function unclickItemSlider() {
         body.find('.js-slider-glass').find('.settings__slider-item').each((i, el) => {
             if ($(el).hasClass('current')) {
@@ -262,6 +315,7 @@ $(function (e) {
             }
         })
     }
+
     // slickCarousel();
     function destroyCarousel(callback, callback2) {
         if ($('.js-slider-glass').hasClass('slick-initialized')) {
