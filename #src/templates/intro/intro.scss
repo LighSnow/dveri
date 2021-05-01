@@ -105,6 +105,7 @@
 
 @media (max-width: 1200px) {
   .intro {
+    height: 311px;
     margin: -4px;
     padding: 15px 0 30px;
   }
@@ -116,7 +117,7 @@
     font-size: 10px;
   }
   .intro__slider {
-    height: 258px;
+
     .slick-list {
       height: 100%;
     }
@@ -133,13 +134,14 @@
 
 @media (max-width: 767.98px) {
   .intro {
+    height: auto;
     display: block;
     padding: 10px 0 20px;
     .intro__slider .slick-slide div {
       height: auto;
     }
     .intro__slider {
-      height: auto;
+
 
       overflow: hidden;
       .slick-list {

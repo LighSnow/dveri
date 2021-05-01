@@ -8,6 +8,19 @@ html {
 	box-sizing: inherit;
 }
 
+input[type='text'],
+input[type='button'],
+input[type='number'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+input:disabled {
+	color: #212121;
+	opacity: 1;
+	-webkit-text-fill-color: #212121;
+}
+
 body {
 	font-family: $font-main;
 	line-height: 1.26;
@@ -98,6 +111,9 @@ a {
 	top: 0;
 	height: 100%;
 	z-index: 9999;
+}
+.empty-rating .jq-star {
+	cursor: default;
 }
 
 .nice-select .option.selected {

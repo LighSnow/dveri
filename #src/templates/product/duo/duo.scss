@@ -220,7 +220,7 @@
             width: 255px;
 
             .slider__for-item {
-              padding: 15px 0 !important;
+              padding: 15px!important;
 
               .slider__item-promo {
                 display: none;
@@ -515,7 +515,7 @@
               //height: 300px;
               flex: 0 0 45%;
               max-width: 170px;
-              max-height: 85%;
+              max-height: 100%;
               width: 100%;
             }
             .slider__for-item {

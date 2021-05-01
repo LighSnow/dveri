@@ -138,11 +138,11 @@ $(function () {
     if (mediaWidth <= 1200) {
         $(".rating-block.static-rating").starRating({readOnly: true, starSize: 16});
         $(".rating-block.no-static-rating").starRating({initialRating: 3, starSize: 16});
-        $(".rating-block.empty-rating").starRating({initialRating: 0, starSize: 16});
+        $(".rating-block.empty-rating").starRating({initialRating: 0, starSize: 16, readOnly: true});
     } else {
         $(".rating-block.static-rating").starRating({readOnly: true});
         $(".rating-block.no-static-rating").starRating({initialRating: 3});
-        $(".rating-block.empty-rating").starRating({initialRating: 0});
+        $(".rating-block.empty-rating").starRating({initialRating: 0, readOnly: true});
     }
 
 

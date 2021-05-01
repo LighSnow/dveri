@@ -179,11 +179,11 @@
 
             .slider-play-btn {
               position: absolute;
-              left: 50%;
-              top: 50%;
+              left: 52%;
+              top: 52%;
               transform: translate(-55%, -50%);
-              width: 36px;
-              height: 36px;
+              width: 32px;
+              height: 32px;
               border-radius: 4px;
               background-color: #64b0ce;
 
@@ -1121,7 +1121,7 @@
 
             &.slider-big-photo {
               .slider__for-item {
-                padding: 20px;
+                padding: 15px;
               }
             }
 
@@ -1681,7 +1681,7 @@
             .slider__for-item {
               max-width: 100%;
               width: 100%;
-              padding: 0;
+              padding: 15px;
 
               .slider__item-view {
                 display: none;

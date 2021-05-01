@@ -147,13 +147,19 @@
 			@media (max-width: 1200px) {
 				display: flex;
 				align-self: flex-end;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
 			}
 			@media (max-width: 767.97px) {
+				position: static;
 				width: 100%;
 				order: 3;
 				margin-right: 0;
 				justify-content: center;
 				margin: 20px 0px 0px 0px;
+				transform: none;
 			}
 		}
 		&__btn {
@@ -183,6 +189,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin: 0px 0px 20px 0px;
+		position: relative;
 
 		@media (max-width: 767.97px) {
 			flex-wrap: wrap;

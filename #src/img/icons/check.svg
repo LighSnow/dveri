@@ -1,17 +1,14 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_i)">
-<path d="M512 146L485.9 119.9L433.1 67.1L201.3 299C195.1 305.2 184.9 305.2 178.7 299L78.9 199.2L0 278L150.5 428.5C154.8 432.8 159.7 436.3 165 438.9C165 438.9 165.1 438.9 165.1 439C165.7 439.3 166.3 439.6 166.9 439.9C166.9 439.9 167 439.9 167 440C168.8 440.8 170.6 441.5 172.5 442.1C172.7 442.2 172.8 442.2 173 442.3C173.5 442.5 174 442.6 174.5 442.8C174.8 442.9 175.1 443 175.3 443C175.8 443.1 176.2 443.3 176.7 443.4C177 443.5 177.4 443.6 177.7 443.6C178.3 443.7 178.9 443.9 179.5 444C180.1 444.1 180.7 444.2 181.2 444.3C181.6 444.4 181.9 444.4 182.3 444.4C182.8 444.5 183.2 444.5 183.7 444.6C184.1 444.6 184.4 444.7 184.8 444.7C185.3 444.7 185.8 444.8 186.3 444.8C186.6 444.8 187 444.8 187.3 444.9C188 444.9 188.7 444.9 189.4 445C189.5 445 189.7 445 189.8 445C204.6 445 218.8 439.1 229.2 428.7L512 146Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_i" x="-9" y="0" width="521" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="-9"/>
-<feGaussianBlur stdDeviation="4.5"/>
-<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
-</filter>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M512,146l-26.1-26.1l0,0l-52.8-52.8L201.3,299c-6.2,6.2-16.4,6.2-22.6,0l-99.8-99.8L0,278l150.5,150.5
+	c4.3,4.3,9.2,7.8,14.5,10.4c0,0,0.1,0,0.1,0.1c0.6,0.3,1.2,0.6,1.8,0.9c0,0,0.1,0,0.1,0.1c1.8,0.8,3.6,1.5,5.5,2.1
+	c0.2,0.1,0.3,0.1,0.5,0.2c0.5,0.2,1,0.3,1.5,0.5c0.3,0.1,0.6,0.2,0.8,0.2c0.5,0.1,0.9,0.3,1.4,0.4c0.3,0.1,0.7,0.2,1,0.2
+	c0.6,0.1,1.2,0.3,1.8,0.4s1.2,0.2,1.7,0.3c0.4,0.1,0.7,0.1,1.1,0.1c0.5,0.1,0.9,0.1,1.4,0.2c0.4,0,0.7,0.1,1.1,0.1
+	c0.5,0,1,0.1,1.5,0.1c0.3,0,0.7,0,1,0.1c0.7,0,1.4,0,2.1,0.1c0.1,0,0.3,0,0.4,0c14.8,0,29-5.9,39.4-16.3L512,146L512,146L512,146z"
+	/>
 </svg>
