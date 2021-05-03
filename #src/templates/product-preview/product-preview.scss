@@ -78,6 +78,12 @@
 				.product__rating {
 					display: flex;
 					align-items: center;
+					a {
+						color: #212121;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
 				}
 			}
 
