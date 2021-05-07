@@ -100,8 +100,8 @@ $(function () {
         const scrollPrevEl = $(this).parents('.category__filter-dropdown').find('.category__filter-dropdown-wrapper');
 
         $(this).text(text === 'Показать всё' ? 'Скрыть' : 'Показать всё');
-        // !scrollPrevEl.hasClass('show-all-block') ?
-        //     scrollPrevEl.mCustomScrollbar("destroy") : scrollPrevEl.mCustomScrollbar({theme: "dark-3"});
+        !scrollPrevEl.hasClass('show-all-block') ?
+            scrollPrevEl.mCustomScrollbar("destroy") : scrollPrevEl.mCustomScrollbar({theme: "dark-3"});
         scrollPrevEl.toggleClass('show-all-block');
     });
 

@@ -130,7 +130,8 @@ $(function () {
                 dots: false,
                 centerMode: true,
                 focusOnSelect: true,
-                vertical: true
+                vertical: true,
+                infinite: true
             })
         }
     }
@@ -240,4 +241,8 @@ $(function () {
     const productIconChoise = (elem) => {
         elem.addClass('current').siblings().removeClass('current');
     }
+
+    window.addEventListener('resize', function (e) {
+        $('.product__slider-nav').find('.slick-track').css({'transform': 'translate3d(0px, 0, 0px)'});
+    });
 });
