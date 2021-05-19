@@ -1700,7 +1700,7 @@
           grid-template-rows: 400px;
 
           .product__slider-for {
-            width: 100%;
+            width: 100% !important;
             max-width: 100%;
 
             .slider__for-item {

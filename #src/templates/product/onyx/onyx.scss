@@ -2280,6 +2280,9 @@
           &.glass-row {
             grid-template-columns: 1fr;
             grid-template-rows: 77px 140px !important;
+            &.glass-row-rebuild {
+              grid-template-rows: 77px auto !important;
+            }
           }
 
           &.column {
@@ -2835,6 +2838,7 @@
           &--slider {
             .settings__slider {
               max-width: 380px !important;
+              justify-content: space-around;
             }
           }
 
@@ -3046,6 +3050,14 @@
             .glasstype__inner {
 
               &-item {
+                .glasstype__inner-img {
+                  width: 70px;
+                  height: 70px;
+                  img {
+                    width: 74px;
+                    height: 74px;
+                  }
+                }
               }
 
               &-text {
@@ -4596,6 +4608,14 @@
             .glasstype__inner {
 
               &-item {
+                .glasstype__inner-img {
+                  width: 65px;
+                  height: 65px;
+                  img {
+                    width: 69px;
+                    height: 69px;
+                  }
+                }
               }
 
               &-text {
