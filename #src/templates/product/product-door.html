@@ -38,13 +38,16 @@
 							</div>
 						</div>
 						}
-						@@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
+						@@if(forPage == 'twoDoor' || forPage == 'glass') {
 						<div class="product__slider">
+							}
+							@@if(forPage == 'door') {
+							<div class="product__slider without-nav">
 							}
 							@@if(forPage == 'onyx') {
 							<div class="product__slider slider-onyx">
 								}
-								@@if(forPage == 'twoDoor' || forPage == 'door' || forPage == 'glass') {
+								@@if(forPage == 'twoDoor' || forPage == 'glass') {
 								<div class="product__slider-nav">
 									<div class="slider__nav-item">
 										<img src="../../img/product/product-slider-nav.png" alt="">
